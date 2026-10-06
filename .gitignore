@@ -147,3 +147,27 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Environment files (contains API keys)
+.env
+.env.*
+*.env
+triage-engine/.env
+
+# Dependencies
+node_modules/
+triage-engine/node_modules/
+
+# Temporary work & backup copies
+* - Copy.html
+draft/
+draft/*
+dictionsry.py
+
+# Generated output
+output.json
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/
