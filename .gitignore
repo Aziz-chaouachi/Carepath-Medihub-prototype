@@ -147,6 +147,11 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
 
 # Environment files (contains API keys)
 .env
