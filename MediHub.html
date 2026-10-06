@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarePath - Healthcare Navigation</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.3/dist/fonts/geist-sans/style.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, rgb(113, 29, 41) 0%, #e3ebe9 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    @media (min-width: 768px) {
+      body { overflow: hidden; }
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px) saturate(150%);
+      -webkit-backdrop-filter: blur(20px) saturate(150%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+    .glass-button { position: relative; overflow: hidden; }
+    @keyframes ripple-animation { to { transform: scale(4); opacity: 0; } }
+    .ripple {
+      position: absolute; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5); transform: scale(0);
+      animation: ripple-animation 0.6s ease-out; pointer-events: none;
+    }
+    .transition-smooth { transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .fade-in { animation: fadeIn 300ms ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .icon-button {
+      width: 40px; height: 40px; display: flex; align-items: center;
+      justify-content: center; border-radius: 12px; cursor: pointer; transition: all 200ms ease;
+    }
+    .icon-button:hover { background: rgba(255, 255, 255, 0.1); }
+    .icon-button:active { background: rgba(255, 255, 255, 0.15); }
+    .sidebar-scroll::-webkit-scrollbar { width: 6px; }
+    .sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+    .sidebar-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 3px; }
+    .sidebar-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
+    .sidebar-content { transition: width 300ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .nav-item { position: relative; transition: all 200ms ease; }
+    .nav-item::before {
+      content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 4px; height: 0; background: rgba(255, 255, 255, 0.9);
+      border-radius: 0 2px 2px 0; transition: height 200ms ease;
+    }
+    .nav-item.active::before { height: 20px; box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- CDN Libraries -->
+  <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- React Code Block -->
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+    const { createRoot } = ReactDOM;
+
+    const Icon = ({ name }) => {
+      if (name === 'logo') {
+        return (
+          <img src="hand.png" alt="CarePath Logo" className="max-w-none" 
+            style={{ width: '100px', height: '100px', objectFit: 'contain', position: 'relative', zIndex: '10' }} />
+        );
+      }
+
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          {name === 'chevronLeft' && <path d="m15 18-6-6 6-6" />}
+          {name === 'chevronRight' && <path d="m9 18 6-6-6-6" />}
+          {name === 'home' && <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></>}
+          {name === 'map' && <><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" /><line x1="9" y1="3" x2="9" y2="18" /><line x1="15" y1="6" x2="15" y2="21" /></>}
+          {name === 'news' && <><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16l-3-3" /><path d="M14 2v20" /><path d="M18 8h-4" /><path d="M18 12h-4" /><path d="M18 16h-4" /></>}
+          {name === 'folder' && <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />}
+          {name === 'message' && <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />}
+          {name === 'user' && <><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></>}
+          {name === 'settings' && <><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1 z"/></>}
+          {name === 'info' && <><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></>}
+          {name === 'moreHorizontal' && <><circle cx="12" cy="12" r="1" /><circle cx="19" cy="12" r="1" /><circle cx="5" cy="12" r="1" /></>}
+        </svg>
+      );
+    };
+
+    function App() {
+      const [isCollapsed, setIsCollapsed] = useState(false);
+      const [activeTab, setActiveTab] = useState('Who We Are');
+
+      function createRipple(event) {
+        const button = event.currentTarget;
+        const ripple = document.createElement('span');
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = event.clientX - rect.left - size / 2;
+        const y = event.clientY - rect.top - size / 2;
+
+        ripple.className = 'ripple';
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+
+        button.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      }
+
+      const triggerMapFunction = (funcName, arg = null) => {
+        const iframeWindow = document.getElementById('map-frame')?.contentWindow;
+        if (iframeWindow && iframeWindow[funcName]) {
+          arg !== null ? iframeWindow[funcName](arg) : iframeWindow[funcName]();
+        }
+      };
+
+      const handleSearchChange = (e) => {
+        const value = e.target.value;
+        if (value.trim() === '') {
+          triggerMapFunction('searchMap', '');
+          triggerMapFunction('clearMap');
+        } else {
+          triggerMapFunction('searchMap', value);
+        }
+      };
+
+      const navItems = [
+        { label: 'Home', icon: 'home' },
+        { label: 'HealthMap', icon: 'map' },
+        { label: 'Facilities News', icon: 'news' },
+        { label: 'Documents/Procedures', icon: 'folder' }
+      ];
+
+      const workspaceItems = [
+        { label: 'Profile', icon: 'user' },
+        { label: 'Settings', icon: 'settings' }
+      ];
+
+      const getHeaderIcon = () => {
+        if (activeTab === 'Who We Are') return 'info';
+        const found = [...navItems, ...workspaceItems].find(item => item.label === activeTab);
+        return found ? found.icon : 'home';
+      };
+
+      return (
+        <div className="w-full min-h-screen md:h-screen flex flex-col md:flex-row items-stretch md:items-end justify-start p-3 sm:p-4 md:p-8 gap-4 md:gap-8 relative overflow-y-auto md:overflow-hidden">
+          
+          {/* --- Sidebar Container --- */}
+          <div className={`transition-smooth shrink-0 flex flex-col w-full ${isCollapsed ? 'md:w-20 h-auto md:h-full' : 'md:w-80 h-auto md:h-full'}`}>
+            <div className="glass sidebar-content flex flex-col w-full h-full">
+              
+              {/* Header */}
+              <div className={`flex p-5 border-b border-white/10 transition-all ${isCollapsed ? 'flex-col items-center gap-4' : 'items-center justify-between'}`}>
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center justify-center shrink-0 cursor-pointer" onClick={() => setActiveTab('Who We Are')}>
+                    <Icon name="logo" />
+                  </div>
+                  {!isCollapsed && (
+                    <div className="flex flex-col fade-in cursor-pointer" onClick={() => setActiveTab('Who We Are')}>
+                      <h2 className="font-semibold text-white text-xl tracking-wide">CarePath</h2>
+                      <p className="text-[11px] text-white/70 font-medium tracking-wide">KNOW WHAT TO DO NEXT</p>
+                    </div>
+                  )}
+                </div>
+                <button onClick={() => setIsCollapsed(!isCollapsed)} className={`glass-button icon-button text-white/70 hover:text-white hover:bg-white/10 ${isCollapsed ? '' : 'ml-auto'}`}>
+                  <Icon name={isCollapsed ? 'chevronRight' : 'chevronLeft'} />
+                </button>
+              </div>
+
+              {/* Navigation Content */}
+              <div className="flex-1 overflow-y-auto sidebar-scroll p-4 space-y-6">
+                <div>
+                  {!isCollapsed && <p className="text-xs font-bold text-white/50 mb-3 px-2 tracking-widest fade-in">GENERAL</p>}
+                  <div className="space-y-1">
+                    {navItems.map((item, idx) => (
+                      <button key={idx} onClick={(e) => { createRipple(e); setActiveTab(item.label); }}
+                        className={`glass-button w-full flex items-center gap-3 rounded-xl p-3 text-white/70 hover:text-white hover:bg-white/10 transition-all ${isCollapsed ? 'justify-center' : ''} ${activeTab === item.label ? 'bg-white/15 text-white active' : ''} nav-item`}>
+                        <span><Icon name={item.icon} /></span>
+                        {!isCollapsed && <div className="flex items-center justify-between flex-1 fade-in"><span className="font-medium text-sm">{item.label}</span></div>}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  {!isCollapsed && <p className="text-xs font-bold text-white/50 mb-3 px-2 tracking-widest fade-in">PERSONAL</p>}
+                  <div className="space-y-1">
+                    {workspaceItems.map((item, idx) => (
+                      <button key={idx} onClick={(e) => { createRipple(e); setActiveTab(item.label); }}
+                        className={`glass-button w-full flex items-center gap-3 rounded-xl p-3 text-white/70 hover:text-white hover:bg-white/10 transition-all ${isCollapsed ? 'justify-center' : ''} ${activeTab === item.label ? 'bg-white/15 text-white active' : ''} nav-item`}>
+                        <Icon name={item.icon} />
+                        {!isCollapsed && <span className="font-medium text-sm fade-in">{item.label}</span>}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className={`p-4 border-t border-white/10 flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
+                {!isCollapsed && (
+                  <div className="flex items-center gap-3 fade-in">
+                    <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-900 font-bold text-sm">P</div>
+                    <div className="flex flex-col">
+                      <p className="font-semibold text-sm text-white">Patient</p>
+                      <p className="text-xs text-white/60">Verified account</p>
+                    </div>
+                  </div>
+                )}
+                {isCollapsed && <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-900 font-bold text-sm">P</div>}
+                {!isCollapsed && (
+                  <button onClick={createRipple} className="glass-button icon-button text-white/60 hover:text-white hover:bg-white/10">
+                    <Icon name="moreHorizontal" />
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* --- Main Content Area --- */}
+          <div className="glass transition-smooth flex-1 flex flex-col fade-in w-full h-[80vh] md:h-[92%]" style={{ maxWidth: '100%' }}>
+            
+            {activeTab === 'CareBot Chat' ? (
+              // Completely flexible full-area container with internal padding removed
+              <div className="w-full h-full flex flex-col rounded-3xl overflow-hidden relative fade-in bg-white/5 border border-white/10">
+                {/* Embedded Return to Home Bar */}
+                <div className="w-full bg-black/20 backdrop-blur-md border-b border-white/10 p-3 flex justify-start shrink-0">
+                   <button 
+                     onClick={(e) => { createRipple(e); setActiveTab('Home'); }} 
+                     className="glass-button flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-semibold transition-all"
+                   >
+                     <Icon name="chevronLeft" /> Return to Home
+                   </button>
+                </div>
+                {/* Flexible iframe filling the remaining height and width */}
+                <iframe src="triage-engine\medihub-chat-interface.html" className="w-full flex-1 border-0 bg-transparent block" title="CareBot Chat"></iframe>
+              </div>
+            ) : (
+              // Standard View for everything else
+              <div className="p-3 flex-1 flex flex-col h-full">
+                
+                {/* Top Header Row */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2 pb-2 border-b border-white/10">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/20">
+                      <Icon name={getHeaderIcon()} />
+                    </div>
+                    <h1 className="text-3xl font-bold text-white tracking-wide">{activeTab}</h1>
+                  </div>
+
+                  {/* HealthMap Controls */}
+                  {activeTab === 'HealthMap' && (
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 fade-in w-full sm:w-auto">
+                      <select 
+                        onChange={(e) => triggerMapFunction('filterMap', e.target.value)}
+                        className="bg-white/15 hover:bg-white/25 text-white border border-white/20 rounded-lg px-3 py-1.5 text-sm font-medium outline-none cursor-pointer transition-all focus:ring-2 focus:ring-white/40 [&>option]:bg-[#4a121a] [&>option]:text-white"
+                      >
+                        <option value="all">Show All</option>
+                        <option value="hospital">Public Hospitals</option>
+                        <option value="regional">Regional (RH)</option>
+                        <option value="university">University Med</option>
+                        <option value="clinic">Clinics</option>
+                        <option value="csb">CSB Centers</option>
+                        <option value="radiology">Radiology (RC)</option>
+                      </select>
+
+                      <input 
+                        type="text" 
+                        placeholder="Search areas or facilities..."
+                        onChange={handleSearchChange}
+                        className="w-48 md:w-64 bg-white/15 hover:bg-white/25 text-white placeholder-white/60 border border-white/20 rounded-lg px-3 py-1.5 text-sm outline-none focus:ring-2 focus:ring-white/40 transition-all"
+                      />
+
+                      <button 
+                        onClick={(e) => { createRipple(e); triggerMapFunction('findNearestAndRoute'); }} 
+                        className="glass-button px-3 py-1.5 bg-white/15 hover:bg-white/25 text-white border border-white/20 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5 shrink-0"
+                      >
+                        <span>📍</span> Route to Nearest
+                      </button>
+                    </div>
+                  )}
+                </div>
+                
+                <div className={`flex-1 rounded-2xl bg-white/5 border border-white/10 flex shadow-inner text-center overflow-hidden ${activeTab === 'HealthMap' ? '' : 'items-center justify-center p-8 overflow-y-auto'}`}>
+                   
+                   {activeTab === 'Who We Are' ? (
+                     <div className="flex flex-col items-center justify-center max-w-2xl text-white/80 space-y-6 fade-in">
+                       <img src="hand.png" alt="CarePath Logo Image" className="w-48 h-48 object-contain mb-2 drop-shadow-2xl" />
+                       <h2 className="text-3xl font-bold text-white tracking-wide">Welcome to CarePath</h2>
+                       <p className="text-lg leading-relaxed text-white/70">Your all-in-one healthcare navigation assistant. We help you map out your healthcare journey, manage crucial documents, and stay connected with your personal care progress.</p>
+                     </div>
+                   ) : activeTab === 'Home' ? (
+                     <div className="flex flex-col items-center justify-center max-w-2xl text-white/80 space-y-6 fade-in">
+                       <h2 className="text-3xl font-bold text-white tracking-wide">Dashboard Home</h2>
+                       <p className="text-lg leading-relaxed text-white/70">Welcome to your dashboard. Access your personal assistant to get started.</p>
+                       <button 
+                         onClick={(e) => { createRipple(e); setActiveTab('CareBot Chat'); }} 
+                         className="glass-button mt-4 px-8 py-4 bg-white/20 hover:bg-white/30 border border-white/30 text-white rounded-xl font-bold transition-all shadow-lg flex items-center gap-3 text-lg"
+                       >
+                         <Icon name="message" /> Chat with the bot
+                       </button>
+                     </div>
+                   ) : activeTab === 'HealthMap' ? (
+                     <div className="w-full h-full flex flex-col fade-in">
+                       <iframe id="map-frame" src="health-map.html" className="w-full flex-1 border-0 bg-white" title="CarePath Health Map"></iframe>
+                     </div>
+                   ) : activeTab === 'Facilities News' ? (
+                     <div className="w-full h-full overflow-y-auto fade-in">
+                       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 text-left">
+                         <div className="glass p-6 hover:bg-white/10 transition-all cursor-pointer group">
+                           <div className="flex justify-between items-start mb-4">
+                             <h3 className="text-xl font-bold text-white group-hover:text-red-200">Central Hospital</h3>
+                             <span className="text-xs font-bold bg-red-500/80 text-white px-2 py-1 rounded">ALERT</span>
+                           </div>
+                           <p className="text-sm text-white/70 mb-6">Emergency room wait times are currently exceeding 2 hours. Please reroute non-critical issues to the North Clinic.</p>
+                           <button onClick={createRipple} className="glass-button w-full py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-semibold transition-all">Read Full Update</button>
+                         </div>
+                         <div className="glass p-6 hover:bg-white/10 transition-all cursor-pointer group">
+                           <div className="flex justify-between items-start mb-4">
+                             <h3 className="text-xl font-bold text-white group-hover:text-red-200">North Clinic</h3>
+                             <span className="text-xs font-bold bg-green-500/80 text-white px-2 py-1 rounded">OPEN</span>
+                           </div>
+                           <p className="text-sm text-white/70 mb-6">Extended weekend hours are now in effect. Walk-ins accepted for pediatric care until 8:00 PM.</p>
+                           <button onClick={createRipple} className="glass-button w-full py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-semibold transition-all">Read Full Update</button>
+                         </div>
+                         <div className="glass p-6 hover:bg-white/10 transition-all cursor-pointer group">
+                           <div className="flex justify-between items-start mb-4">
+                             <h3 className="text-xl font-bold text-white group-hover:text-red-200">Westside Lab</h3>
+                             <span className="text-xs font-bold bg-yellow-500/80 text-white px-2 py-1 rounded">NOTICE</span>
+                           </div>
+                           <p className="text-sm text-white/70 mb-6">Bloodwork appointments are fully booked for today. X-Ray and MRI departments are operating normally.</p>
+                           <button onClick={createRipple} className="glass-button w-full py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-semibold transition-all">Read Full Update</button>
+                         </div>
+                       </div>
+                     </div>
+                   ) : (
+                     <p className="text-white/60 text-lg font-medium tracking-wide max-w-lg fade-in">
+                       Workspace reserved for: <span className="text-white font-bold block mt-2">{activeTab}</span>
+                     </p>
+                   )}
+                   
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    const root = createRoot(document.getElementById('app'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

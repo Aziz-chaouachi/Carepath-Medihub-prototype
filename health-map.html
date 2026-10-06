@@ -1,0 +1,3079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePath Health Map</title>
+    <!-- MapLibre CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" />
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #e3ebe9; overflow: hidden; }
+        
+        /* Full Viewport Map Container */
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; height: 100vh; }
+
+        /* Custom Marker Icons */
+        .custom-marker {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            cursor: pointer;
+            border: 2px solid white;
+            transition: transform 0.2s;
+        }
+        .custom-marker:hover { transform: scale(1.15); }
+
+        /* Popup Styling */
+        .maplibregl-popup-content {
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+        }
+        .popup-content h3 { margin: 0 0 8px 0; color: #111; font-size: 1.1rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .popup-content p { margin: 4px 0; color: #555; font-size: 0.9rem; }
+        .popup-content strong { color: #333; }
+        .nav-link {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            background: #4285F4;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-link:hover { background: #3367d6; }
+    </style>
+</head>
+<body>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- MapLibre JS -->
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <script>
+    // 1. Initialize Map with OpenFreeMap
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://tiles.openfreemap.org/styles/liberty',
+        center: [10.1815, 36.8065], // Default center (Tunis)
+        zoom: 12
+    });
+
+    // 2. Add GPS User Tracking Control
+    const geolocate = new maplibregl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+        showUserHeading: true
+    });
+    map.addControl(geolocate, 'top-right');
+    map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
+
+    let userCoords = null;
+    geolocate.on('geolocate', (e) => {
+        userCoords = [e.coords.longitude, e.coords.latitude];
+    });
+
+        // 3. Extracted Database of Locations (Sample 232 items)
+        const facilities = [
+                            {
+    "Name": "La Rabta",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "R523+QRM, Tunis",
+    "Tel": 21671578856,
+    "latitude": 36.8022135066513,
+    "longitude": 10.1545268018926,
+    "Website": "https://www.chularabta.tn/"
+  },
+  {
+    "Name": "Charles Nicolle",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "1938 Boulevard du 9 Avril 1938, Tunis",
+    "Tel": 21671764033,
+    "latitude": 36.8028215031913,
+    "longitude": 10.1631334453678,
+    "Website": "http://www.chucharlesnicolle.tn/"
+  },
+  {
+    "Name": "Salah Azaiez",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Oncology",
+    "Emergency": "yes ",
+    "Adresse": "R545+R86, Rue Bab Saadoune, Tunis 1006",
+    "Tel": 21671150740,
+    "latitude": 36.8072443251237,
+    "longitude": 10.1585672736463,
+    "Website": "http://institutsalahazaiez.com/"
+  },
+  {
+    "Name": "B\u00e9chir Hamza",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Pediatrics",
+    "Emergency": "yes ",
+    "Adresse": "167 Boulevard du 9 Avril 1938, Tunis",
+    "Tel": 21671260586,
+    "latitude": 36.8068835399575,
+    "longitude": 10.1593933940633,
+    "Website": null
+  },
+  {
+    "Name": "H\u00e9di Ra\u00efs",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "ophthalmology",
+    "Emergency": "yes ",
+    "Adresse": "R545+FVJ, Boulevard du 9 Avril 1938, Tunis 1006",
+    "Tel": 21671263701,
+    "latitude": 36.8063337688109,
+    "longitude": 10.1597849965668,
+    "Website": null
+  },
+  {
+    "Name": "Wassila Bourguiba",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Neonatolgy ,Maternity",
+    "Emergency": "yes ",
+    "Adresse": "R525+636, Tunis",
+    "Tel": 21671571316,
+    "latitude": 36.800623217066,
+    "longitude": 10.1575829030438,
+    "Website": null
+  },
+  {
+    "Name": "Institut National de Nutrition",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Nutrition",
+    "Emergency": "no",
+    "Adresse": "R544+8RQ, 11 Rue Jebel lakdhar, Tunis",
+    "Tel": 21671570725,
+    "latitude": 36.8056811651015,
+    "longitude": 10.1573646066939,
+    "Website": "http://www.nutrition.rns.tn/bienvenue/contact.htm"
+  },
+  {
+    "Name": "Institut Pasteur",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Laboratory",
+    "Emergency": "no",
+    "Adresse": "R5FH+2JM, Av. Jugurtha, Tunis",
+    "Tel": 21671783022,
+    "latitude": 36.8227238746072,
+    "longitude": 10.1794317331662,
+    "Website": "https://pasteur.tn/"
+  },
+  {
+    "Name": "Mongi-Ben Hamida National Institute of Neurology",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Neurology",
+    "Emergency": "yes ",
+    "Adresse": "Av. de la Rabta Tunis 1007",
+    "Tel": 21671571316,
+    "latitude": 36.8010914029267,
+    "longitude": 10.1578356697589,
+    "Website": null
+  },
+  {
+    "Name": "H\u00f4pital Habib Thameur",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes ",
+    "Adresse": "Q5PG+CJV, Rue Ali Ben Ayed, Tunis",
+    "Tel": 21671397000,
+    "latitude": 36.7863355742997,
+    "longitude": 10.1763563217089,
+    "Website": "http://www.hopitalhabibthameur.tn/"
+  },
+  {
+    "Name": "H\u00f4pital Mongi Slim",
+    "Type": "public",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes ",
+    "Adresse": "Sidi Daoud, la Marsa, 2070",
+    "Tel": 21671764033,
+    "latitude": 36.866221319333,
+    "longitude": 10.2900199681055,
+    "Website": null
+  },
+  {
+    "Name": "Abderrahmen Mami Pneumo-Phthisiology Hospital",
+    "Type": "public",
+    "State": "Ariana",
+    "Departements": "Pneumo-Phthisiology",
+    "Emergency": "yes ",
+    "Adresse": "Route de Bizerte -Ariana 2080",
+    "Tel": 21671713645,
+    "latitude": 36.869815046853,
+    "longitude": 10.1782321662756,
+    "Website": null
+  },
+  {
+    "Name": "Center Oncology Medical And Radiotherapy",
+    "Type": "public",
+    "State": "Ariana",
+    "Departements": "Oncology",
+    "Emergency": "yes ",
+    "Adresse": "H\u00f4pital Abderrahman Mami, Rue de l'H\u00f4pital, 2080 l'Ariana",
+    "Tel": 21671821188,
+    "latitude": 36.868385950992,
+    "longitude": 10.1788598031854,
+    "Website": null
+  },
+  {
+    "Name": "Mahmoud El Matri Hospital",
+    "Type": "public",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes ",
+    "Adresse": "Avenue Ibn Khaldoun, Ariana",
+    "Tel": 21671821621,
+    "latitude": 36.86714995463,
+    "longitude": 10.1833766430373,
+    "Website": null
+  },
+  {
+    "Name": "Mohamed Kassab Institute of Orthopedics",
+    "Type": "public",
+    "State": "Manouba",
+    "Departements": "Orthopedics",
+    "Emergency": "yes ",
+    "Adresse": "Rue des travailleurs Ksar Sa\u00efd La Manouba 2010 Tunis",
+    "Tel": 21671606914,
+    "latitude": 36.8146652203685,
+    "longitude": 10.1013114195906,
+    "Website": "https://www.orthokassab.com/"
+  },
+  {
+    "Name": "Razi Hospital",
+    "Type": "public",
+    "State": "Manouba",
+    "Departements": "psychiatry",
+    "Emergency": "yes ",
+    "Adresse": "Rue des Orangers, La Manouba 2010, Tunisia",
+    "Tel": 21671570053,
+    "latitude": 36.8105576560534,
+    "longitude": 10.0823961776028,
+    "Website": null
+  },
+  {
+    "Name": "Ben Arous Trauma and Burn Center Mohamed Bouazizi Hospital",
+    "Type": "public",
+    "State": "Ben Arous",
+    "Departements": "Trauma & Burns",
+    "Emergency": "yes",
+    "Adresse": "Rue du 1er-Mai 2013 Ben Arous",
+    "Tel": 21679100500,
+    "latitude": 36.7467608878647,
+    "longitude": 10.2128065220734,
+    "Website": null
+  },
+  {
+    "Name": "El Yasminet Regional Hospital",
+    "Type": "public",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes ",
+    "Adresse": "P6MW+7R, Ben Arous",
+    "Tel": 21650031571,
+    "latitude": 36.7327993622142,
+    "longitude": 10.2478310536042,
+    "Website": null
+  },
+  {
+    "Name": "Al Agba CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8401344733243,
+    "longitude": 10.1184565290584,
+    "Website": null
+  },
+  {
+    "Name": "Amilcar CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8688037353526,
+    "longitude": 10.3368080805746,
+    "Website": null
+  },
+  {
+    "Name": "Aziza Othmana el Hafsia CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8010572697086,
+    "longitude": 10.1719725443744,
+    "Website": null
+  },
+  {
+    "Name": "Bab El Assel CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8019506338868,
+    "longitude": 10.1667820328579,
+    "Website": null
+  },
+  {
+    "Name": "Bardo Centre CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8105101916673,
+    "longitude": 10.1384409399971,
+    "Website": null
+  },
+  {
+    "Name": "Carthage CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8481588185926,
+    "longitude": 10.3211879065745,
+    "Website": null
+  },
+  {
+    "Name": "Cit\u00e9 Erriadh la Marsa CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.886117277847,
+    "longitude": 10.3148164927251,
+    "Website": null
+  },
+  {
+    "Name": "Sidi Fathallah CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7642980926576,
+    "longitude": 10.2047383113427,
+    "Website": null
+  },
+  {
+    "Name": "Djebel Lahmar CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8198677002035,
+    "longitude": 10.1645732797474,
+    "Website": null
+  },
+  {
+    "Name": "Cite El Khadra CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8314090495717,
+    "longitude": 10.1916902846408,
+    "Website": null
+  },
+  {
+    "Name": "Cit\u00e9 Ettahrir CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8215939453167,
+    "longitude": 10.1279572785925,
+    "Website": null
+  },
+  {
+    "Name": "Gammarth  CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.9052782672912,
+    "longitude": 10.3007565529854,
+    "Website": null
+  },
+  {
+    "Name": "El kabaria CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7527599793598,
+    "longitude": 10.1931998256463,
+    "Website": null
+  },
+  {
+    "Name": "Hedi Chaker CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7914412925642,
+    "longitude": 10.1803379308196,
+    "Website": null
+  },
+  {
+    "Name": "Ibn Khaldoun CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8245084439201,
+    "longitude": 10.1390887942822,
+    "Website": null
+  },
+  {
+    "Name": "Kram-Ouest La Goulette CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8387484247613,
+    "longitude": 36.8387484247613,
+    "Website": null
+  },
+  {
+    "Name": "Saint-Cl\u00e9ment Bardo CSB ",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8126051040225,
+    "longitude": 10.1221595817448,
+    "Website": null
+  },
+  {
+    "Name": "Mohamed Ali CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7674416537542,
+    "longitude": 10.1893903744633,
+    "Website": null
+  },
+  {
+    "Name": "El Ouardia CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.775836245323,
+    "longitude": 10.1848619872801,
+    "Website": null
+  },
+  {
+    "Name": "Ras Ettabia CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8197119609458,
+    "longitude": 10.1410633529098,
+    "Website": null
+  },
+  {
+    "Name": "Sidi Daoued Carthage CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8640199906187,
+    "longitude": 10.3039929499181,
+    "Website": null
+  },
+  {
+    "Name": "Sijoumi CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7936993213112,
+    "longitude": 10.1605134959624,
+    "Website": null
+  },
+  {
+    "Name": "Zahrouni  CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7890432395828,
+    "longitude": 10.1097017201985,
+    "Website": null
+  },
+  {
+    "Name": "El Omrane",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.817472216429,
+    "longitude": 10.160050239416,
+    "Website": null
+  },
+  {
+    "Name": "Kemal Atat\u00fcrk Bardo",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8143658892516,
+    "longitude": 10.1335803991468,
+    "Website": null
+  },
+  {
+    "Name": "El Aouina CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8510449722326,
+    "longitude": 10.2616608655328,
+    "Website": null
+  },
+  {
+    "Name": "Sidi Hassine CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7683319879599,
+    "longitude": 10.1113428876952,
+    "Website": null
+  },
+  {
+    "Name": "25 Juillet CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7458799559169,
+    "longitude": 10.1203336520452,
+    "Website": null
+  },
+  {
+    "Name": "Bab El Khadra CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8108325152573,
+    "longitude": 10.171658041314,
+    "Website": null
+  },
+  {
+    "Name": "Djebel Djelloud CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7692571798541,
+    "longitude": 10.1999210472539,
+    "Website": null
+  },
+  {
+    "Name": "Ali Trad CSB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7963263267206,
+    "longitude": 10.1486550977116,
+    "Website": null
+  },
+  {
+    "Name": "Cite ennour CAB",
+    "Type": "csb",
+    "State": "Tunis",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.7518363301451,
+    "longitude": 10.2005141238583,
+    "Website": null
+  },
+  {
+    "Name": "CSB Ariana Medina",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.86251504166682,
+    "longitude": 10.19651459780006,
+    "Website": null
+  },
+  {
+    "Name": "CSB Essaida",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.93557519708835,
+    "longitude": 10.04066200599468,
+    "Website": null
+  },
+  {
+    "Name": "CSB Ettadhamen",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83558626900902,
+    "longitude": 10.11251441215861,
+    "Website": null
+  },
+  {
+    "Name": "CSB Habibia",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.81203728564098,
+    "longitude": 9.941735401063614,
+    "Website": null
+  },
+  {
+    "Name": "CSB Hedi Essaidi",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.82904586347383,
+    "longitude": 9.970191680239866,
+    "Website": null
+  },
+  {
+    "Name": "CSB Kaalat Landlos",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 37.06005711438757,
+    "longitude": 10.11075140722256,
+    "Website": null
+  },
+  {
+    "Name": "CSB M'nihla",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.85637973972385,
+    "longitude": 10.11729345887586,
+    "Website": null
+  },
+  {
+    "Name": "CSB Pont de Bizerte",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.99319331022576,
+    "longitude": 10.06137929956525,
+    "Website": null
+  },
+  {
+    "Name": "CSB Raoued",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.91210738597069,
+    "longitude": 10.1848506826683,
+    "Website": null
+  },
+  {
+    "Name": "CSB Sidi Thabet",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.91226858354148,
+    "longitude": 10.04159583500246,
+    "Website": null
+  },
+  {
+    "Name": "CSB Soukra",
+    "Type": "csb",
+    "State": "Ariana",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.87482279697467,
+    "longitude": 10.24380509672475,
+    "Website": null
+  },
+  {
+    "Name": "CSB Bordj El Amri",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.71999123656771,
+    "longitude": 9.881011706984662,
+    "Website": null
+  },
+  {
+    "Name": "CSB Den-Den",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.80304397827454,
+    "longitude": 10.11025569321106,
+    "Website": null
+  },
+  {
+    "Name": "CSB Douar Hicher",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.82441402401728,
+    "longitude": 10.0946045139894,
+    "Website": null
+  },
+  {
+    "Name": "CSB Jedaida Ancienne",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.84025809237696,
+    "longitude": 9.930232892597388,
+    "Website": null
+  },
+  {
+    "Name": "CSB Jedaida Nouvelle",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83806434667063,
+    "longitude": 9.943720451878248,
+    "Website": null
+  },
+  {
+    "Name": "CSB Manouba",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.8090976462446,
+    "longitude": 10.11103972146896,
+    "Website": null
+  },
+  {
+    "Name": "CSB Mornaguia",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.75716921528604,
+    "longitude": 10.00676189132432,
+    "Website": null
+  },
+  {
+    "Name": "CSB Oued Ellil",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83542277116084,
+    "longitude": 10.03836961490346,
+    "Website": null
+  },
+  {
+    "Name": "CSB El Mharine",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.80397808178522,
+    "longitude": 9.844323308583032,
+    "Website": null
+  },
+  {
+    "Name": "CSB Hmaad",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.85368161397817,
+    "longitude": 9.884265169434315,
+    "Website": null
+  },
+  {
+    "Name": "CSM Tebourba",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.82684886522879,
+    "longitude": 9.840340117192817,
+    "Website": null
+  },
+  {
+    "Name": "CSB El Kibaa",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83127176355257,
+    "longitude": 10.04459797149645,
+    "Website": null
+  },
+  {
+    "Name": "Centre de Lutte contre la Tuberculose",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83373114149592,
+    "longitude": 10.09668185330265,
+    "Website": null
+  },
+  {
+    "Name": "CSB Kaled Ibn Alwalid",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.83028584138959,
+    "longitude": 10.07743938220568,
+    "Website": null
+  },
+  {
+    "Name": "CSB Hmaim",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.69867860586403,
+    "longitude": 9.9920017696574,
+    "Website": null
+  },
+  {
+    "Name": "CSB El Bassetine",
+    "Type": "csb",
+    "State": "Manouba",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.84536941477531,
+    "longitude": 10.09125759509173,
+    "Website": null
+  },
+  {
+    "Name": "CSB B Douar El Houch",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.67671797165465,
+    "longitude": 10.21341505191332,
+    "Website": null
+  },
+  {
+    "Name": "CSB Ben Arous",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.75496423185879,
+    "longitude": 10.21627337155348,
+    "Website": null
+  },
+  {
+    "Name": "CSB Bir El Bey",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.70821136508911,
+    "longitude": 10.37827839435801,
+    "Website": null
+  },
+  {
+    "Name": "CSB Borj Cedria",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.69391683712367,
+    "longitude": 10.38663052269865,
+    "Website": null
+  },
+  {
+    "Name": "CSB Bou Mhel",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.72088607292994,
+    "longitude": 10.29675579435885,
+    "Website": null
+  },
+  {
+    "Name": "CSB Djebel Ressas",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.66123802215625,
+    "longitude": 10.32787992098074,
+    "Website": null
+  },
+  {
+    "Name": "CSB El Mourouj",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.71659862461869,
+    "longitude": 10.21013005074875,
+    "Website": null
+  },
+  {
+    "Name": "CSB Ezzahra",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.74495729718496,
+    "longitude": 10.306588865701,
+    "Website": null
+  },
+  {
+    "Name": "CSB Fouchana",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.70186602609806,
+    "longitude": 10.1623239713456,
+    "Website": null
+  },
+  {
+    "Name": "CSB Hammam Lif",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.72577917765734,
+    "longitude": 10.34495027901801,
+    "Website": null
+  },
+  {
+    "Name": "CSB Khelidia",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.64357519758489,
+    "longitude": 10.19273957716496,
+    "Website": null
+  },
+  {
+    "Name": "CSB Megrine Chaker",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.78212921475212,
+    "longitude": 10.2324498943632,
+    "Website": null
+  },
+  {
+    "Name": "CSB Megrine Coteaux",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.77087119150188,
+    "longitude": 10.22955302599028,
+    "Website": null
+  },
+  {
+    "Name": "CSB Mehamedia",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.67077991314817,
+    "longitude": 10.15930644680778,
+    "Website": null
+  },
+  {
+    "Name": "CSB Mornag",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.62225225502144,
+    "longitude": 10.271259663574,
+    "Website": null
+  },
+  {
+    "Name": "CSB Naassen",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.70413633961522,
+    "longitude": 10.23234071895879,
+    "Website": null
+  },
+  {
+    "Name": "CSB Rades",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.76628672558981,
+    "longitude": 10.26100684346004,
+    "Website": null
+  },
+  {
+    "Name": "CSB Rades Mellaha",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.76650950070621,
+    "longitude": 10.26108588138724,
+    "Website": null
+  },
+  {
+    "Name": "CSB Sidi Mosbah",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.74489078681773,
+    "longitude": 10.24134829508596,
+    "Website": null
+  },
+  {
+    "Name": "CSB Zaouia-Mornag",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.69895560109323,
+    "longitude": 10.27399678958484,
+    "Website": null
+  },
+  {
+    "Name": "DAT Megrine",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.77075398387566,
+    "longitude": 10.22954852207483,
+    "Website": null
+  },
+  {
+    "Name": "Nouvelle Medina",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.74780744673512,
+    "longitude": 10.25334475805325,
+    "Website": null
+  },
+  {
+    "Name": "Cit\u00e9 Stade",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.75839793190028,
+    "longitude": 10.22750972120453,
+    "Website": null
+  },
+  {
+    "Name": "El Mourouj 1",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.73105784391307,
+    "longitude": 10.20286662686397,
+    "Website": null
+  },
+  {
+    "Name": "Yasminet",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.74350578367142,
+    "longitude": 10.23197903527005,
+    "Website": null
+  },
+  {
+    "Name": "Chedda",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.69011867281707,
+    "longitude": 10.20942089968278,
+    "Website": null
+  },
+  {
+    "Name": "Chela",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.69676578209068,
+    "longitude": 10.30050687750914,
+    "Website": null
+  },
+  {
+    "Name": "Borj Sougui",
+    "Type": "csb",
+    "State": "Ben Arous",
+    "Departements": "Primary Care / General Practice",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": null,
+    "latitude": 36.6028382157662,
+    "longitude": 10.25621823943201,
+    "Website": null
+  },
+  {
+    "Name": "Tebourba Regional Hospital",
+    "Type": "public/RH",
+    "State": "Manouba",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "H\u00f4pital Local de Tebourba, C64, T\u00e9bourba 1130",
+    "Tel": 21671530066,
+    "latitude": 36.845821100698,
+    "longitude": 9.82737605276263,
+    "Website": null
+  },
+  {
+    "Name": "Ettadhamen Hospital",
+    "Type": "public/RH",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Rue des Martyrs, Douar Hicher, Cit\u00e9 Ettadhamen",
+    "Tel": 21671520880,
+    "latitude": 36.8331834308669,
+    "longitude": 10.096538877354,
+    "Website": null
+  },
+  {
+    "Name": "National Center for School and University Medicine",
+    "Type": "public/univ/scho",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "no",
+    "Adresse": "16 Ave Mohamed V, Tunis",
+    "Tel": 71350820,
+    "latitude": 36.8022648815935,
+    "longitude": 10.1858276815955,
+    "Website": null
+  },
+  {
+    "Name": "Health Center University",
+    "Type": "public/univ/scho",
+    "State": "Manouba",
+    "Departements": "Multidisciplinary",
+    "Emergency": "no",
+    "Adresse": "R35P+345, Ave H\u00e9di Chaker, Manouba",
+    "Tel": 21670603944,
+    "latitude": 36.807225669807,
+    "longitude": 10.0849982689831,
+    "Website": null
+  },
+  {
+    "Name": "Kheireddine Regional Hospital",
+    "Type": "public/RH",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "R8H8+M5 La Goulette",
+    "Tel": 21671731860,
+    "latitude": 36.829262608411,
+    "longitude": 10.3153955728635,
+    "Website": null
+  },
+  {
+    "Name": "El Farabi Clinic",
+    "Type": "Private",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RUE CHEIKH Med ZAGHOUANI MENZAH VI- 1004",
+    "Tel": "71 75 05 00",
+    "latitude": 36.84818071645969,
+    "longitude": 10.16756706690185,
+    "Website": null
+  },
+  {
+    "Name": "Ennasr Clinic",
+    "Type": "Private",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "50 , AVENUE DE L'ERE NOUVELLE - ENNASR 2 - 2037 ARIANA",
+    "Tel": "70831000",
+    "latitude": 36.86022638808332,
+    "longitude": 10.1528568374217,
+    "Website": null
+  },
+  {
+    "Name": "La Soukra Clinic",
+    "Type": "Private",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RUE CHEIKH MED ENNAIFER-2045 SOUKRA",
+    "Tel": "36406300",
+    "latitude": 36.86355225334125,
+    "longitude": 10.27734819509279,
+    "Website": null
+  },
+  {
+    "Name": "Les Narcisses Clinic",
+    "Type": "Private",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "50 , AVENUE DE L'ERE NOUVELLE - ENNASR 2 - 2037 ARIANA",
+    "Tel": "70 248800",
+    "latitude": 36.86140537138775,
+    "longitude": 10.15975293620623,
+    "Website": null
+  },
+  {
+    "Name": "M\u00e9diterran\u00e9enne Clinic",
+    "Type": "Private",
+    "State": "Ariana",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "37 Avenue de L'UMA R\u00e9sidence City II Bloc C 2036 Soukra",
+    "Tel": "36 136 606",
+    "latitude": 36.86234788484308,
+    "longitude": 10.21127152392812,
+    "Website": null
+  },
+  {
+    "Name": "El Walid Clinic",
+    "Type": "Private",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "19, Av. TAIEB M'HIRI - CITE LES ROSES-2034 EZZAHRA",
+    "Tel": "7145 02 00",
+    "latitude": 36.73510618497406,
+    "longitude": 10.31293960857911,
+    "Website": null
+  },
+  {
+    "Name": "Megrine Clinic",
+    "Type": "Private",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "59 BIS AV DE LA REPUBLIQUE /MEGRINE",
+    "Tel": "98 32 34 66",
+    "latitude": 36.7703714492221,
+    "longitude": 10.24200475275831,
+    "Website": null
+  },
+  {
+    "Name": "Hammam Lif Clinic",
+    "Type": "Private",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RTE GP1 KM 18- 2050 HAMMEM LIF",
+    "Tel": null,
+    "latitude": 36.72603771822358,
+    "longitude": 10.34029126360675,
+    "Website": null
+  },
+  {
+    "Name": "Ezzahra Clinic",
+    "Type": "Private",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Rue Abou El Kacem Ezzahraoui 2034",
+    "Tel": "36413000",
+    "latitude": 36.73977497694213,
+    "longitude": 10.30113486625029,
+    "Website": null
+  },
+  {
+    "Name": "El Mourouj Clinic",
+    "Type": "Private",
+    "State": "Ben Arous",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Carrefour Medical Rur Media el Mourouj I 2050",
+    "Tel": "71367044",
+    "latitude": 36.73349787064381,
+    "longitude": 10.2034622239208,
+    "Website": null
+  },
+  {
+    "Name": "St. Augustin Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RUE ABOU HANIFA 1002 MUTUELLE-VILLE",
+    "Tel": "71 78 30 33",
+    "latitude": 36.83058420967659,
+    "longitude": 10.17606338159722,
+    "Website": null
+  },
+  {
+    "Name": "Ridha Mrad Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "41 RUE MONGI SLIM-TUNIS",
+    "Tel": "71 24 67 29",
+    "latitude": 36.83150297224608,
+    "longitude": 10.15622603742005,
+    "Website": null
+  },
+  {
+    "Name": "Mourali Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Gyn-Obstet",
+    "Emergency": "no",
+    "Adresse": "17 AV AHMED AMINE OMRANE",
+    "Tel": "71 28 70 98",
+    "latitude": 36.84913993064763,
+    "longitude": 10.19870278344631,
+    "Website": null
+  },
+  {
+    "Name": "Les Jasmins Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Centre Urbain Nord Lot E 18 1003 Tunis",
+    "Tel": 36089000,
+    "latitude": 36.84674444390735,
+    "longitude": 10.19905545276266,
+    "Website": null
+  },
+  {
+    "Name": "Carthage Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "1, RUE VICTORINUS-CARTHAGE HANNIBAL",
+    "Tel": "71 27 57 20",
+    "latitude": 36.85661648080175,
+    "longitude": 10.32999730066667,
+    "Website": null
+  },
+  {
+    "Name": "Taoufik Tunis Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "BOULEVARD DU 7 NOV-TUNIS",
+    "Tel": "71 14 30 00",
+    "latitude": 36.8318340469345,
+    "longitude": 10.15579414906566,
+    "Website": null
+  },
+  {
+    "Name": "El Menzah Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "1 RUE APOLLO XI-BELVEDERE",
+    "Tel": "71 89 15 22",
+    "latitude": 36.82728053298731,
+    "longitude": 10.17943079509075,
+    "Website": null
+  },
+  {
+    "Name": "Le Secours Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "34 AV DE LYON-TUNIS",
+    "Tel": "71 35 15 00",
+    "latitude": 36.80903453285825,
+    "longitude": 10.17592252392513,
+    "Website": null
+  },
+  {
+    "Name": "Sidi Salah Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "5 RUE AMILCAR-CITE EL OUIFAK-LA MARSA",
+    "Tel": "71 74 02 68",
+    "latitude": 36.87520630729117,
+    "longitude": 10.32494989509342,
+    "Website": null
+  },
+  {
+    "Name": "La Medina Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "4 RUE ABOULKACEM CHEBBI TUNIS",
+    "Tel": "71 34 57 54",
+    "latitude": 36.79135505602953,
+    "longitude": 10.17387789508862,
+    "Website": null
+  },
+  {
+    "Name": "Les Jardins Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Gyn-Obstet",
+    "Emergency": "no",
+    "Adresse": "5 RUE HAZEM-LE BELVEDERE",
+    "Tel": "71 78 44 40",
+    "latitude": 36.82451030775642,
+    "longitude": 10.17937963741964,
+    "Website": null
+  },
+  {
+    "Name": "Avicenne Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "4 , AV.TAHAR SFAR /EL MANAR 2/TUNIS",
+    "Tel": "71 88 80 00",
+    "latitude": 36.84234851375868,
+    "longitude": 10.16000925276243,
+    "Website": null
+  },
+  {
+    "Name": "Nouvelle Parc Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "13 RUE HOOKER DOOLITTLE TUNIS",
+    "Tel": "71 79 77 00",
+    "latitude": 36.81741697225011,
+    "longitude": 10.17742465276101,
+    "Website": null
+  },
+  {
+    "Name": "El Manar Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "BD DU 7 NOV -EL MANAR",
+    "Tel": "71 88 50 00",
+    "latitude": 36.83518591134832,
+    "longitude": 10.15087492392655,
+    "Website": null
+  },
+  {
+    "Name": "Montplaisir Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Rue 8010 Montplaisir TUNIS",
+    "Tel": "71 90 50 01",
+    "latitude": 36.8168538271394,
+    "longitude": 10.1850919797484,
+    "Website": null
+  },
+  {
+    "Name": "Internationale Ophthalmology Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "Les Berges du lac - Tunis",
+    "Tel": "71 86 05 50",
+    "latitude": 36.8368189251175,
+    "longitude": 10.23834463742035,
+    "Website": null
+  },
+  {
+    "Name": "G\u00e9n\u00e9rale Cardio-Vasculaire Tunis Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RTE X2 ,CITE EL KHADHRA",
+    "Tel": "71 90 80 00",
+    "latitude": 36.82619356022452,
+    "longitude": 10.19350068159691,
+    "Website": null
+  },
+  {
+    "Name": "El Amen Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "20 RUE AZIZA OTHMANA - MUTUELLE VILLE - TUNIS",
+    "Tel": "71 79 15 33",
+    "latitude": 36.83832882505879,
+    "longitude": 10.16965541228114,
+    "Website": null
+  },
+  {
+    "Name": "Liberty Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "134 AV DE LA LIBERTE",
+    "Tel": "71 80 02 88",
+    "latitude": 36.81788930552909,
+    "longitude": 10.1783342509129,
+    "Website": null
+  },
+  {
+    "Name": "Ibnou El Heithem Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "ROUTE X2-CITE EL KHADHRA",
+    "Tel": "71 79 15 00",
+    "latitude": 36.825591364976,
+    "longitude": 10.19370837095748,
+    "Website": null
+  },
+  {
+    "Name": "Ophtalmology AMC Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "RUE 102- ZONE A - 2045 LES BERGES DU LAC",
+    "Tel": "71 86 02 66",
+    "latitude": 36.83676504970997,
+    "longitude": 10.23486296753198,
+    "Website": null
+  },
+  {
+    "Name": "El Amen La Marsa Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "15 AV DE LA REPUBLIQUE/LA MARSA",
+    "Tel": "71 74 90 00",
+    "latitude": 36.87560402495536,
+    "longitude": 10.32990292392888,
+    "Website": null
+  },
+  {
+    "Name": "Polyclinique du Lac",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Rue du Lac de Constance /2045 Les Berges du Lac",
+    "Tel": "71 96 00 00",
+    "latitude": 36.83200228492205,
+    "longitude": 10.23073082577451,
+    "Website": null
+  },
+  {
+    "Name": "Alyssa Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RUE DU LAC LEMAN/1053 Les Berges du Lac",
+    "Tel": "71 96 25 55",
+    "latitude": 36.84053822678669,
+    "longitude": 10.24482812392689,
+    "Website": null
+  },
+  {
+    "Name": "Laser Ophthalmology Center",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "TANIT MEDICAL- Montplaisir- Angle Rue 8300 et 8301- 1082 Tunis",
+    "Tel": null,
+    "latitude": 36.81918901607437,
+    "longitude": 10.190749076052299,
+    "Website": null
+  },
+  {
+    "Name": "El Amel Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "43 RUE 7301 EL MENZAH 9B /TUNIS",
+    "Tel": "24 70 62 67",
+    "latitude": 36.85146268166587,
+    "longitude": 10.1486380740082,
+    "Website": null
+  },
+  {
+    "Name": "Hannibal Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "CITE LES PINS LAC II",
+    "Tel": "71 13 75 00",
+    "latitude": 36.84518478639826,
+    "longitude": 10.28402841043343,
+    "Website": null
+  },
+  {
+    "Name": "Cardio-Vasculaire G\u00e9n\u00e9rale du Lac",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "RUE DU LAC DE CONSTANCE LES BERGES DU LAC 1053",
+    "Tel": 71960000,
+    "latitude": 36.83196417858171,
+    "longitude": 10.23038719509093,
+    "Website": null
+  },
+  {
+    "Name": "Medimmo - Institut de Vision et R\u00e9tine",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Ophthalmology",
+    "Emergency": "no",
+    "Adresse": "24 RUE DU LAC M\u00c4LAREN 1053 LES BERGES DU LAC TUNIS",
+    "Tel": "71656296",
+    "latitude": 36.83595385912609,
+    "longitude": 10.23211323742029,
+    "Website": null
+  },
+  {
+    "Name": "Pasteur Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "Centre Urbain Nord",
+    "Tel": "36402000",
+    "latitude": 36.84928035762602,
+    "longitude": 10.19862603742101,
+    "Website": null
+  },
+  {
+    "Name": "Myron International Clinic",
+    "Type": "Private",
+    "State": "Tunis",
+    "Departements": "Multidisciplinary",
+    "Emergency": "yes",
+    "Adresse": "1053 Les Berges du lac",
+    "Tel": "31305555",
+    "latitude": 36.84407531433983,
+    "longitude": 10.28307149509164,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Dr Dakhlia Nebrass",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "4, AV. TAIEB M'HIRI",
+    "Tel": 54704534,
+    "latitude": 36.85288307224,
+    "longitude": 10.1542286619592,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Dr Haddouk Kamel",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "40 Ave Habib Bourguiba",
+    "Tel": 70730749,
+    "latitude": 36.8008493814348,
+    "longitude": 10.1906675834485,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Dr CHEHATA SAMI",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Cit\u00e9 Jamil EL MENZAH 6",
+    "Tel": 71238760,
+    "latitude": 36.8466323295237,
+    "longitude": 10.1669095263809,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center  IBN NAFIS",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "84 bis Av. Habib Bourguiba, Ariana 2080",
+    "Tel": 71701139,
+    "latitude": 36.8549304485015,
+    "longitude": 10.187338752763,
+    "Website": null
+  },
+  {
+    "Name": "Ariana Radiology and Ultrasound Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "24 Av. Ibn Kholdoune, Ariana 2058",
+    "Tel": 70824391,
+    "latitude": 36.8693404590464,
+    "longitude": 10.1833934558228,
+    "Website": null
+  },
+  {
+    "Name": "CIMA Dr. Sami Said",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V55R+FV3, Ariana",
+    "Tel": 71700800,
+    "latitude": 36.8586205234978,
+    "longitude": 10.1921384134936,
+    "Website": null
+  },
+  {
+    "Name": "CIREN Radiology",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00c9t Mezzanine, Centre m\u00e9dical kamoun, 2 Av. de l\u2019\u00c8re Nouvelle, Ariana 2036",
+    "Tel": null,
+    "latitude": 36.8611074196057,
+    "longitude": 10.1591976423291,
+    "Website": null
+  },
+  {
+    "Name": "CER Radiology Menzah 8",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Av. Othman Ibn Affane, Ariana",
+    "Tel": 71707087,
+    "latitude": 36.8553044923541,
+    "longitude": 10.1690067423291,
+    "Website": null
+  },
+  {
+    "Name": "El Menzah MRI Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "38 All\u00e9e De L'Ariana, Tunis 1004",
+    "Tel": 71232577,
+    "latitude": 36.8411702479727,
+    "longitude": 10.1818048711645,
+    "Website": null
+  },
+  {
+    "Name": "CDR Radiology",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "71 Av. de l\u2019\u00c8re Nouvelle, Ariana",
+    "Tel": 71828000,
+    "latitude": 36.8610518876712,
+    "longitude": 10.1582125693164,
+    "Website": null
+  },
+  {
+    "Name": "IRS Medical Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Iris medical center, 2 Av. H\u00e9di Nouira, Ariana 2037",
+    "Tel": 98202077,
+    "latitude": 36.8674094652442,
+    "longitude": 10.1711904296454,
+    "Website": null
+  },
+  {
+    "Name": "BORJ LOUZIR Radiology Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V682+3WM, Av. Mustapha Mohsen, Ariana",
+    "Tel": 70689409,
+    "latitude": 36.865188249211,
+    "longitude": 10.2022689245379,
+    "Website": null
+  },
+  {
+    "Name": "RAOUED RADIOLOGY CENTER",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "W5RH+247, Raoued",
+    "Tel": 21880027,
+    "latitude": 36.9400200248166,
+    "longitude": 10.1777974932531,
+    "Website": null
+  },
+  {
+    "Name": "Dr. Chokri Zarrad's Radiology Clinic",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R2MP+9WJ, P7, Oued Ellil",
+    "Tel": 71533212,
+    "latitude": 36.8334763128415,
+    "longitude": 10.0371818999999,
+    "Website": null
+  },
+  {
+    "Name": "Ghazela Radiology Center (CRG)",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Av. Fethi Zouhir, Ariana",
+    "Tel": 71866891,
+    "latitude": 36.8896413670311,
+    "longitude": 10.1815794711645,
+    "Website": null
+  },
+  {
+    "Name": "Medical Imaging and Radiology Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V6R6+HG2, Tunis",
+    "Tel": null,
+    "latitude": 36.8912124063193,
+    "longitude": 10.2116390980829,
+    "Website": null
+  },
+  {
+    "Name": "Riadh Sokra Medical Imaging Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V749+X4R\u060c Rue Mikhail Nouaima, Tunis",
+    "Tel": 52593075,
+    "latitude": 36.8574994922308,
+    "longitude": 10.2677351423291,
+    "Website": null
+  },
+  {
+    "Name": "Manouba Digital Radiology Center MRI Scanner",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "2 Ave du Grand Margreb Arabe, Manouba",
+    "Tel": 50320959,
+    "latitude": 36.8135936946953,
+    "longitude": 10.0983531,
+    "Website": "https://www.facebook.com/Radiologie.Manouba?mibextid=LQQJ4d"
+  },
+  {
+    "Name": "Bardo Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "6 Ave Habib Bourguiba, 2000",
+    "Tel": null,
+    "latitude": 36.8086702150868,
+    "longitude": 10.1381142711645,
+    "Website": null
+  },
+  {
+    "Name": "CIME Ettahrir Medical Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R4JC+7WX, Tunis",
+    "Tel": 71512690,
+    "latitude": 36.8307231313329,
+    "longitude": 10.1223356423291,
+    "Website": null
+  },
+  {
+    "Name": "Manouba Felfel Radiology Center",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Centre de radiologie m\u00e9dicale de Manouba, STATION DE METRO SLIMEN KAHIA, Manouba 2010",
+    "Tel": 71601009,
+    "latitude": 36.8033426615072,
+    "longitude": 10.0970557846582,
+    "Website": null
+  },
+  {
+    "Name": "Bardo Medical Imaging Center, Dr. JLASSI HELMI",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Ave Habib Bourguiba, 2000 bardo",
+    "Tel": 29506844,
+    "latitude": 36.8092250253016,
+    "longitude": 10.1386882999999,
+    "Website": null
+  },
+  {
+    "Name": "Ben Mrad Bardo Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Bardo Center - Bloc 5, 1\u00e8me Etage, Le Bardo, Tunis 2000, Tunisia tunis\u060c 2000",
+    "Tel": 71583635,
+    "latitude": 36.8096045152441,
+    "longitude": 10.1384073711645,
+    "Website": null
+  },
+  {
+    "Name": "Dr. Ridha JMAIA, ECHIFAA Medical Imaging Center",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "9 Av. Habib THAMER, Manouba",
+    "Tel": 51759598,
+    "latitude": 36.8098844745194,
+    "longitude": 10.0908060288354,
+    "Website": null
+  },
+  {
+    "Name": "Ezzouhour Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Rue 4001 AU DESSUS DE BIAT BH Tunis, 2052",
+    "Tel": 95261888,
+    "latitude": 36.7936749125637,
+    "longitude": 10.1304896134936,
+    "Website": null
+  },
+  {
+    "Name": "Medical Imaging and Radiology Center Jardins d'El Menzah Dr. Meriem Sayed",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "face \u00e0 Monoprix, R\u00e9sidence Cordoba, Avenue Des Jasmins\u060c Ariana 2098",
+    "Tel": 70735785,
+    "latitude": 36.857144323249,
+    "longitude": 10.1276826423291,
+    "Website": "https://www.radiologie.jardinsmenzah.com/"
+  },
+  {
+    "Name": "Dr Hella Said Abdelhadi Centre radiology manar",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R4PP+HG8, Unnamed Road, Tunis",
+    "Tel": 71881881,
+    "latitude": 36.836394246096,
+    "longitude": 10.1363573153417,
+    "Website": null
+  },
+  {
+    "Name": "Intilaka Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "km 4, 126 Rue de Bizerte",
+    "Tel": 71650077,
+    "latitude": 36.8396525067673,
+    "longitude": 10.1164868576708,
+    "Website": null
+  },
+  {
+    "Name": "Medical Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "27 Av. Kheireddine Pacha, Tunis",
+    "Tel": 71903052,
+    "latitude": 36.8195160056372,
+    "longitude": 10.1848523423291,
+    "Website": null
+  },
+  {
+    "Name": "CIMES / Radiology and CT Scan Center Tunis",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "97 bis Rue de La Palestine, Tunis 1002",
+    "Tel": 71840806,
+    "latitude": 36.8194054943692,
+    "longitude": 10.1794137288354,
+    "Website": "https://www.med.tn/medecin/radiologue/tunis/--centre-dimagerie-medicale-et-scanner-cimes-224401.html"
+  },
+  {
+    "Name": "CINBEL Radiology Center Dr Zrelly Ryma",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "11 Av. Des Etats Unis, Tunis 1002",
+    "Tel": 71795724,
+    "latitude": 36.8159083836971,
+    "longitude": 10.1777566423291,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "10 rue mustapha mubarek, Tunis",
+    "Tel": null,
+    "latitude": 36.7979861221497,
+    "longitude": 10.1766554999999,
+    "Website": null
+  },
+  {
+    "Name": "IBN ZOHR Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R5GV+8HP, Tunis",
+    "Tel": 71900677,
+    "latitude": 36.8257890539115,
+    "longitude": 10.1939912865063,
+    "Website": null
+  },
+  {
+    "Name": "Digital Medical Imaging Center Le Passage - Dr. Ben Saidane",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Medina Palace, 53 Av. de Paris, Tunis",
+    "Tel": 71245777,
+    "latitude": 36.805076843453,
+    "longitude": 10.1806998,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Dr kribi attaya Lilia",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R5GM+86J, Av. Alain Savary, Tunis",
+    "Tel": 71281199,
+    "latitude": 36.825839105992,
+    "longitude": 10.1829420269873,
+    "Website": null
+  },
+  {
+    "Name": "Breast Imaging Center, and General Radiology Tunis",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00e9tage-1, Sous sol voie X2, Centre Al Hakim, Tunis 1003",
+    "Tel": 55941086,
+    "latitude": 36.8257657059879,
+    "longitude": 10.1944380423291,
+    "Website": null
+  },
+  {
+    "Name": "CERU SCINTIGRAPHIE / PET-SCAN",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u0633\u0627\u062d\u0629 \u0628\u0627\u0633\u062a\u0648\u0631\u060c Av. Alain Savary, Tunis 1002",
+    "Tel": 71289969,
+    "latitude": 36.8217743057639,
+    "longitude": 10.1791863711645,
+    "Website": null
+  },
+  {
+    "Name": "CiD - Diagnostic Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "20 Rue Jamel Abdenasser, Tunis",
+    "Tel": 71323978,
+    "latitude": 36.7966572304895,
+    "longitude": 10.1790445423291,
+    "Website": null
+  },
+  {
+    "Name": "RADIOLOGY CERT",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "1000 Rue Charles de Gaulle, Tunis",
+    "Tel": 71322088,
+    "latitude": 36.7963618130158,
+    "longitude": 10.1779502711645,
+    "Website": "http://certradiologie.blogspot.com/"
+  },
+  {
+    "Name": "Gamma Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "44 Av. de La Libert\u00e9, Tunis 1002",
+    "Tel": 71792796,
+    "latitude": 36.8102987029761,
+    "longitude": 10.1795955355707,
+    "Website": null
+  },
+  {
+    "Name": "Rose Clinic",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Immeuble la rose, Avenue De La Bourse\u060c Tunis 1053",
+    "Tel": 71100900,
+    "latitude": 36.8473457792048,
+    "longitude": 10.2653378999999,
+    "Website": "https://www.clinique-larose.com/"
+  },
+  {
+    "Name": "Queen Dido Medical Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Lotissement AFH Al Iquamet Ain Zaghouan Nord, 1er Etage Tunis, 2045",
+    "Tel": 70723676,
+    "latitude": 36.8663713368228,
+    "longitude": 10.2886570423291,
+    "Website": null
+  },
+  {
+    "Name": "CIML Lake Medical Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R7VJ+WXQ, Rue de la Feuille d'\u00c9rable, Tunis",
+    "Tel": 71267047,
+    "latitude": 36.8448256211739,
+    "longitude": 10.2825161865063,
+    "Website": null
+  },
+  {
+    "Name": "ALBOUHAYRA Medical Imaging Center Dr. Kechaou Saadia",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Cit\u00e9 les pins\u060c 105 r\u00e9sidence Erable, Tunis 1053",
+    "Tel": 99821225,
+    "latitude": 36.8446786506603,
+    "longitude": 10.2843142711645,
+    "Website": null
+  },
+  {
+    "Name": "Lake 2 Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Appt B51, Lac Medical center, Cit\u00e9 Les Pins Lac 2, Tunis 1053",
+    "Tel": 26468288,
+    "latitude": 36.8454730431938,
+    "longitude": 10.2836742834461,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Le Carrefour M\u00e9dical Dr. Yosr Ben Salah",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "CABINET 2-2 CENTRE LE CARREFOUR MEDICAL AIN ZAGHOUAN NORD, Marsa 2046",
+    "Tel": 70724224,
+    "latitude": 36.8647959227133,
+    "longitude": 10.2902240711645,
+    "Website": null
+  },
+  {
+    "Name": "Carthage Radiology Docteur Nesrine Bouchnak",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Hammoun - 1er \u00e9tage, Imm. Carthage M\u00e9dical - Av. Baal, 12 C11, 1090",
+    "Tel": 93828148,
+    "latitude": 36.8589130607596,
+    "longitude": 10.2932184730126,
+    "Website": "https://carthage-radiologie.com/"
+  },
+  {
+    "Name": "Radiology Center Ben Mrad",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "2070 La Goulette Rd, La Goulette",
+    "Tel": 71275152,
+    "latitude": 36.8333225448891,
+    "longitude": 10.3159653288354,
+    "Website": null
+  },
+  {
+    "Name": "Rnt - Radiological Network Of Tunis",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Immeuble HBG, Cit\u00e9 les pins\u060c Rue de l'ile de Failaka, Tunis 1053",
+    "Tel": 70224680,
+    "latitude": 36.8456965355356,
+    "longitude": 10.2838364,
+    "Website": null
+  },
+  {
+    "Name": "FOUCHANA Radiology Center Dr. Anis Ali",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "M5W7+9VH, Avenue de la Libert\u00e9, Fouchana 2082",
+    "Tel": 97475935,
+    "latitude": 36.696376716431,
+    "longitude": 10.1671639251393,
+    "Website": null
+  },
+  {
+    "Name": "Mhamdia Medical Imaging Center",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "en dessus de l'agence Banque de Tunisie, Av de la libert\u00e9, Mohammedia 1145",
+    "Tel": 52464637,
+    "latitude": 36.6836059178006,
+    "longitude": 10.1588485134936,
+    "Website": "https://www.para-doctor.tn/centre-radiologie-mhamdia/"
+  },
+  {
+    "Name": "Radiolab ibn nafis",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Centre Ibn nafis, avenue de la libert\u00e9, Fouchana",
+    "Tel": 22502022,
+    "latitude": 36.6963036962017,
+    "longitude": 10.1677166153417,
+    "Website": null
+  },
+  {
+    "Name": "Sidi Hassine Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "101 Avenue de l'Environnement, Tunis 1095",
+    "Tel": 53487878,
+    "latitude": 36.7709264854417,
+    "longitude": 10.1128138116456,
+    "Website": null
+  },
+  {
+    "Name": "Dr. Chokri Zarrad's Radiology Clinic",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "R2MP+9WJ, P7, Oued Ellil",
+    "Tel": 71533212,
+    "latitude": 36.8335106614696,
+    "longitude": 10.0371926288354,
+    "Website": null
+  },
+  {
+    "Name": "Echifa Radiology Center - Mornaguia",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Carrefour Marketing\u060c 6 bis rue Essaada - Cit\u00e9 Bassatine en face de, Mornaguia 2011",
+    "Tel": 71541442,
+    "latitude": 36.7597889435176,
+    "longitude": 10.0196689846582,
+    "Website": null
+  },
+  {
+    "Name": "Tebourba Radiology Center",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "RRFQ+FVH, 4 cit\u00e9 Chebbi, Tebourba 1130",
+    "Tel": 56110645,
+    "latitude": 36.8238841546224,
+    "longitude": 9.84169332207786,
+    "Website": null
+  },
+  {
+    "Name": "Dr. Ridha JMAIA, ECHIFAA Medical Imaging Center",
+    "Type": "RC",
+    "State": "Manouba",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "9 Av. Habib THAMER, Manouba",
+    "Tel": 51759598,
+    "latitude": 36.8098415254745,
+    "longitude": 10.0907738423291,
+    "Website": null
+  },
+  {
+    "Name": "Violette Medical Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Ennasr 2, Av. H\u00e9di Nouira, Ariana",
+    "Tel": 20030003,
+    "latitude": 36.8671481914379,
+    "longitude": 10.1709816441771,
+    "Website": null
+  },
+  {
+    "Name": "Radiology office DR MHALA Hajer",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "90 Avenue Fethi Zouhir, Ennkhilette, Ariana",
+    "Tel": 56115717,
+    "latitude": 36.883797727741,
+    "longitude": 10.1841129846582,
+    "Website": null
+  },
+  {
+    "Name": "Medical Imaging and Radiology Center",
+    "Type": "RC",
+    "State": "Ariana",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V6R6+HG2, Tunis",
+    "Tel": null,
+    "latitude": 36.8911780836157,
+    "longitude": 10.2115961827741,
+    "Website": null
+  },
+  {
+    "Name": "Salambo Medical Radiology Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Centre M\u00e9dical La Palmeraie - 2 Avenue H\u00e9di Chaker Salambo Le Kram, 2025.",
+    "Tel": 26707409,
+    "latitude": 36.8396500416192,
+    "longitude": 10.3174310050469,
+    "Website": null
+  },
+  {
+    "Name": "medical imaging center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "09 Rue Tahar Ben Achour, Marsa 2070.",
+    "Tel": 71774283,
+    "latitude": 36.8791710883692,
+    "longitude": 10.326745972659,
+    "Website": null
+  },
+  {
+    "Name": "La Marsa Medical Imaging Center",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "2 la, Rue des Hafsides, La Marsa.\u00a0",
+    "Tel": 71742537,
+    "latitude": 36.8830417315809,
+    "longitude": 10.3331364041678,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Scanner La Marsa",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "15 Av. de la R\u00e9publique, Marsa 2078.",
+    "Tel": 93084830,
+    "latitude": 36.8761215292253,
+    "longitude": 10.3299555909957,
+    "Website": null
+  },
+  {
+    "Name": "NORTHERN RADIOLOGICAL CENTER",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "09 Rue Tahar Ben Achour, Marsa 2070",
+    "Tel": 71774283,
+    "latitude": 36.8793344416057,
+    "longitude": 10.3268004067174,
+    "Website": null
+  },
+  {
+    "Name": "Digital Radiology",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "V8MF+6QQ, Carthage",
+    "Tel": 71729775,
+    "latitude": 36.8832798391123,
+    "longitude": 10.3244586908771,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Marsa Dr Nadia ZAMALI",
+    "Type": "RC",
+    "State": "Tunis",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "03 Rue Abdelhafidh El Mekki, Marsa 2700",
+    "Tel": 51042000,
+    "latitude": 36.8846502870868,
+    "longitude": 10.3289180659951,
+    "Website": null
+  },
+  {
+    "Name": "MRI South Suburbs",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00a022 Avenue de la R\u00e9publique\u060c Hammam-Lif 2050",
+    "Tel": 79395800,
+    "latitude": 36.7335073717201,
+    "longitude": 10.324049962427,
+    "Website": null
+  },
+  {
+    "Name": "Mourouj Medical Imaging Center (IMM)",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Centre m\u00e9dical El-Ahmadi En face du Terminus M\u00e9tro ligne 6 1er \u00e9tage Mourouj, 4 2074.",
+    "Tel": 51762767,
+    "latitude": 36.7207098952685,
+    "longitude": 10.2165427644346,
+    "Website": null
+  },
+  {
+    "Name": "Hammam-Lif Medical Imaging Center",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "75 Rue Salammbo, Hammam-Lif 2050",
+    "Tel": 71211783,
+    "latitude": 36.7275977767743,
+    "longitude": 10.3369983757763,
+    "Website": null
+  },
+  {
+    "Name": "Planet Radiology - Dr. Haythem Allani",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Rez-de-chauss\u00e9e, Centre Planet Medical, 27 Av. Farhat Hached M\u00e9grine Sidi rezig, Megrine 2033",
+    "Tel": 71434033,
+    "latitude": 36.7643451163405,
+    "longitude": 10.2455323644306,
+    "Website": null
+  },
+  {
+    "Name": "Rades Radiology Center CIMRAD Dr Neyla Regaya",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Au-dessous de la banque Zitouna, 33 Av. Mohamed Ali, Rad\u00e8s 2040",
+    "Tel": 20888133,
+    "latitude": 36.7725169535132,
+    "longitude": 10.2733603067026,
+    "Website": null
+  },
+  {
+    "Name": "MRI Ben Arous",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00a0N1, Ben Arous.",
+    "Tel": 79297000,
+    "latitude": 36.7522591201902,
+    "longitude": 10.2509776489807,
+    "Website": null
+  },
+  {
+    "Name": "Ibn Rochd Radiology",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Q69M+HJM, Rue de la Gare, Megrine 2033",
+    "Tel": 71426600,
+    "latitude": 36.7691778626613,
+    "longitude": 10.23397266237,
+    "Website": null
+  },
+  {
+    "Name": "Rad\u00e8s Radiology and Scanner Center",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": null,
+    "Tel": 71441842,
+    "latitude": 36.7680524039986,
+    "longitude": 10.269303877857,
+    "Website": null
+  },
+  {
+    "Name": "Imaging Center Medical Ben Arous, Cimba",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "6 Rue de Bizerte, Ben Arous 2013",
+    "Tel": 71387700,
+    "latitude": 36.7562460229966,
+    "longitude": 10.2219549912764,
+    "Website": null
+  },
+  {
+    "Name": "Dr. Nejib Chammakhi radiology and scanner center",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "66 Av. Habib Bourguiba, Ezzahra",
+    "Tel": 71455464,
+    "latitude": 36.7441754313218,
+    "longitude": 10.3058222932982,
+    "Website": null
+  },
+  {
+    "Name": "Radiology Center Tunis South",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Av. Mahdia, El Mourouj",
+    "Tel": 71369400,
+    "latitude": 36.7345879542214,
+    "longitude": 10.2101811200922,
+    "Website": null
+  },
+  {
+    "Name": "Morneg Medical Imaging Center (CIMM)",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "04 Rue Mongi Slim, Mornag 2090",
+    "Tel": 71300093,
+    "latitude": 36.6807298751136,
+    "longitude": 10.2897333932854,
+    "Website": null
+  },
+  {
+    "Name": "Medina Radiologie Dr. Atef JAAFAR",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00e0 cot\u00e9 de M\u00e9dina M\u00e9dical\u060c Rue du Caire, M\u00e9grine 2063",
+    "Tel": 71310226,
+    "latitude": 36.742008852529,
+    "longitude": 10.2518846932884,
+    "Website": null
+  },
+  {
+    "Name": "Alpha Medical",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "\u00a0P6VF+MMM, Ben Arous",
+    "Tel": 71381229,
+    "latitude": 36.7443423589424,
+    "longitude": 10.2241835221326,
+    "Website": null
+  },
+  {
+    "Name": "Beau S\u00e9jour Clinic",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "Rte GP1 - Km 6, Megrine 2033",
+    "Tel": 70220000,
+    "latitude": 36.7614458744866,
+    "longitude": 10.2346120799082,
+    "Website": null
+  },
+  {
+    "Name": "DR AMINE ABASSI/ DR IMEN HAJJEM",
+    "Type": "RC",
+    "State": "Ben Arous",
+    "Departements": "Radiology",
+    "Emergency": "no",
+    "Adresse": "JF2W+RF4, Grombalia",
+    "Tel": 25095160,
+    "latitude": 36.6022104941096,
+    "longitude": 10.4962080355646,
+    "Website": null
+  }
+];
+// 4. State Management
+    let activeMarkers = [];
+    let currentCategory = 'all';
+    let currentSearchQuery = '';
+
+    // Clear map markers and route
+    window.clearMap = function() {
+        activeMarkers.forEach(item => item.marker.remove());
+        activeMarkers = [];
+        clearRoute();
+    };
+
+    // Core function to draw markers on the map
+    function renderFacilitiesList(list) {
+        window.clearMap();
+
+        list.forEach(facility => {
+            const facilityType = facility.Type ? facility.Type.toLowerCase() : "";
+            const lat = facility.latitude;
+            const lng = facility.longitude;
+
+            if (!lat || !lng) return;
+
+            // Dynamic Colors and Icons based on exact Type
+            let color = '#333';
+            let icon = '🏥'; 
+
+            if (facilityType === 'public') color = '#d32f2f'; 
+            else if (facilityType === 'public/rh') { color = '#9c27b0'; icon = '🏥'; }
+            else if (facilityType === 'public/univ/scho') { color = '#673ab7'; icon = '🎓'; }
+            else if (facilityType === 'private') { color = '#1976d2'; icon = '🩺'; }
+            else if (facilityType === 'csb') { color = '#388e3c'; icon = '⚕️'; }
+            else if (facilityType === 'rc') { color = '#ff9800'; icon = '☢️'; }
+
+            // Create Marker Element
+            const el = document.createElement('div');
+            el.className = 'custom-marker';
+            el.style.backgroundColor = color;
+            el.innerHTML = icon;
+
+            // Build Popup Content
+            let popupHTML = `<div class="popup-content">
+                                <h3>${icon} ${facility.Name || 'Facility'}</h3>
+                                <p><strong>Address:</strong> ${facility.Adresse || 'N/A'}</p>`;
+            if (facility.Tel && facility.Tel !== "nan") popupHTML += `<p><strong>Tel:</strong> ${facility.Tel}</p>`;
+            if (facility.Website && facility.Website !== "nan") popupHTML += `<p><strong>Web:</strong> <a href="${facility.Website}" target="_blank">Visit Site</a></p>`;
+            popupHTML += `<a class="nav-link" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}" target="_blank">Navigate via Google Maps</a></div>`;
+
+            const popup = new maplibregl.Popup({ offset: 15 }).setHTML(popupHTML);
+
+            // Add Marker to Map
+            const marker = new maplibregl.Marker({ element: el })
+                .setLngLat([lng, lat])
+                .setPopup(popup)
+                .addTo(map);
+            
+            activeMarkers.push({ facility, marker, popup });
+        });
+    }
+
+    // Helper function combining category filter and search bar query
+    function applyFilters() {
+        const query = currentSearchQuery.toLowerCase().trim();
+
+        const filtered = facilities.filter(facility => {
+            const facilityType = facility.Type ? facility.Type.toLowerCase() : "";
+
+            // 1. Check Category Match
+            let categoryMatch = false;
+            if (currentCategory === 'all') categoryMatch = true;
+            else if (currentCategory === 'hospital' && facilityType === 'public') categoryMatch = true;
+            else if (currentCategory === 'regional' && facilityType === 'public/rh') categoryMatch = true;
+            else if (currentCategory === 'university' && facilityType === 'public/univ/scho') categoryMatch = true;
+            else if (currentCategory === 'clinic' && facilityType === 'private') categoryMatch = true;
+            else if (currentCategory === 'csb' && facilityType === 'csb') categoryMatch = true;
+            else if (currentCategory === 'radiology' && facilityType === 'rc') categoryMatch = true;
+
+            if (!categoryMatch) return false;
+
+            // 2. Check Search Query Match
+            if (!query) return true;
+
+            const nameMatch = facility.Name && facility.Name.toLowerCase().includes(query);
+            const addrMatch = facility.Adresse && facility.Adresse.toLowerCase().includes(query);
+            const stateMatch = facility.State && facility.State.toLowerCase().includes(query);
+            const typeMatch = facility.Type && facility.Type.toLowerCase().includes(query);
+
+            return nameMatch || addrMatch || stateMatch || typeMatch;
+        });
+
+        renderFacilitiesList(filtered);
+    }
+
+    // Exposed Filter Function for Dropdown
+    window.filterMap = function(category) {
+        currentCategory = category;
+        applyFilters();
+    };
+
+    // Exposed Search Function for Header Search Input
+    window.searchMap = function(query) {
+        currentSearchQuery = query;
+        applyFilters();
+    };
+
+    // Initial load: render all facilities
+    applyFilters();
+
+    // Haversine Distance Formula (km)
+    window.getDistance = function(lon1, lat1, lon2, lat2) {
+        const R = 6371; 
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+                  Math.sin(dLon/2) * Math.sin(dLon/2);
+        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    };
+
+    // Find Nearest and Draw Route
+    window.findNearestAndRoute = async function() {
+        if (!userCoords) {
+            alert("Please click the GPS target icon in the top right corner to allow location access first.");
+            return;
+        }
+        if (activeMarkers.length === 0) return;
+
+        let closest = null;
+        let minDistance = Infinity;
+
+        activeMarkers.forEach(item => {
+            const dist = window.getDistance(userCoords[0], userCoords[1], item.facility.longitude, item.facility.latitude);
+            if (dist < minDistance) {
+                minDistance = dist;
+                closest = item;
+            }
+        });
+
+        if (closest) {
+            const start = `${userCoords[0]},${userCoords[1]}`;
+            const end = `${closest.facility.longitude},${closest.facility.latitude}`;
+            const osrmUrl = `https://router.project-osrm.org/route/v1/driving/${start};${end}?overview=full&geometries=geojson`;
+
+            try {
+                const response = await fetch(osrmUrl);
+                const data = await response.json();
+                const routeGeoJSON = data.routes[0].geometry;
+
+                drawRoute(routeGeoJSON);
+                
+                map.flyTo({ center: [closest.facility.longitude, closest.facility.latitude], zoom: 14 });
+                closest.marker.togglePopup();
+            } catch (error) {
+                console.error("Error fetching route:", error);
+                alert("Could not calculate driving route.");
+            }
+        }
+    };
+
+    // Draw Route Line on Map
+    function drawRoute(geojsonData) {
+        clearRoute(); 
+        map.addSource('route', {
+            'type': 'geojson',
+            'data': { 'type': 'Feature', 'properties': {}, 'geometry': geojsonData }
+        });
+        map.addLayer({
+            'id': 'route',
+            'type': 'line',
+            'source': 'route',
+            'layout': { 'line-join': 'round', 'line-cap': 'round' },
+            'paint': { 'line-color': '#f39c12', 'line-width': 6, 'line-opacity': 0.8 }
+        });
+    }
+
+    function clearRoute() {
+        if (map.getLayer('route')) map.removeLayer('route');
+        if (map.getSource('route')) map.removeSource('route');
+    }
+</script> 
+</body>
+</html>

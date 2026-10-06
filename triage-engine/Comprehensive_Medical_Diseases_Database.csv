@@ -1,0 +1,644 @@
+Disease,Symptoms,Department,Emergency,Notes
+Myocardial Infarction (Heart Attack),"Chest pain, shortness of breath, sweating, nausea, radiation to arm/jaw, anxiety",Cardiology/Emergency,Yes,Life-threatening
+Heart Failure,"Shortness of breath, fatigue, swelling in legs, rapid heartbeat, persistent cough, orthopnea",Cardiology,No,Chronic progressive
+Arrhythmia/Atrial Fibrillation,"Palpitations, dizziness, shortness of breath, fainting, chest discomfort, irregular pulse",Cardiology,Depends,Variable severity
+Hypertension,"Usually asymptomatic, headaches, shortness of breath, nosebleeds, chest pain, vision changes",Cardiology/GP,No,Chronic condition
+Stroke (Ischemic),"Facial drooping, arm weakness, speech difficulty, sudden confusion, vision loss, severe headache",Neurology/Emergency,Yes,Life-threatening
+Stroke (Hemorrhagic),"Sudden severe headache, weakness, numbness, vision problems, nausea, altered consciousness",Neurology/Emergency,Yes,Life-threatening
+Deep Vein Thrombosis,"Leg swelling, pain, warmth, redness, difficulty walking, calf tenderness",Vascular Surgery,Yes,Risk of embolism
+Pulmonary Embolism,"Chest pain, shortness of breath, rapid heartbeat, fainting, hemoptysis, anxiety",Cardiology/Emergency,Yes,Life-threatening
+Peripheral Arterial Disease,"Leg pain, weakness, cramping, numbness, cold extremities, claudication",Vascular Surgery,No,Progressive disease
+Aortic Aneurysm,"Severe back/abdominal pain, chest pain, fainting, shock, pulsating mass",Vascular Surgery/Emergency,Yes,Life-threatening
+Pericarditis,"Chest pain, shortness of breath, palpitations, fever, friction rub",Cardiology,No,Inflammatory condition
+Myocarditis,"Chest pain, shortness of breath, arrhythmia, fatigue, fever, heart failure",Cardiology,Depends,Can be serious
+Valvular Disease,"Murmur, shortness of breath, fatigue, chest pain, swelling, palpitations",Cardiology,No,Chronic condition
+Angina Pectoris,"Chest pressure, shortness of breath, fatigue, arm/jaw pain, anxiety",Cardiology,No,Cardiac ischemia
+Hypertrophic Cardiomyopathy,"Chest pain, shortness of breath, palpitations, syncope, sudden death risk",Cardiology,Depends,Genetic disorder
+Dilated Cardiomyopathy,"Shortness of breath, fatigue, swelling, palpitations, arrhythmia",Cardiology,No,Progressive disease
+Atrial Septal Defect,"Shortness of breath, palpitations, fatigue, heart murmur, right heart strain",Cardiology,No,Congenital defect
+Venous Insufficiency,"Leg swelling, varicose veins, skin changes, pain, ulceration",Vascular Surgery,No,Chronic condition
+Pneumonia (Bacterial),"Cough, fever, shortness of breath, chest pain, sputum production, chills",Pulmonology/GP,Depends,Infection
+Pneumonia (Viral),"Dry cough, fever, shortness of breath, fatigue, headache, muscle aches",Pulmonology/GP,Depends,Viral infection
+Asthma,"Wheezing, shortness of breath, chest tightness, coughing at night, difficulty exercising",Pulmonology,No,Chronic condition
+COPD,"Persistent cough, shortness of breath, wheezing, chest tightness, frequent infections",Pulmonology,No,Progressive disease
+Acute Bronchitis,"Cough, mucus production, fatigue, shortness of breath, chest discomfort",GP/Pulmonology,No,Usually mild
+Chronic Bronchitis,"Persistent cough, daily sputum, shortness of breath, wheezing, blue lips",Pulmonology,No,Chronic condition
+Tuberculosis (Active),"Persistent cough, fever, night sweats, weight loss, hemoptysis, chills",Pulmonology/Infectious Disease,Yes,Contagious disease
+Tuberculosis (Latent),"No symptoms, positive tb test, tb exposure history, normal x-ray",Pulmonology,No,Preventive treatment
+Acute Respiratory Distress Syndrome,"Severe shortness of breath, chest pain, rapid breathing, hypoxia, respiratory failure",Pulmonology/ICU,Yes,Life-threatening
+Sleep Apnea (Obstructive),"Snoring, daytime sleepiness, gasping at night, pauses in breathing, morning headaches",Sleep Medicine,No,Chronic condition
+Sleep Apnea (Central),"Apnea episodes, daytime sleepiness, morning headaches, choking sensation, insomnia",Sleep Medicine,No,Neurological
+Pleural Effusion,"Shortness of breath, chest pain, cough, dullness to percussion, fatigue",Pulmonology,Depends,Depends on cause
+Emphysema,"Shortness of breath, cough, wheezing, barrel chest, weight loss, fatigue",Pulmonology,No,Degenerative disease
+Lung Cancer (Non-Small Cell),"Persistent cough, chest pain, hemoptysis, shortness of breath, fatigue, weight loss",Oncology,No,Malignancy
+Lung Cancer (Small Cell),"Cough, chest pain, shortness of breath, hoarseness, weight loss, neurological symptoms",Oncology,No,Aggressive cancer
+Pulmonary Embolism (See Cardio),"Chest pain, shortness of breath, rapid heartbeat, fainting, hemoptysis",Cardiology/Emergency,Yes,Life-threatening
+Pulmonary Fibrosis,"Progressive shortness of breath, dry cough, chest pain, fatigue, digital clubbing",Pulmonology,No,Progressive disease
+Cystic Fibrosis,"Persistent cough, thick sputum, pancreatic insufficiency, malabsorption, recurrent infections",Pulmonology,No,Genetic disorder
+GERD,"Heartburn, regurgitation, chest pain, difficulty swallowing, sore throat, laryngitis",Gastroenterology,No,Chronic condition
+Peptic Ulcer Disease,"Abdominal pain, nausea, vomiting blood, black stools, loss of appetite",Gastroenterology,Depends,Can hemorrhage
+Gastroenteritis (Viral),"Nausea, vomiting, diarrhea, abdominal cramps, fever, dehydration",GP/Gastroenterology,No,Self-limited
+Gastroenteritis (Bacterial),"Severe diarrhea, abdominal cramps, fever, bloody stools, dehydration",GP/Gastroenterology,Depends,May need IV fluids
+Inflammatory Bowel Disease (Crohn's),"Diarrhea, abdominal pain, weight loss, rectal bleeding, fistulas, malabsorption",Gastroenterology,No,Chronic progressive
+Ulcerative Colitis,"Bloody diarrhea, abdominal pain, weight loss, tenesmus, urgency, toxic megacolon risk",Gastroenterology,Depends,Chronic disease
+Irritable Bowel Syndrome,"Diarrhea/constipation, abdominal pain, bloating, mucus in stool, no bleeding",Gastroenterology,No,Functional disorder
+Appendicitis,"Right lower abdominal pain, nausea, vomiting, fever, anorexia, rebound tenderness",General Surgery/Emergency,Yes,Requires surgery
+Diverticulitis,"Left lower abdominal pain, fever, nausea, constipation/diarrhea, blood in stool",General Surgery,Depends,May need admission
+Pancreatitis (Acute),"Severe epigastric pain, nausea, vomiting, fever, elevated amylase/lipase",Gastroenterology/Emergency,Yes,Can be severe
+Pancreatitis (Chronic),"Chronic abdominal pain, malabsorption, steatorrhea, diabetes, pancreatic insufficiency",Gastroenterology,No,Progressive disease
+Cirrhosis,"Jaundice, abdominal swelling, easy bruising, ascites, hepatic encephalopathy, portal hypertension",Hepatology,Depends,End-stage liver
+Hepatitis A,"Jaundice, fatigue, abdominal pain, dark urine, light stools, fever",Hepatology,No,Usually self-limited
+Hepatitis B,"Jaundice, fatigue, abdominal pain, arthralgia, liver dysfunction, often asymptomatic",Hepatology,Depends,Chronic risk
+Hepatitis C,"Often asymptomatic, jaundice, fatigue, joint pain, cirrhosis risk, hepatocellular carcinoma",Hepatology,No,Often chronic
+Cholecystitis/Gallstones,"Right upper quadrant pain, nausea, vomiting, fever, jaundice, murphy's sign positive",General Surgery,Depends,May need surgery
+Cholangitis,"Fever, jaundice, right upper quadrant pain, shock, elevated liver enzymes",General Surgery/Hepatology,Yes,Medical emergency
+Colon Cancer,"Rectal bleeding, changes in bowel habits, abdominal pain, weight loss, anemia, obstruction",Oncology,No,Malignancy
+Gastric Cancer,"Abdominal pain, nausea, vomiting, weight loss, dysphagia, anemia",Oncology,No,Malignancy
+Esophageal Cancer,"Progressive dysphagia, chest pain, weight loss, regurgitation, hemoptysis",Oncology,No,Malignancy
+Epilepsy (Generalized),"Tonic-clonic seizures, loss of consciousness, muscle jerking, confusion, tongue biting",Neurology,Yes,Can be fatal
+Epilepsy (Partial/Focal),"Localized muscle jerking, aura, altered consciousness, automatisms, post-ictal confusion",Neurology,Depends,Varies by type
+Status Epilepticus,"Prolonged/repeated seizures, respiratory distress, hyperthermia, rhabdomyolysis, cerebral edema",Neurology/Emergency,Yes,Medical emergency
+Migraines with Aura,"Severe headache, visual disturbances, nausea, photophobia, phonophobia, unilateral",Neurology,No,Chronic condition
+Migraines without Aura,"Throbbing headache, nausea, vomiting, photophobia, phonophobia, bilateral or unilateral",Neurology,No,Chronic condition
+Tension Headache,"Pressure sensation, bilateral tightness, mild to moderate, neck tension, not disabling",Neurology/GP,No,Not serious
+Cluster Headache,"Unilateral severe pain, lacrimation, conjunctival injection, nasal congestion, recurrent episodes",Neurology,No,Severely painful
+Parkinson's Disease,"Tremor at rest, rigidity, bradykinesia, postural instability, cogwheel rigidity",Neurology,No,Progressive disease
+Parkinsonism (Secondary),"Parkinsonian features, medication-induced/toxic cause, vascular, traumatic, metabolic",Neurology,No,Variable course
+Alzheimer's Disease,"Memory loss, confusion, disorientation, behavioral changes, cognitive decline, personality change",Neurology/Psychiatry,No,Progressive dementia
+Vascular Dementia,"Cognitive decline, stroke history, stepwise deterioration, motor deficits, urinary incontinence",Neurology,No,Progressive disease
+Lewy Body Dementia,"Hallucinations, parkinsonism, cognitive fluctuation, rem sleep behavior, sensitivity to antipsychotics",Neurology,No,Progressive disease
+Multiple Sclerosis,"Numbness, weakness, fatigue, vision problems, cognitive issues, optic neuritis",Neurology,No,Autoimmune progressive
+Amyotrophic Lateral Sclerosis (ALS),"Muscle weakness, fasciculations, difficulty speaking, dysphagia, respiratory decline",Neurology,No,Progressive fatal
+Guillain-Barré Syndrome,"Ascending paralysis, autonomic dysfunction, respiratory failure, areflexia, sensory changes",Neurology/Emergency,Yes,Medical emergency
+Peripheral Neuropathy,"Numbness, tingling, burning pain, weakness, loss of reflexes, ataxia",Neurology,No,Chronic condition
+Bell's Palsy,"Facial drooping, difficulty closing eye, drooping mouth, loss of facial movement, ear pain",Neurology,No,Usually recovers
+Trigeminal Neuralgia,"Severe facial pain, sudden shocks, triggered by touch/chewing, facial spasms, unilateral",Neurology,No,Neuropathic pain
+Meningitis (Bacterial),"Severe headache, fever, neck stiffness, photophobia, confusion, petechial rash",Neurology/Infectious Disease,Yes,Life-threatening
+Meningitis (Viral),"Headache, fever, neck stiffness, photophobia, malaise, usually self-limited",Neurology,Depends,Usually milder
+Type 1 Diabetes,"Increased thirst, frequent urination, fatigue, weight loss, ketoacidosis risk",Endocrinology,Depends,Requires insulin
+Type 2 Diabetes,"Often asymptomatic, increased thirst, frequent urination, fatigue, blurred vision",Endocrinology/GP,No,Chronic disease
+Diabetic Ketoacidosis,"Severe hyperglycemia, ketosis, metabolic acidosis, dehydration, altered consciousness",Endocrinology/Emergency,Yes,Medical emergency
+Hyperosmolar Hyperglycemic State,"Severe hyperglycemia, dehydration, altered consciousness, seizures, coma",Endocrinology/Emergency,Yes,Medical emergency
+Hypothyroidism,"Fatigue, weight gain, cold intolerance, dry skin, hair loss, constipation, myxedema",Endocrinology,No,Chronic condition
+Hyperthyroidism,"Weight loss, heat intolerance, tremor, anxiety, palpitations, exophthalmos, goiter",Endocrinology,No,Chronic condition
+Thyroid Cancer (Papillary),"Neck mass, difficulty swallowing, hoarseness, lymph node swelling, lung metastases",Oncology/Endocrinology,No,Usually low-grade
+Thyroid Cancer (Follicular),"Neck mass, nodule, distant metastases, elevated tsh, slow growth",Oncology/Endocrinology,No,Moderate risk
+Cushing's Syndrome,"Central obesity, purple stretch marks, easy bruising, hypertension, muscle weakness, moon face",Endocrinology,No,Chronic condition
+Addison's Disease,"Fatigue, weakness, hypotension, hyperpigmentation, electrolyte imbalance, adrenal crisis",Endocrinology,Yes,Medical emergency
+Pituitary Adenoma,"Headaches, vision problems, hormonal imbalance, pituitary insufficiency, mass effect",Neurosurgery,No,Benign tumor
+PCOS,"Irregular periods, hirsutism, acne, infertility, insulin resistance, ovarian cysts",Gynecology/Endocrinology,No,Endocrine disorder
+Hyperlipidemia,"Usually asymptomatic, xanthomas, corneal arcus, atherosclerosis, elevated lipids",Cardiology/GP,No,Risk factor
+Hypokalemia,"Muscle weakness, palpitations, arrhythmia, paralysis, rhabdomyolysis",Emergency,Depends,Electrolyte emergency
+Hyperkalemia,"Weakness, palpitations, arrhythmia, peaked t-waves, cardiac arrest risk",Emergency,Yes,Life-threatening
+Hypocalcemia,"Tetany, paresthesia, muscle cramps, seizures, qt prolongation, laryngospasm",Emergency,Depends,Electrolyte emergency
+Chronic Kidney Disease Stage 1-2,"Usually asymptomatic, hematuria, proteinuria, decreased gfr, hypertension",Nephrology,No,Progressive disease
+Chronic Kidney Disease Stage 3-5,"Fatigue, swelling, increased urination, anemia, bone disease, uremia",Nephrology,No,Progressive disease
+Acute Kidney Injury (Prerenal),"Oliguria, elevated creatinine, decreased urine output, dehydration, shock",Nephrology/Emergency,Yes,Requires urgent care
+Acute Kidney Injury (Intrinsic),"Oliguria, hematuria, cellular casts, tubular necrosis, sepsis, drug toxicity",Nephrology/Emergency,Yes,Requires urgent care
+Acute Kidney Injury (Postrenal),"Oliguria, flank pain, elevated bun/cr, obstruction, urinary retention",Nephrology/Urology,Yes,Requires urgent care
+Nephrotic Syndrome,"Proteinuria, hypoalbuminemia, edema, hyperlipidemia, thrombosis risk",Nephrology,No,Chronic condition
+Glomerulonephritis (Post-streptococcal),"Hematuria, proteinuria, hypertension, edema, throat infection history",Nephrology,Depends,Usually recovers
+IgA Nephropathy,"Hematuria, proteinuria, progressive renal decline, mesangial iga, variable course",Nephrology,No,Most common GN
+Membranoproliferative GN,"Hematuria, proteinuria, complement activation, progressive renal failure",Nephrology,No,Progressive disease
+Nephrolithiasis (Kidney Stones),"Severe flank pain, hematuria, nausea, vomiting, radiation to groin",Urology/Emergency,Yes,Severe pain
+Pyelonephritis,"Fever, flank pain, costovertebral angle tenderness, dysuria, nausea, sepsis risk",Urology,Yes,Bacterial infection
+Cystitis (UTI),"Dysuria, frequency, urgency, suprapubic pain, hematuria, negative cva tenderness",Urology/GP,No,Common infection
+Benign Prostatic Hyperplasia,"Urinary frequency, urgency, nocturia, weak stream, incomplete emptying",Urology,No,Age-related
+Prostate Cancer,"Often asymptomatic, dysuria, hematuria, erectile dysfunction, bone pain, elevated psa",Oncology/Urology,No,Common malignancy
+Erectile Dysfunction,"Inability to achieve/maintain erection, weak erection, diminished libido",Urology,No,Chronic condition
+Rheumatoid Arthritis,"Symmetric joint pain, swelling, morning stiffness, rheumatoid factor positive, systemic involvement",Rheumatology,No,Autoimmune disease
+Osteoarthritis,"Joint pain, stiffness, swelling, reduced mobility, bony enlargement, crepitus",Rheumatology,No,Degenerative disease
+Systemic Lupus Erythematosus,"Malar rash, joint pain, photosensitivity, oral ulcers, serositis, ana positive",Rheumatology,No,Autoimmune disease
+Sjögren's Syndrome,"Dry eyes, dry mouth, joint pain, fatigue, lymphocytes, autoantibodies",Rheumatology,No,Autoimmune disease
+Scleroderma (Systemic Sclerosis),"Skin tightening, raynaud's, dysphagia, pulmonary fibrosis, organ involvement",Rheumatology,No,Chronic disease
+Ankylosing Spondylitis,"Back pain, stiffness, morning stiffness, chest pain, uveitis, hla-b27 positive",Rheumatology,No,Inflammatory arthritis
+Psoriatic Arthritis,"Joint pain, psoriatic rash, nail involvement, asymmetric arthritis, systemic features",Rheumatology/Dermatology,No,Inflammatory arthritis
+Reactive Arthritis,"Joint pain, urethritis, conjunctivitis, mucocutaneous ulcers, post-infection",Rheumatology,No,Post-infectious
+Gout (Acute),"Severe joint pain, swelling, erythema, warmth, elevated uric acid, often big toe",Rheumatology,No,Metabolic arthritis
+Fibromyalgia,"Widespread pain, fatigue, sleep dysfunction, cognitive issues, tender points",Rheumatology,No,Chronic pain syndrome
+Polymyalgia Rheumatica,"Proximal muscle pain, stiffness, morning stiffness, fatigue, elevated esr/crp",Rheumatology,No,Inflammatory disorder
+Temporal (Giant Cell) Arteritis,"Temporal headache, scalp tenderness, jaw claudication, visual loss, elevated esr",Rheumatology,Yes,Vision-threatening
+Vasculitis (Small Vessel),"Palpable purpura, arthralgias, renal involvement, systemic symptoms",Rheumatology,Depends,Variable severity
+Vasculitis (Large Vessel),"Claudication symptoms, fever, weight loss, elevated inflammatory markers",Rheumatology,Depends,Can be serious
+Behçet's Disease,"Recurrent oral ulcers, genital ulcers, ocular involvement, skin lesions, vasculitis",Rheumatology,Depends,Chronic disease
+Mixed Connective Tissue Disease,"Features of multiple autoimmune diseases, high anti-rnp, raynaud's, joint pain",Rheumatology,No,Overlap syndrome
+Common Cold,"Runny nose, sore throat, cough, sneezing, mild fever, malaise",GP,No,Viral illness
+Influenza (Flu),"High fever, body aches, severe fatigue, dry cough, sore throat, headache",GP,Depends,Can be serious
+COVID-19,"Fever, cough, fatigue, loss of taste/smell, shortness of breath, myalgia",GP,Depends,Variable severity
+RSV Infection,"Cough, wheezing, shortness of breath, fever, nasal congestion, apnea in infants",Pediatrics,Depends,Viral infection
+Strep Throat (Pharyngitis),"Severe sore throat, difficulty swallowing, fever, swollen tonsils, exudate, headache",GP,No,Bacterial infection
+Mononucleosis,"Fever, sore throat, swollen lymph nodes, splenomegaly, fatigue, ebv exposure",GP,Depends,Viral infection
+Pertussis (Whooping Cough),"Persistent cough, whooping sound, vomiting, apnea, respiratory distress",GP,Yes,Serious in infants
+Measles,"Fever, cough, conjunctivitis, koplik spots, maculopapular rash, cough-3-3 rule",Pediatrics,Depends,Contagious disease
+Mumps,"Fever, bilateral parotid swelling, difficulty eating, meningitis, deafness, orchitis",Pediatrics,Depends,Viral infection
+Chickenpox (Varicella),"Fever, vesicular rash, severe pruritus, scabs, successive crops, contagious",Pediatrics,Depends,Viral infection
+Herpes Zoster (Shingles),"Severe pain, vesicular rash in dermatome, fever, postherpetic neuralgia, scabs",Dermatology/GP,No,Reactivation virus
+HIV/AIDS,"Fever, weight loss, diarrhea, opportunistic infections, immunodeficiency, cd4 <200",Infectious Disease,No,Chronic infection
+Hepatitis A,"Jaundice, fatigue, abdominal pain, dark urine, light stools, fever",Hepatology,No,Self-limited viral
+Hepatitis B (Acute),"Jaundice, fatigue, abdominal pain, arthralgia, transaminitis, hepatitis b surface antigen",Hepatology,Depends,Viral hepatitis
+Hepatitis C (Acute),"Often asymptomatic, jaundice, fatigue, joint pain, hcv rna positive",Hepatology,No,Often chronic
+Hepatitis D,"Requires hepatitis b, jaundice, severe liver disease, fulminant hepatitis risk",Hepatology,Depends,Coinfection
+Hepatitis E,"Jaundice, fatigue, abdominal pain, cholestasis, fulminant failure in pregnant women",Hepatology,Depends,Usually self-limited
+Sepsis,"Fever, tachycardia, tachypnea, altered mental status, hypotension, organ dysfunction",Infectious Disease/Emergency,Yes,Life-threatening
+Septic Shock,"Sepsis + hypotension, lactate >2 mmol/l, altered consciousness, multi-organ failure",ICU/Emergency,Yes,Life-threatening
+Malaria,"High fever, chills, sweating, hemolytic anemia, cerebral malaria, paroxysms",Infectious Disease,Yes,Can be fatal
+Dengue Fever,"High fever, severe headache, joint pain, rash, hemorrhagic manifestations, dengue shock",Infectious Disease,Depends,Tropical disease
+Typhoid Fever,"Fever, headache, abdominal pain, rose spots, delirium, intestinal perforation risk",Infectious Disease,Depends,Bacterial infection
+Tuberculosis (Active Pulmonary),"Persistent cough, fever, night sweats, weight loss, hemoptysis, chills",Pulmonology,Yes,Contagious disease
+Leprosy,"Hypoesthetic skin lesions, peripheral neuropathy, skin deformity, nasal involvement, chronic",Dermatology/Infectious Disease,No,Chronic infection
+Plague,"Sudden fever, buboes, septicemia, pneumonic plague, hemorrhagic manifestations",Infectious Disease,Yes,Medical emergency
+Psoriasis (Plaque),"Red plaques, silvery scales, pruritus, symmetric distribution, nail involvement",Dermatology,No,Chronic condition
+Psoriasis (Pustular),"Pustules on erythematous base, systemic involvement, fever, arthritis, trigger factors",Dermatology,Depends,Acute presentation
+Atopic Dermatitis (Eczema),"Intense pruritus, red skin, dryness, cracking, oozing, lichenification",Dermatology,No,Chronic condition
+Contact Dermatitis,"Pruritus, erythema, vesicles, well-demarcated, allergen exposure history",Dermatology,No,Allergic reaction
+Acne Vulgaris,"Comedones, papules, pustules, cysts, scarring potential, sebaceous gland involvement",Dermatology,No,Common disorder
+Rosacea,"Facial flushing, red papules, visible blood vessels, rhinophyma, ocular symptoms",Dermatology,No,Chronic condition
+Urticaria (Acute),"Itchy hives, angioedema, evanescent lesions, anaphylaxis risk, allergic trigger",Dermatology/Emergency,Depends,Allergic reaction
+Urticaria (Chronic),"Recurrent hives, >6 weeks duration, idiopathic or autoimmune, persistent",Dermatology,No,Chronic condition
+Melanoma,"Asymmetric mole, irregular border, color variation, diameter >6mm, bleeding, ulceration",Oncology/Dermatology,No,Serious cancer
+Basal Cell Carcinoma,"Pearly nodule, telangiectic vessels, ulceration, bleeding, slow growth",Oncology/Dermatology,No,Low metastatic risk
+Squamous Cell Carcinoma,"Red scaly patch, ulceration, bleeding, rapid growth, sun exposure history",Oncology/Dermatology,No,Moderate risk
+Alopecia Areata,"Sudden hair loss, circular patches, nail involvement, autoimmune, usually recoverable",Dermatology,No,Autoimmune disorder
+Androgenetic Alopecia,"Progressive hair loss, male/female pattern, miniaturization, genetic predisposition",Dermatology,No,Age-related
+Vitiligo,"Depigmented patches, symmetric distribution, progressive, autoimmune, cosmetic concern",Dermatology,No,Chronic condition
+Lichen Planus,"Purple polygonal papules, oral involvement, hyperkeratosis, itching, nail dystrophy",Dermatology,No,Chronic condition
+Pemphigus Vulgaris,"Intraepidermal blistering, oral ulcers, flaccid bullae, acantholysis, autoimmune",Dermatology,Depends,Autoimmune blistering
+Bullous Pemphigoid,"Subepidermal blistering, tense bullae, urticarial lesions, autoimmune",Dermatology,No,Autoimmune blistering
+Tinea Pedis (Athlete's Foot),"Interdigital maceration, erythema, scaling, pruritus, fungal infection",Dermatology,No,Fungal infection
+Candidiasis,"White patches, erythema, burning sensation, predisposing factors, fungal overgrowth",Dermatology,No,Fungal infection
+Herpes Simplex,"Vesicles, severe pain, crusting, recurrent, viral reactivation, prodrome",Dermatology,Depends,Viral infection
+Iron Deficiency Anemia,"Fatigue, weakness, dyspnea, pallor, tachycardia, microcytic hypochromic",Hematology,No,Chronic condition
+Vitamin B12 Deficiency,"Megaloblastic anemia, paresthesia, ataxia, dementia, macrocytic, intrinsic factor issue",Hematology,No,Chronic condition
+Folate Deficiency Anemia,"Fatigue, glossitis, diarrhea, macrocytic anemia, pregnancy/alcohol-related",Hematology,No,Nutritional deficiency
+Hemolytic Anemia,"Jaundice, hemoglobinuria, elevated reticulocyte count, ldh elevation, haptoglobin decrease",Hematology,Depends,Depends on cause
+Acute Leukemia (ALL),"Fever, bleeding, bruising, fatigue, bone pain, lymphadenopathy, blasts",Oncology/Hematology,Yes,Medical emergency
+Acute Leukemia (AML),"Fever, bleeding, bruising, fatigue, bone pain, myeloblasts, auer rods",Oncology/Hematology,Yes,Medical emergency
+Chronic Leukemia (CLL),"Asymptomatic often, lymphadenopathy, fatigue, infections, slow progression",Oncology/Hematology,No,Chronic disease
+Chronic Leukemia (CML),"Fever, night sweats, abdominal pain, splenomegaly, philadelphia chromosome",Oncology/Hematology,No,Chronic myeloid
+Hodgkin Lymphoma,"Lymphadenopathy, b symptoms, chest pain, pruritus, reed-sternberg cells",Oncology/Hematology,No,Malignancy
+Non-Hodgkin Lymphoma,"Lymphadenopathy, b symptoms, abdominal distention, hepatosplenomegaly, variable histology",Oncology/Hematology,No,Malignancy
+Thrombocytopenia (ITP),"Bleeding, bruising, petechiae, mucosal bleeding, platelet <30k, autoimmune",Hematology,Yes,Can be serious
+Thrombotic Thrombocytopenic Purpura,"Microangiopathic hemolytic anemia, thrombocytopenia, renal dysfunction, fever, cns symptoms",Hematology/Emergency,Yes,Life-threatening
+Hemophilia A,"Easy bruising, spontaneous bleeding, joint bleeds, muscle hematomas, factor viii deficiency",Hematology,Depends,Bleeding disorder
+Hemophilia B,"Easy bruising, spontaneous bleeding, joint bleeds, muscle hematomas, factor ix deficiency",Hematology,Depends,Bleeding disorder
+Von Willebrand Disease,"Easy bruising, mucosal bleeding, prolonged bleeding, joint bleeds, variable severity",Hematology,No,Bleeding disorder
+Sickle Cell Disease,"Severe pain crisis, hemolytic anemia, organ damage, stroke risk, vaso-occlusion",Hematology,Yes,Medical emergency
+Myopia (Nearsightedness),"Blurred distance vision, close vision clear, difficulty seeing board, refractive error",Ophthalmology,No,Refractive error
+Hyperopia (Farsightedness),"Blurred near vision, distance vision better, eye strain, accommodative effort",Ophthalmology,No,Refractive error
+Astigmatism,"Blurred vision at all distances, eye strain, headaches, irregular cornea",Ophthalmology,No,Refractive error
+Presbyopia,"Difficulty focusing near objects, age-related, blurred near vision, >40 years old",Ophthalmology,No,Age-related
+Cataract,"Cloudy lens, blurred vision, glare sensitivity, dimmed colors, progressive, age-related",Ophthalmology,No,Age-related disease
+Glaucoma (Open-Angle),"Often asymptomatic, gradual vision loss, elevated intraocular pressure, optic disc cupping",Ophthalmology,No,Progressive disease
+Glaucoma (Angle-Closure),"Severe eye pain, blurred vision, halos, headache, nausea, red eye, emergency",Ophthalmology,Yes,Ocular emergency
+Age-Related Macular Degeneration,"Central vision loss, distorted lines, blurred colors, drusen, >50 years, progressive",Ophthalmology,No,Degenerative disease
+Diabetic Retinopathy,"Floaters, blurred vision, microaneurysms, hemorrhages, cotton-wool spots, diabetic",Ophthalmology,Depends,Diabetes complication
+Retinal Detachment,"Sudden floaters, flashing lights, shadow in vision, painless, vision loss, emergency",Ophthalmology,Yes,Ocular emergency
+Corneal Abrasion,"Eye pain, tearing, foreign body sensation, photophobia, red eye, epithelial defect",Ophthalmology,No,Corneal injury
+Dry Eye Syndrome,"Eye dryness, grittiness, burning, paradoxical tearing, itching, mucus discharge",Ophthalmology,No,Common condition
+Conjunctivitis (Viral),"Red eye, tearing, discharge, photophobia, contagious, self-limited",Ophthalmology,No,Viral infection
+Conjunctivitis (Bacterial),"Red eye, purulent discharge, eyelid swelling, photophobia, contagious",Ophthalmology,No,Bacterial infection
+Conjunctivitis (Allergic),"Red eye, itching, tearing, swollen lids, seasonal, non-contagious",Ophthalmology,No,Allergic reaction
+Osteoporosis,"Bone fragility, height loss, kyphosis, fracture risk, decreased bone mineral density",Orthopedics/Endocrinology,No,Metabolic disease
+Vertebral Compression Fracture,"Acute back pain, height loss, kyphosis, deformity, post-menopausal",Orthopedics/Emergency,Depends,Spine fracture
+Hip Fracture (Femoral Neck),"Severe hip pain, unable to bear weight, external rotation, shortened leg, falls",Orthopedics/Emergency,Yes,Surgical emergency
+Meniscal Tear,"Knee pain, locking, clicking, swelling, limited range of motion, pivot shift test positive",Orthopedics,No,Cartilage injury
+Anterior Cruciate Ligament (ACL) Tear,"Acute knee pain, giving way, swelling, instability, lachman test positive",Orthopedics,Depends,Ligament injury
+Posterior Cruciate Ligament (PCL) Tear,"Posterior knee pain, instability, swelling, difficulty walking, drawer sign positive",Orthopedics,No,Ligament injury
+Medial Collateral Ligament (MCL) Sprain,"Medial knee pain, swelling, bruising, valgus instability, contact injury",Orthopedics,No,Ligament sprain
+Rotator Cuff Tear,"Shoulder pain, weakness, limited range of motion, atrophy, impingement",Orthopedics,No,Shoulder injury
+Frozen Shoulder (Adhesive Capsulitis),"Shoulder pain, progressive stiffness, limited motion, gradual onset, sleep disruption",Orthopedics/Physical Medicine,No,Shoulder condition
+Patellar Tendinopathy,"Knee pain below patella, pain with jumping, swelling, overuse injury, athletes",Orthopedics,No,Tendon injury
+Achilles Tendinopathy,"Heel pain, swelling, stiffness, pain with activities, overuse, rupture risk",Orthopedics,No,Tendon injury
+Plantar Fasciitis,"Heel pain, morning pain worse, fascia inflammation, flat feet, obesity factor",Orthopedics,No,Foot condition
+Carpal Tunnel Syndrome,"Hand numbness, tingling, weak grip, pain in wrist, paresthesia at night",Orthopedics/Neurology,No,Nerve compression
+Cubital Tunnel Syndrome,"Elbow pain, ulnar nerve compression, numbness in ring/pinky finger, weakness",Orthopedics/Neurology,No,Nerve compression
+Cervical Spondylosis,"Neck pain, stiffness, radiculopathy, myelopathy, osteophytes, progressive",Orthopedics,Depends,Degenerative disease
+Lumbar Spinal Stenosis,"Back pain, leg pain, claudication, numbness, weakness, neurogenic claudication",Orthopedics,No,Degenerative disease
+Disc Herniation (Cervical),"Neck pain, radiculopathy, arm numbness, weakness, myelopathy risk",Orthopedics,No,Intervertebral disc
+Disc Herniation (Lumbar),"Back pain, radiculopathy, leg numbness, weakness, sciatica, cauda equina risk",Orthopedics,Depends,Intervertebral disc
+Acute Otitis Media,"Ear pain, fever, hearing loss, ear fullness, otoscopic findings, conductive",ENT,No,Ear infection
+Chronic Otitis Media,"Chronic ear drainage, hearing loss, perforation, recurrent infection, mastoiditis risk",ENT,No,Chronic infection
+Otosclerosis,"Progressive hearing loss, conductive then sensorineural, tinnitus, vertigo, stapes fixation",ENT,No,Bone disease
+Vertigo (BPPV),"Sudden rotatory vertigo, nausea, dix-hallpike positive, brief episodes, benign",ENT/Neurology,No,Inner ear disorder
+Meniere's Disease,"Vertigo attacks, tinnitus, hearing loss, aural fullness, episodic, endolymphatic hydrops",ENT,No,Inner ear disorder
+Acute Sinusitis,"Facial pain, nasal congestion, purulent discharge, fever, headache, post-nasal drip",ENT,No,Sinus infection
+Chronic Sinusitis,"Chronic nasal congestion, post-nasal drip, facial pain, loss of smell, recurrent infections",ENT,No,Chronic condition
+Nasal Polyps,"Nasal obstruction, post-nasal drip, loss of smell, recurrent sinusitis, mostly painless",ENT,No,Chronic condition
+Deviated Nasal Septum,"Nasal obstruction, asymmetry, sleep apnea, snoring, difficulty breathing",ENT,No,Anatomic variation
+Laryngitis,"Hoarseness, cough, sore throat, difficulty swallowing, voice loss, usually viral",ENT,No,Laryngeal inflammation
+Vocal Cord Dysfunction,"Hoarseness, stridor, shortness of breath, voice problems, psychological stress",ENT,No,Vocal disorder
+Pharyngeal Cancer,"Sore throat, dysphagia, otalgia, weight loss, hoarseness, lymphadenopathy",Oncology/ENT,No,Malignancy
+Major Depressive Disorder,"Persistent sadness, loss of interest, sleep changes, appetite changes, guilt, suicidal ideation",Psychiatry,Yes,Can be fatal
+Persistent Depressive Disorder (Dysthymia),"Chronic low mood, loss of interest, low self-worth, sleep/appetite changes, >2 years",Psychiatry,No,Chronic condition
+Bipolar Disorder Type I,"Manic episodes, depressive episodes, grandiosity, decreased need for sleep, impulsive behavior",Psychiatry,Yes,Requires medication
+Bipolar Disorder Type II,"Hypomanic episodes, major depressive episodes, lower severity mania, mood instability",Psychiatry,No,Chronic mood disorder
+Generalized Anxiety Disorder,"Excessive worry, restlessness, irritability, muscle tension, sleep problems, >6 months",Psychiatry,No,Chronic condition
+Panic Disorder,"Panic attacks, heart palpitations, sweating, trembling, fear of dying, anticipatory anxiety",Psychiatry,No,Anxiety disorder
+Social Anxiety Disorder,"Intense fear of social situations, avoidance, physical symptoms, embarrassment fear",Psychiatry,No,Anxiety disorder
+Specific Phobia,"Intense fear of specific object/situation, avoidance, panic response, disproportionate fear",Psychiatry,No,Anxiety disorder
+PTSD,"Flashbacks, nightmares, hypervigilance, avoidance, emotional numbness, trauma history",Psychiatry,Depends,Trauma-related
+Acute Stress Disorder,"Similar to ptsd, occurs within 4 weeks of trauma, dissociation, intrusive thoughts",Psychiatry,Depends,Acute trauma
+OCD,"Intrusive thoughts, compulsions, repetitive behaviors, anxiety, time-consuming rituals",Psychiatry,No,Chronic condition
+Body Dysmorphic Disorder,"Preoccupation with appearance, repetitive behaviors, body image distortion, functional impairment",Psychiatry,No,Mental health
+Schizophrenia,"Delusions, hallucinations, disorganized speech, negative symptoms, cognitive decline",Psychiatry,Depends,Serious mental illness
+Brief Psychotic Disorder,"Delusions/hallucinations, disorganized speech, <1 month duration, acute onset",Psychiatry,Depends,Acute episode
+Autism Spectrum Disorder,"Social difficulties, repetitive behaviors, sensory sensitivities, communication challenges",Psychiatry/Neurology,No,Neurodevelopmental
+ADHD,"Inattention, hyperactivity, impulsivity, academic/work difficulty, executive dysfunction",Psychiatry/Neurology,No,Neurodevelopmental
+Anorexia Nervosa,"Severe caloric restriction, preoccupation with weight, body dysmorphia, amenorrhea, health risks",Psychiatry,Yes,Can be fatal
+Bulimia Nervosa,"Binge eating, purging, preoccupation with weight, normal weight, electrolyte imbalance",Psychiatry,Depends,Eating disorder
+Ectopic Pregnancy,"Abdominal pain, vaginal bleeding, shoulder pain, shock, rupture risk, hcg positive",Gynecology/Emergency,Yes,Surgical emergency
+Miscarriage (Spontaneous Abortion),"Vaginal bleeding, abdominal cramping, tissue passage, decreased hcg, emotional distress",Obstetrics,Depends,Pregnancy loss
+Molar Pregnancy,"Excessive bleeding, uterine size larger than dates, severe hyperemesis, hypertension, elevated hcg",Obstetrics,Yes,Requires surgery
+Preeclampsia,"Hypertension, proteinuria, headaches, visual changes, epigastric pain, seizure risk",Obstetrics,Yes,Medical emergency
+Eclampsia,"Preeclampsia + seizures, altered consciousness, cerebral edema, acute kidney injury, coma",Obstetrics/Emergency,Yes,Obstetric emergency
+HELLP Syndrome,"Hemolysis, elevated liver enzymes, low platelets, abdominal pain, seizures, multi-organ failure",Obstetrics/Emergency,Yes,Obstetric emergency
+Placental Abruption,"Vaginal bleeding, abdominal pain, uterine contractions, fetal distress, shock",Obstetrics/Emergency,Yes,Obstetric emergency
+Placenta Previa,"Vaginal bleeding, painless bleeding, premature labor, cesarean delivery needed, recurrent",Obstetrics,Depends,Obstetric condition
+Amniotic Fluid Embolism,"Acute dyspnea, cardiovascular collapse, altered consciousness, dic, cardiopulmonary arrest",Obstetrics/Emergency,Yes,Obstetric emergency
+Uterine Fibroids (Leiomyoma),"Heavy menstrual bleeding, pelvic pain, pressure symptoms, infertility, dyspareunia",Gynecology,No,Benign tumors
+Ovarian Cyst,"Abdominal pain, bloating, fullness, rupture risk, torsion risk, usually asymptomatic",Gynecology,Depends,Usually benign
+Endometriosis,"Dysmenorrhea, dyspareunia, chronic pelvic pain, infertility, heavy bleeding",Gynecology,No,Chronic condition
+Polycystic Ovary Syndrome (PCOS),"Irregular periods, hirsutism, acne, infertility, obesity, insulin resistance",Gynecology/Endocrinology,No,Endocrine disorder
+Uterine Cancer (Endometrial),"Abnormal vaginal bleeding, pelvic pain, vaginal discharge, weight gain, obesity-related",Oncology/Gynecology,No,Malignancy
+Cervical Cancer,"Abnormal bleeding, vaginal discharge, pelvic pain, dyspareunia, hpv positive",Oncology/Gynecology,No,Malignancy
+Ovarian Cancer,"Abdominal bloating, abdominal pain, pelvic pain, early satiety, weight loss, ca-125 elevation",Oncology/Gynecology,No,Malignancy
+Breast Cancer,"Breast lump, nipple discharge, skin changes, dimpling, axillary lymphadenopathy",Oncology/Surgery,No,Malignancy
+Mastitis,"Breast pain, redness, swelling, fever, purulent discharge, lactating women",Surgery/Gynecology,Depends,Bacterial infection
+Croup (Laryngotracheobronchitis),"Barky cough, stridor, hoarseness, dyspnea, low fever, viral, <3 years",Pediatrics,Depends,Viral infection
+Epiglottitis,"Severe throat pain, dysphagia, stridor, drooling, fever, tripod position, medical emergency",Pediatrics/Emergency,Yes,Medical emergency
+Acute Bronchiolitis,"Cough, wheezing, shortness of breath, fever, apnea risk, infants, rsv",Pediatrics,Depends,Viral infection
+Fifth Disease (Erythema Infectiosum),"Fever, facial rash (slapped cheek), lacy rash on trunk, joint pain, parvovirus b19",Pediatrics,No,Viral infection
+Roseola Infantum (Sixth Disease),"High fever, fever then rash, rash after fever breaks, seizure risk, hhv-6",Pediatrics,No,Viral infection
+Scarlet Fever,"Fever, sandpaper-like rash, strawberry tongue, sore throat, streptococcus pyogenes",Pediatrics,Depends,Bacterial infection
+Hand-Foot-and-Mouth Disease,"Fever, painful vesicles in mouth, rash on hands/feet, dysphagia, enterovirus",Pediatrics,No,Viral infection
+Kawasaki Disease,"Prolonged fever, rash, conjunctivitis, oral changes, extremity changes, coronary aneurysm risk",Pediatrics/Cardiology,Yes,Urgent treatment
+Intussusception,"Sudden severe pain, palpable mass, abdominal distention, bloody stools, ages 6 months - 3 years",Surgery/Pediatrics,Yes,Surgical emergency
+Pyloric Stenosis,"Projectile vomiting, hungry after vomiting, weight loss, dehydration, males 3-5 weeks",Surgery/Pediatrics,Yes,Surgical emergency
+Patent Foramen Ovale (PFO),"Often asymptomatic, cyanosis if severe, paradoxical embolism risk, congenital defect",Cardiology,No,Congenital defect
+Ventricular Septal Defect (VSD),"Heart murmur, cyanosis if large, congestive heart failure, pulmonary hypertension",Cardiology,No,Congenital defect
+Tetralogy of Fallot (TOF),"Cyanosis, squatting posture, heart murmur, exercise intolerance, blue baby",Cardiology,Depends,Congenital heart
+Transposition of Great Arteries (TGA),"Severe cyanosis, respiratory distress, egg-on-string x-ray, ductus arteriosus dependency",Cardiology/Emergency,Yes,Neonatal emergency
+Febrile Seizure,"Seizure with fever, age 6 months - 5 years, usually generalized, post-ictal confusion",Pediatrics/Neurology,Depends,Childhood disorder
+Absence Seizure,"Brief lapses in awareness, staring spells, no loss of consciousness, absence attacks, childhood",Pediatrics/Neurology,No,Childhood epilepsy
+Juvenile Idiopathic Arthritis,"Joint pain, swelling, stiffness, morning stiffness, uveitis, seronegative",Pediatrics/Rheumatology,No,Childhood arthritis
+Type 1 Diabetes in Children,"Polyuria, polydipsia, weight loss, fatigue, diabetic ketoacidosis risk, autoimmune",Pediatrics/Endocrinology,Depends,Chronic disease
+Silicosis,"Progressive dyspnea, cough, chest pain, nodular opacities, occupational exposure",Occupational Medicine/Pulmonology,No,Occupational disease
+Asbestosis,"Dyspnea, chest pain, pleural plaques, fibrosis, mesothelioma risk, occupational",Occupational Medicine/Pulmonology,No,Occupational disease
+Coal Worker's Pneumoconiosis,"Cough, dyspnea, black sputum, nodular opacities, coal miner exposure",Occupational Medicine,No,Occupational disease
+Farmer's Lung (Hypersensitivity Pneumonitis),"Dyspnea, cough, fever, chills, occupational exposure, moldy hay",Occupational Medicine,No,Allergic reaction
+Heat Stroke,"Core body temperature >40°c, altered mental status, anhidrosis, seizures, organ failure",Emergency,Yes,Medical emergency
+Heat Exhaustion,"Heavy sweating, weakness, dizziness, nausea, core temp 37-40°c, dehydration",Emergency,Depends,Heat illness
+Frostbite,"Tissue freezing, numbness, blistering, blackening, gangrene, cold exposure",Emergency/Surgery,Depends,Cold injury
+Hypothermia,"Core body temperature <35°c, confusion, shivering, bradycardia, peripheral vasoconstriction",Emergency,Yes,Medical emergency
+Carbon Monoxide Poisoning,"Headache, dizziness, confusion, loss of consciousness, cherry-red skin, carboxyhemoglobin",Emergency/Toxicology,Yes,Medical emergency
+Cyanide Poisoning,"Rapid onset, altered consciousness, coma, seizures, cardiac arrhythmia, bitter almond odor",Emergency/Toxicology,Yes,Medical emergency
+Lead Poisoning,"Abdominal pain, constipation, anemia, encephalopathy, developmental delay in children",Toxicology,Depends,Toxic exposure
+Mercury Poisoning,"Tremor, emotional instability, personality changes, ataxia, gingivitis, occupational",Toxicology,No,Chronic poisoning
+Marfan Syndrome,"Tall stature, arachnodactyly, lens dislocation, aortic aneurysm, fibrillin-1 mutation",Genetics/Cardiology,No,Connective tissue
+Ehlers-Danlos Syndrome,"Skin hyperelasticity, vascular fragility, joint hypermobility, wound healing issues",Genetics/Rheumatology,Depends,Connective tissue
+Osteogenesis Imperfecta,"Bone fragility, recurrent fractures, blue sclerae, hearing loss, collagen defect",Genetics/Orthopedics,No,Bone disorder
+Hemochromatosis,"Iron overload, cirrhosis, diabetes, cardiomyopathy, arthropathy, hfe gene mutation",Hematology/Genetics,No,Iron metabolism
+Wilson's Disease,"Neuropsychiatric, liver disease, kayser-fleischer ring, copper accumulation, atp7b mutation",Neurology/Hepatology,No,Copper metabolism
+Cystic Fibrosis,"Thick sputum, pancreatic insufficiency, malabsorption, recurrent infections, cftr mutation",Pulmonology/Genetics,No,Genetic disorder
+Duchenne Muscular Dystrophy,"Progressive weakness, muscle wasting, gait abnormality, elevated ck, males, dystrophin",Neurology/Genetics,No,Progressive paralysis
+Becker Muscular Dystrophy,"Milder than dmd, progressive weakness, adult onset, variable severity",Neurology/Genetics,No,Genetic myopathy
+Fragile X Syndrome,"Intellectual disability, autism, seizures, macro-orchidism, facial features, x-linked",Genetics/Psychiatry,No,X-linked disorder
+Down Syndrome (Trisomy 21),"Intellectual disability, characteristic facies, cardiac defects, down features, trisomy 21",Genetics/Pediatrics,No,Chromosomal disorder
+Turner Syndrome,"Short stature, ovarian dysgenesis, cardiac defects, infertility, webbed neck, 45, x",Genetics/Endocrinology,No,Sex chromosome
+Klinefelter Syndrome,"Infertility, tall stature, gynecomastia, reduced testosterone, 47, xxy",Genetics/Endocrinology,No,Sex chromosome
+Phenylketonuria (PKU),"Untreated: intellectual disability, seizures, behavioral issues, musty odor, phenylalanine elevation",Genetics/Metabolic,No,Metabolic disorder
+Gaucher Disease,"Hepatosplenomegaly, bone pain, anemia, thrombocytopenia, glucocerebroside accumulation",Genetics/Hematology,No,Lysosomal disorder
+Fabry Disease,"Acroparesthesia, angiokeratomas, corneal opacity, cardiac/renal involvement, alpha-galactosidase a",Genetics,Depends,Lysosomal disorder
+Niemann-Pick Disease,"Hepatosplenomegaly, neurologic decline, infiltration, sphingomyelinase deficiency",Genetics/Pediatrics,No,Lipid storage
+Acute Lymphoblastic Leukemia (ALL),"Pale skin, easy bruising, frequent infections, unexplained fever, constant fatigue, bone and joint pain",Oncology/Hematology,Yes,Rapidly progressing blood cancer
+Acute Myeloid Leukemia (AML),"Extreme tiredness, pale skin, unusual bleeding or bruising, frequent fevers, shortness of breath",Oncology/Hematology,Yes,Aggressive bone marrow cancer
+Chronic Lymphocytic Leukemia (CLL),"Swollen lymph nodes in neck or armpits, constant tiredness, night sweats, unexplained weight loss",Oncology/Hematology,No,Slow-growing blood cancer in older adults
+Chronic Myeloid Leukemia (CML),"Feeling full quickly after small meals, heavy sweating at night, fatigue, weight loss, bone pain",Oncology/Hematology,No,Overproduction of white blood cells
+Multiple Myeloma,"Persistent back or rib bone pain, frequent bone fractures, constant fatigue, recurring infections, thirst",Oncology/Hematology,No,Plasma cell cancer in bone marrow
+Hodgkin Lymphoma,"Painless swollen lymph nodes in neck or armpits, drenching night sweats, itchy skin, unexplained fever",Oncology/Hematology,No,Lymph system cancer characterized by Reed-Sternberg cells
+Non-Hodgkin Lymphoma,"Swollen lymph nodes in neck or groin, chest pain, persistent coughing, feeling full quickly, night sweats",Oncology/Hematology,Depends,Diverse group of blood cancers
+Glioblastoma Multiforme,"Worsening morning headaches, seizures, mood or personality changes, difficulty speaking, blurry vision",Oncology/Neurology,Yes,Aggressive brain tumor
+Meningioma,"Gradual headaches, memory loss, vision changes, hearing loss, weakness in arms or legs",Oncology/Neurology,Depends,Brain lining tumor
+Medulloblastoma,"Morning vomiting, unsteadiness while walking, clumsy hand movements, double vision, persistent headaches",Oncology/Pediatrics,Yes,Pediatric brain tumor
+Astrocytoma,"Seizures, persistent headaches, memory loss, changes in vision or speech, weakness on one side",Oncology/Neurology,Depends,Glial cell brain tumor
+Oligodendroglioma,"Seizures, numbness or tingling, memory problems, headaches, difficulty speaking",Oncology/Neurology,No,Slow-growing brain tumor
+Ependymoma,"Headaches, nausea, vomiting, dizziness, balance trouble, back pain if spinal cord involved",Oncology/Neurology,Depends,Ventricular lining brain tumor
+Pituitary Adenoma,"Blurred or double vision, loss of side vision, unexplained weight gain, irregular periods, fatigue",Oncology/Endocrinology,No,Benign tumor of pituitary gland
+Pancreatic Ductal Adenocarcinoma,"Yellowing of skin and eyes, upper belly pain spreading to back, dark urine, sudden unexplained weight loss",Oncology/Gastroenterology,Yes,High-fatality gastrointestinal cancer
+Hepatocellular Carcinoma (Liver Cancer),"Belly swelling, upper right abdomen pain, yellow skin, feeling full easily, chalky stool",Oncology/Hepatology,Depends,Primary liver malignancy
+Gastric Adenocarcinoma (Stomach Cancer),"Persistent indigestion, severe heartburn, feeling bloated after small meals, stomach pain, vomiting blood",Oncology/Gastroenterology,Depends,Malignant stomach condition
+Esophageal Carcinoma,"Difficulty or pain when swallowing food, feeling like food is stuck in chest, hoarseness, chronic cough",Oncology/Gastroenterology,Depends,Esophageal lining cancer
+Colorectal Adenocarcinoma,"Blood in stool, persistent changes in bowel habits, belly cramps, unexplained fatigue, feeling bowel isn't empty",Oncology/Gastroenterology,Depends,Colon or rectal cancer
+Small Cell Lung Cancer,"Severe persistent cough, coughing up blood, sudden shortness of breath, chest tightness, rapid weight loss",Oncology/Pulmonology,Yes,Aggressive smoking-related lung cancer
+Non-Small Cell Lung Cancer (Adenocarcinoma),"Lingering cough, deep chest pain when breathing or laughing, wheezing, tiredness, voice hoarseness",Oncology/Pulmonology,Depends,Most common lung cancer type
+Triple-Negative Breast Cancer,"Hard lump in breast, dimpling or pitting of breast skin, nipple turning inward, bloody nipple discharge",Oncology,Depends,Aggressive subtype of breast cancer
+Invasive Ductal Carcinoma (Breast),"Painless firm lump in breast or armpit, skin redness or thickening, change in breast size or shape",Oncology,No,Most common breast cancer
+Ovarian Epithelial Carcinoma,"Constant abdominal bloating, feeling full fast, pelvic pain, frequent urgency to urinate, changes in bowel habits",Oncology/Gynecology,Depends,Gynecological cancer
+Endometrial / Uterine Cancer,"Unusual vaginal bleeding post-menopause, heavy or irregular periods, pelvic pain, watery discharge",Oncology/Gynecology,Depends,Uterine lining cancer
+Cervical Carcinoma,"Bleeding after intercourse, unusual spot bleeding between periods, foul-smelling discharge, pelvic pain",Oncology/Gynecology,Depends,HPV-linked cervical cancer
+Prostate Adenocarcinoma,"Difficulty starting urination, weak urine stream, waking up often at night to urinate, blood in semen, hip/back pain",Oncology/Urology,No,Common male cancer
+Renal Cell Carcinoma (Kidney Cancer),"Blood in urine (pink or rusty color), side/back pain below ribs, lump on side or lower back, constant fatigue",Oncology/Urology,Depends,Primary kidney cancer
+Bladder Urothelial Carcinoma,"Painless blood in urine, painful urination, frequent urge to pass urine, lower back discomfort",Oncology/Urology,Depends,Bladder lining cancer
+Melanoma (Cutaneous),"New irregular dark spot on skin, existing mole changing color/shape/size, bleeding or itchy sore",Oncology/Dermatology,Depends,Aggressive skin cancer
+Squamous Cell Skin Carcinoma,"Firm red nodule, flat sore with a scaly crust, persistent open sore that bleeds easily",Oncology/Dermatology,No,Sun-exposure skin cancer
+Basal Cell Carcinoma,"Pearly white or waxy bump, flat flesh-colored lesion, easily bleeding sore that heals and returns",Oncology/Dermatology,No,Slow-growing common skin cancer
+Osteosarcoma,"Deep bone pain that worsens at night, swollen area near joint, sudden bone fracture from minor movement",Oncology/Orthopedics,Depends,Primary bone cancer in teens/adults
+Ewing Sarcoma,"Localized bone pain, swelling and tenderness near affected bone, unexplained fever, limping",Oncology/Pediatrics,Depends,Bone/soft tissue cancer
+Chondrosarcoma,"Growing lump near joint, dull ache in hip/thigh/shoulder, stiffness, limited movement",Oncology/Orthopedics,No,Cartilage cancer
+Anaplastic Thyroid Cancer,"Rapidly growing neck mass, tight feeling in throat, severe swallowing trouble, voice change, noisy breathing",Oncology/Endocrinology,Yes,Rare aggressive thyroid cancer
+Papillary Thyroid Carcinoma,"Painless lump in neck, mild throat tightness, hoarseness, swollen neck lymph nodes",Oncology/Endocrinology,No,Most common thyroid cancer
+Nasopharyngeal Carcinoma,"Lump in neck, nasal congestion with bloody discharge, hearing loss or ringing in one ear, frequent headaches",Oncology/ENT,Depends,Throat/nasal cancer
+Laryngeal Carcinoma,"Persistent hoarseness lasting weeks, sore throat, painful swallowing, feeling of lump in throat, breathing trouble",Oncology/ENT,Depends,Voice box cancer
+Uveal Melanoma (Eye Cancer),"Blurry vision, seeing flashing lights or dark spots, growing dark spot on colored iris, loss of side vision",Oncology/Ophthalmology,Depends,Intraocular melanoma
+Norovirus Gastroenteritis,"Sudden heavy vomiting, explosive watery diarrhea, stomach cramps, low-grade fever, muscle aches",Infectious Disease/GP,Depends,Highly contagious stomach flu
+Rotavirus Gastroenteritis,"Severe watery diarrhea in infants, persistent vomiting, high fever, abdominal pain, signs of dehydration",Infectious Disease/Pediatrics,Yes,Common pediatric intestinal virus
+Respiratory Syncytial Virus (RSV),"Wheezing, rapid shallow breathing, severe coughing fits, nasal flaring, fever, blueish lip tinge",Pediatrics/Pulmonology,Yes,Dangerous lower respiratory infection in infants and elderly
+Croup (Human Parainfluenza),"Barking seal-like cough, harsh raspy sound when inhaling, hoarseness, noisy breathing, low fever",Pediatrics/ENT,Yes,Airway swelling in young children
+Adenovirus Infection,"Red painful eyes with watery discharge, sore throat, fever, runny nose, cough, loose stools",Infectious Disease/GP,No,Common virus causing cold and pink eye
+Rhinovirus (Common Cold),"Stuffy or runny nose, sneezing, scratchy sore throat, mild body aches, low fever, tiredness",GP,No,Most frequent viral upper respiratory bug
+Coxsackievirus (Hand, Foot, Mouth Disease),"Painful sores inside mouth, itchy red rash or blisters on palms and soles, high fever, sore throat",Pediatrics/Dermatology,No,Common childhood viral illness
+Herpes Simplex Virus 1 (Cold Sores),"Painful fluid-filled blisters on or around lips, tingling or burning sensation before outbreak, swollen gums",Dermatology/GP,No,Oral herpes infection
+Herpes Simplex Virus 2 (Genital Herpes),"Painful genital blisters or sores, burning during urination, groin swelling, flu-like aches",Infectious Disease/Gynecology/Urology,No,Sexually transmitted herpes
+Infectious Mononucleosis (Epstein-Barr),"Extreme exhaustion, severe sore throat with swollen white tonsils, swollen neck glands, enlarged spleen",Infectious Disease/GP,Depends,Kissing disease / Glandular fever
+Cytomegalovirus (CMV),"Prolonged fatigue, swollen lymph nodes, sore throat, fever, muscle aches",Infectious Disease,Depends,Common herpesvirus family pathogen
+Roseola Infantum (HHV-6),"Sudden high fever lasting 3-5 days followed by a rosy-pink raised rash on chest and belly after fever drops",Pediatrics,No,Common infant viral fever
+Mumps,"Painful swollen puffy cheeks and jaw, high fever, pain when chewing or swallowing, headache, testicular swelling",Infectious Disease/Pediatrics,Depends,Salivary gland viral infection
+Rubella (German Measles),"Mild red rash starting on face and moving down, low fever, swollen lymph nodes behind ears/neck, joint pain",Infectious Disease/GP,Depends,Dangerous in early pregnancy
+Varicella (Chickenpox),"Very itchy red spots turning into fluid-filled blisters all over body, fever, tiredness, lost appetite",Pediatrics/Dermatology,No,Classic childhood rash illness
+Herpes Zoster (Shingles),"Painful burning or tingling strip of red blisters on one side of waist, torso, or face, intense nerve pain",Dermatology/Neurology,Depends,Reactivation of chickenpox virus
+Fifth Disease (Parvovirus B19),"Bright red 'slapped cheek' rash on face, lace-like rash on arms and body, mild fever, joint soreness in adults",Pediatrics/Dermatology,No,Slapped cheek syndrome
+Molluscum Contagiosum,"Small painless firm dome-shaped bumps with a central dimple on skin, mild itching",Dermatology/Pediatrics,No,Benign viral skin infection
+Human Papillomavirus (Genital Warts),"Small flesh-colored or cauliflower-like bumps around genitals or anus, mild itching or discomfort",Dermatology/Gynecology/Urology,No,STD caused by low-risk HPV strains
+West Nile Virus,"Sudden fever, severe headache, neck stiffness, disorientation, muscle weakness, body tremors",Infectious Disease/Neurology,Yes,Mosquito-borne neuro-invasive virus
+Zika Virus,"Mild fever, red itchy eyes, joint and muscle pain, faint pink spotty skin rash, headache",Infectious Disease,Depends,Mosquito virus linked to microcephaly
+Chikungunya Virus,"Sudden high fever, severe debilitating joint pain in hands and feet, skin rash, muscle pain",Infectious Disease,No,Mosquito-borne virus causing severe joint aches
+Yellow Fever,"High fever, chills, severe back pain, nausea, yellow skin and eyes, dark black vomiting",Infectious Disease/Emergency,Yes,Mosquito-transmitted viral jaundice
+Rabies,"Tingling or itching at bite site, extreme anxiety, fear of water, inability to swallow, confusion, aggressive outbursts",Infectious Disease/Emergency,Yes,Nearly 100% fatal viral brain infection once symptoms start
+Mpox (Monkeypox),"Painful blistering rash on face, hands, or genitals, swollen lymph nodes, fever, intense body aches, fatigue",Infectious Disease/Dermatology,Depends,Poxvirus causing painful cutaneous lesions
+Hantavirus Pulmonary Syndrome,"Flu-like aches and fever followed by sudden severe shortness of breath, fluid filling lungs, dizziness",Infectious Disease/Emergency,Yes,Rodent-dropping transmitted lung virus
+Hepatitis A,"Sudden nausea, belly pain under right ribs, dark tea-colored urine, pale stool, yellow skin and eyes, tiredness",Hepatology/Infectious Disease,No,Food/water-borne liver virus
+Hepatitis B (Acute),"Extreme tiredness, yellow skin and eyes, dark urine, joint pain, loss of appetite, right upper belly tenderness",Hepatology/Infectious Disease,Depends,Blood/body fluid borne liver virus
+Hepatitis C (Chronic),"Chronic fatigue, vague right side belly discomfort, yellow skin, brain fog, spider-like skin veins",Hepatology/Infectious Disease,No,Chronic viral liver infection
+Hepatitis E,"Yellow skin and eyes, dark urine, pale stools, belly pain, nausea, severe illness in pregnant women",Hepatology/Infectious Disease,Depends,Waterborne liver infection
+Strep Throat (Group A Strep),"Sudden sharp sore throat, painful swallowing, bright red tonsils with white spots, fever, swollen neck glands",ENT/GP,No,Bacterial throat infection needing antibiotics
+Scarlet Fever,"Sandpaper-like red skin rash, bright red strawberry tongue, high fever, sore throat, flushed face",Pediatrics/Infectious Disease,No,Toxin-mediated streptococcal infection
+Impetigo,"Honey-colored crusted sores around mouth and nose, red itchy blisters that pop easily",Dermatology/Pediatrics,No,Contagious superficial skin infection
+Erysipelas,"Bright red, shiny, raised, hot and painful skin patch with distinct sharp edges, high fever, chills",Dermatology/Infectious Disease,Yes,Superficial bacterial skin infection
+MRSA Skin Infection,"Painful red swollen bump like a spider bite, filled with pus, warm to touch, fever",Infectious Disease/Dermatology,Depends,Antibiotic-resistant staph infection
+Toxic Shock Syndrome,"Sudden high fever, severe low blood pressure, sunburn-like body rash, confusion, vomiting, peeling palms and soles",Emergency/Infectious Disease,Yes,Life-threatening bacterial toxin emergency
+Lyme Disease (Early),"Expanding red 'bullseye' rash, constant fatigue, joint aches, fever, swollen lymph nodes",Infectious Disease/GP,No,Tick-borne Borrelia burgdorferi infection
+Primary Syphilis,"Single painless hard open sore on genitals or mouth, swollen nearby lymph nodes",Infectious Disease/Dermatology,No,Treponema pallidum STD
+Secondary Syphilis,"Rough non-itchy rash on palms and soles of feet, fever, patchy hair loss, sore throat, swollen glands",Infectious Disease/Dermatology,No,Systemic spread of syphilis
+Gonorrhea,"Thick yellow or green discharge from genitals, burning pain when passing urine, testicular pain, spotty bleeding",Infectious Disease/Urology/Gynecology,No,Neisseria gonorrhoeae STD
+Chlamydia,"Watery or cloudy genital discharge, pain when peeing, lower belly ache, pain during sex",Infectious Disease/Gynecology/Urology,No,Most common bacterial STD
+Pelvic Inflammatory Disease (PID),"Severe lower belly pain, foul-smelling vaginal discharge, bleeding between periods, pain during intercourse, fever",Gynecology/Emergency,Yes,Complication of untreated STDs leading to infertility
+Typhoid Fever,"Sustained high fever, severe stomach pain, rose-colored spots on chest, extreme exhaustion, constipation or diarrhea",Infectious Disease,Yes,Food/water-borne systemic bacterial infection
+Salmonella Enteritis,"Sudden watery diarrhea, stomach cramps, nausea, vomiting, fever, chills, dehydration",Gastroenterology/GP,Depends,Food poisoning from contaminated poultry or eggs
+Shigellosis (Dysentery),"Frequent bloody or painful diarrhea, intense stomach cramps, high fever, constant urge to poop",Infectious Disease/Gastroenterology,Yes,Highly contagious gut infection
+Cholera,"Massive painless watery diarrhea ('rice-water stools'), rapid severe vomiting, muscle cramps, severe dehydration, extreme thirst",Infectious Disease/Emergency,Yes,Vibrio cholerae waterborne toxin disease
+Clostridioides Difficile (C. diff) Colitis,"Frequent watery foul-smelling diarrhea, severe abdominal cramping, fever, dehydration after taking antibiotics",Gastroenterology/Infectious Disease,Yes,Antibiotic-associated gut overgrowth
+Legionnaires' Disease,"High fever, chills, dry cough, severe muscle aches, shortness of breath, confusion, diarrhea",Pulmonology/Infectious Disease,Yes,Severe pneumonia from contaminated water systems
+Walking Pneumonia (Mycoplasma),"Persistent dry barking cough lasting weeks, low fever, tiredness, headache, mild chest soreness",Pulmonology/GP,No,Atypical mild bacterial lung infection
+Whooping Cough (Pertussis),"Severe uncontrollable coughing fits followed by a high-pitched 'whoop' sound when inhaling, vomiting after coughing",Pediatrics/Infectious Disease,Yes,Bordetella pertussis respiratory illness
+Diphtheria,"Thick grey leathery coating over throat and tonsils, sore throat, swollen 'bull neck', difficulty breathing or swallowing",Infectious Disease/Emergency,Yes,Dangerous toxin-mediated throat infection
+Meningococcal Disease,"Sudden high fever, extreme neck stiffness, dark purple spotty rash that doesn't fade when pressed, severe headache, confusion",Infectious Disease/Emergency,Yes,Rapidly fatal bacterial brain or blood infection
+Listeriosis,"Fever, muscle aches, confusion, stiff neck, loss of balance, miscarriages in pregnant women",Infectious Disease,Yes,Foodborne bacteria from unpasteurized dairy or deli meat
+Brucellosis,"Wave-like fever that rises and drops repeatedly, profuse sweating with moldy odor, joint pain",Infectious Disease,No,Raw milk or livestock contact infection
+Leptospirosis,"High fever, severe calf and lower back pain, intensely red eyes without discharge, yellow skin, dark urine",Infectious Disease/Emergency,Yes,Water contaminated by animal urine
+Bubonic Plague,"Sudden fever, painfully swollen enlarged lymph nodes in groin or armpits, severe chills",Infectious Disease/Emergency,Yes,Yersinia pestis flea-borne disease
+Leprosy (Hansen's Disease),"Numb pale skin patches, enlarged thick nerves under skin, loss of feeling in fingers and toes, muscle weakness",Infectious Disease/Dermatology,No,Mycobacterium leprae nerve and skin disease
+Cat Scratch Disease,"Swollen tender lymph node near a cat scratch or bite, small red bump at bite site, low fever, tiredness",Infectious Disease/Pediatrics,No,Bartonella henselae infection from cats
+Gas Gangrene,"Sudden unbearable pain in wound, pale skin turning dark purple or black, crackling gas bubbles under skin, foul discharge",General Surgery/Emergency,Yes,Rapidly lethal deep muscle tissue infection
+Giardiasis,"Watery foul-smelling diarrhea, greasy floating stools, severe gas, stomach cramps, bloating, sulfur burps",Gastroenterology/Infectious Disease,No,Drinking contaminated stream or well water
+Amebic Dysentery,"Severe bloody diarrhea, deep belly cramps, fever, liver abscess pain in upper right abdomen",Infectious Disease/Gastroenterology,Yes,Entamoeba histolytica parasite
+Cryptosporidiosis,"Profuse watery diarrhea, stomach cramps, dehydration, low fever, nausea lasting weeks",Infectious Disease/Gastroenterology,Depends,Waterborne parasite resistant to chlorine
+Pinworm Infection (Enterobiasis),"Intense itching around anus especially at night, restless sleep, irritability in young children",Pediatrics/GP,No,Very common childhood threadworm
+Ascariasis (Large Roundworm),"Stomach discomfort, visible large worms in stool or vomit, coughing during larval migration, intestinal blockage",Infectious Disease/Gastroenterology,Depends,Soil-transmitted giant roundworm
+Hookworm Infection,"Itchy 'ground itch' rash on feet, belly pain, severe tiredness, pale skin, anemia, weight loss",Infectious Disease/Hematology,No,Walking barefoot on infected soil
+Strongyloidiasis,"Itchy red lines on skin, belly pain, diarrhea, dry cough, wheezing",Infectious Disease/Gastroenterology,Depends,Soil worm that can hyperinfect immunocompromised
+Trichinosis,"Severe muscle soreness and swelling, puffy swollen eyelids, high fever, splinter-like marks under fingernails",Infectious Disease,Depends,Eating undercooked infected pork or game meat
+Tapeworm Infection (Taeniasis),"Unexplained weight loss, passing flat white tapeworm segments in stool, mild belly discomfort, appetite changes",Gastroenterology/Infectious Disease,No,Tapeworm from undercooked meat
+Neurocysticercosis,"Sudden seizures, severe progressive headaches, confusion, balance loss, fluid buildup in brain",Neurology/Emergency,Yes,Tapeworm larvae forming cysts in brain tissue
+Hydatid Disease (Echinococcosis),"Slowly growing liver mass causing right belly ache, yellow skin, coughing up fluid if in lungs, severe allergic reaction if cyst bursts",General Surgery/Infectious Disease,Yes,Dog tapeworm forming fluid-filled organ cysts
+Schistosomiasis (Bilharzia),"Itchy skin rash after swimming, blood in urine, painful urination, bloody stools, enlarged liver or spleen",Infectious Disease/Urology,No,Freshwater snail-transmitted parasite
+Elephantiasis (Lymphatic Filariasis),"Extreme swelling and thickening of skin and legs or scrotum, severe fluid buildup, repeated skin infections",Infectious Disease/Vascular Surgery,No,Mosquito-borne worm blocking lymph fluid
+River Blindness (Onchocerciasis),"Intense relentless skin itching, firm skin lumps, leopard-like skin discoloration, gradual vision loss",Ophthalmology/Infectious Disease,No,Blackfly-transmitted parasitic worm
+African Eye Worm (Loiasis),"Visible adult worm crawling under eye surface, temporary painful swollen itchy spots on arms or legs",Ophthalmology/Infectious Disease,No,Deerfly-borne eyeworm
+Guinea Worm Disease,"Painful burning skin blister on lower leg, fever, severe localized burning relieved by water, worm emerging from wound",Infectious Disease/Global Health,No,Drinking stagnant water containing water fleas
+Cutaneous Leishmaniasis,"Painless open skin sores or ulcers with raised borders that leave deep crater scars after healing",Dermatology/Infectious Disease,No,Sandfly bite parasite
+Visceral Leishmaniasis (Kala-Azar),"Persistent high fever, massive abdominal swelling from enlarged spleen and liver, severe anemia, dark skin tone",Infectious Disease/Hematology,Yes,Fatal internal organ parasitic infection
+Chagas Disease (Chronic),"Irregular heartbeats, massive enlarged heart, heart failure, difficulty swallowing, extreme constipation",Cardiology/Gastroenterology,Yes,Kissing bug transmitted parasite
+African Sleeping Sickness,"Painful bite sore, fever, extreme daytime sleepiness, nighttime insomnia, severe confusion, unsteadiness",Infectious Disease/Neurology,Yes,Tsetse fly-borne parasitic brain infection
+Babesiosis,"High fever, chills, dark red urine, drenching sweats, tiredness, pale skin from breakdown of red blood cells",Infectious Disease/Hematology,Yes,Tick-borne malaria-like blood parasite
+Primary Amoebic Meningoencephalitis,"Sudden severe frontal headache, high fever, stiff neck, altered sense of smell or taste, hallucinations, rapid coma",Neurology/Emergency,Yes,Brain-eating amoeba from warm freshwater
+Acanthamoeba Keratitis,"Severe eye pain, intense redness, feeling like something is in eye, blurry vision, ring-shaped cloudiness on cornea",Ophthalmology,Yes,Parasitic corneal infection from dirty contact lenses
+Trichomoniasis,"Foul-smelling frothy yellow-green vaginal discharge, genital itching, pain during sex, burning when peeing",Gynecology/Infectious Disease,No,Parasitic protozoan STI
+Acute Pulmonary Histoplasmosis,"Fever, dry cough, chest pain when breathing, joint soreness, painful red skin bumps on shins",Pulmonology/Infectious Disease,Depends,Fungal spores from bird or bat droppings in soil
+Valley Fever (Coccidioidomycosis),"Fatigue, fever, cough, chest pain, rash on lower legs, joint aches, drenching night sweats",Pulmonology/Infectious Disease,Depends,Desert soil fungal spore inhalation
+Blastomycosis,"Fever, cough with sputum, chest pain, crusted skin warts or ulcers, bone lesions",Pulmonology/Dermatology,Depends,Fungal infection near moist soil and decaying wood
+Pulmonary Aspergilloma,"Coughing up blood, chronic cough, chest discomfort, shortness of breath, low-grade fever",Pulmonology,Yes,Fungal ball growing in pre-existing lung cavities
+Invasive Aspergillosis,"Severe chest pain, coughing up blood, high fever, shortness of breath, rapid tissue damage",Pulmonology/Infectious Disease,Yes,Lethal fungal infection in severely immunocompromised
+Cryptococcal Meningitis,"Slowly worsening headache, neck stiffness, fever, confusion, sensitivity to light, vomiting",Neurology/Infectious Disease,Yes,Fungal brain infection common in HIV/AIDS
+Candidal Bloodstream Infection (Candidemia),"High fever and chills resistant to antibiotics, low blood pressure, organ failure in hospital patients",Infectious Disease/ICU,Yes,Fungal bloodstream infection
+Esophageal Candidiasis,"Painful swallowing, feeling like food gets stuck in throat, severe chest burning",Gastroenterology/Infectious Disease,Depends,Yeast infection of esophagus in low immunity
+Body Ringworm (Tinea Corporis),"Itchy circular red rash with raised scaly edges and clearer skin in the center",Dermatology/GP,No,Contagious fungal skin infection
+Scalp Ringworm (Tinea Capitis),"Scaly round bald patches on scalp, brittle broken hairs, severe scalp itching, tender swollen spots",Dermatology/Pediatrics,No,Fungal scalp infection in children
+Jock Itch (Tinea Cruris),"Very itchy, red, scaly rash in groin and inner thighs",Dermatology/GP,No,Fungal groin infection
+Athlete's Foot (Tinea Pedis),"Itchy, peeling, cracked, red skin between toes, stinging or burning soles",Dermatology/GP,No,Common foot fungal infection
+Tinea Versicolor,"Patches of discolored skin on back and chest, fine flaking skin, mild itchiness",Dermatology/GP,No,Overgrowth of Malassezia skin yeast
+Mucormycosis (Black Fungus),"Black dead skin on nose bridge or inside mouth, facial swelling, eye bulging, vision loss, severe facial pain",Infectious Disease/ENT,Yes,Rapid black fungus destroying facial bones in diabetics
+Rose Gardener's Disease (Sporotrichosis),"Painless red bump on finger or hand after thorn prick, followed by a line of red nodules up the arm",Dermatology/Infectious Disease,No,Fungus entering skin via plant thorns
+Pneumocystis Jirovecii Pneumonia (PJP),"Progressive shortness of breath, dry non-productive cough, low fever, deep fatigue, blue lips",Pulmonology/Infectious Disease,Yes,Classic opportunistic lung fungus in HIV/AIDS
+Fungal Nail Infection (Onychomycosis),"Thickened, yellowed, brittle, crumbling, or distorted fingernails or toenails",Dermatology/Podiatry,No,Fungal nail infection
+Huntington's Disease,"Involuntary jerky dancing movements (chorea), severe mood swings, clumsiness, progressive memory loss, difficulty swallowing",Neurology/Genetics,No,Inherited progressive brain degeneration
+Cystic Fibrosis,"Persistent salty-tasting skin, thick sticky mucus coughing, frequent lung infections, poor weight gain, greasy bulky stools",Pulmonology/Genetics,Depends,Genetic defect affecting mucus and sweat glands
+Ehlers-Danlos Syndrome (Hypermobility),"Unusually stretchy velvety skin, extremely flexible joints that dislocate easily, chronic joint pain, easy bruising",Rheumatology/Genetics,No,Connective tissue collagen disorder
+Vascular Ehlers-Danlos Syndrome,"Translucent thin skin with visible veins, fragile blood vessels prone to tearing, hollow organ rupture, easy bruising",Vascular Surgery/Genetics,Yes,Life-threatening arterial/organ fragility
+Marfan Syndrome,"Tall slender build with disproportionately long arms/legs/fingers, chest bone sinking or sticking out, extreme nearsightedness, heart valve murmur",Cardiology/Genetics,Depends,Connective tissue disorder with aortic risk
+Amyotrophic Lateral Sclerosis (ALS),"Gradual muscle weakness starting in hands or feet, muscle twitching and cramping, slurred speech, difficulty swallowing or breathing",Neurology,Depends,Progressive motor neuron disease
+Spinal Muscular Atrophy (SMA),"Floppy muscle tone in infants, inability to sit or roll, weak cry, bell-shaped chest, swallowing difficulty",Pediatrics/Neurology,Yes,Genetic motor neuron loss
+Duchenne Muscular Dystrophy,"Frequent falls, difficulty rising from floor (Gowers' sign), large calf muscles, waddling gait, heart muscle weakness",Pediatrics/Neurology,No,X-linked progressive muscle wasting
+Neurofibromatosis Type 1,"Multiple flat light-brown skin spots (cafe-au-lait), soft rubbery bumps under skin, freckles in armpits/groin, bone deformities",Neurology/Genetics,No,Genetic disorder causing nerve tumors
+Gaucher Disease,"Enormously swollen belly from enlarged liver and spleen, bone pain and fractures, easy bruising and bleeding, fatigue",Hematology/Genetics,No,Lysosomal storage disorder
+Fabry Disease,"Burning pain or tingling in hands and feet, reddish-purple skin spots on lower belly, decreased sweating, cloudy cornea",Nephrology/Genetics,No,Enzyme deficiency damaging kidneys and heart
+Pompe Disease,"Extreme muscle weakness, enlarged heart in infants, trouble breathing when lying flat, difficulty swallowing",Pediatrics/Neurology,Yes,Glycogen storage disorder
+Alkaptonuria,"Urine turning dark black when exposed to air, blue-black dark spots on ear cartilage and whites of eyes, early joint stiffness",Genetics/Rheumatology,No,Rare metabolic disorder
+Prader-Willi Syndrome,"Insatiable extreme hunger and chronic overeating, floppiness as infant, almond-shaped eyes, developmental delay, short stature",Pediatrics/Endocrinology,No,Genetic chromosome 15 deletion
+Angelman Syndrome,"Frequent smiling and happy excitable personality, severe speech delay, jerky arm movements, unstable walking, microcephaly",Pediatrics/Neurology,No,Neurodevelopmental genetic disorder
+Fibrodysplasia Ossificans Progressiva (FOP),"Malformed big toes at birth, painful hard swellings on back/shoulders that gradually turn muscles into solid bone",Orthopedics/Genetics,No,Muscles turning to bone ('stone man' disease)
+Progeria (Hutchinson-Gilford),"Rapid aging starting in infancy, hair loss, thin wrinkled skin, pinched nose, severe early stiffness and heart disease",Pediatrics/Genetics,No,Accelerated aging genetic disease
+Fragile X Syndrome,"Large ears, long narrow face, prominent jaw, hyperflexible fingers, intellectual disability, social anxiety, autism-like behaviors",Pediatrics/Genetics,No,Most common inherited intellectual disability
+Acetaminophen (Toxicity),"Nausea and vomiting in first 24 hours, followed by pain under right lower ribs, yellowing skin, dark urine, extreme drowsiness",Toxicology/Emergency,Yes,Potentially fatal liver overdose
+Aspirin (Salicylate Toxicity),"Loud ringing in ears (tinnitus), deep rapid hyperventilating, fever, vomiting, confusion, dizziness",Toxicology/Emergency,Yes,Acid-base imbalance toxicity
+Opioid Overdose,"Pinpoint tiny pupils, unresponsiveness or deep coma, dangerously slow breathing, blueish lips and fingernails",Emergency/Toxicology,Yes,Life-threatening respiratory depression
+Carbon Monoxide Poisoning,"Dull throbbing headache, dizziness, weakness, nausea, confusion, chest pain, bright red skin in late stage",Emergency/Toxicology,Yes,Colorless odorless gas poisoning
+Organophosphate Poisoning,"Profuse sweating, watery mouth drooling, pinpoint pupils, watery diarrhea, severe muscle twitching, slow heart rate",Toxicology/Emergency,Yes,Pesticide toxicity causing cholinergic crisis
+Anticholinergic Toxicity,"Flushed hot skin, extreme mouth dryness, widely dilated pupils, severe confusion/hallucinations, rapid heart rate, urine retention",Toxicology/Emergency,Yes,'Mad as a hatter, dry as a bone, red as a beet'
+Serotonin Syndrome,"High body temperature, rapid heart rate, severe muscle shivering and stiffness, hyperactive reflexes, confusion, sweating",Toxicology/Emergency,Yes,Dangerous excess serotonin medication level
+Digitalis (Digoxin Toxicity),"Seeing yellow-green halos around lights, loss of appetite, nausea, dangerously slow or irregular pulse, confusion",Cardiology/Toxicology,Yes,Cardiac glycoside drug toxicity
+Lead Poisoning,"Severe cramping belly pain ('lead colic'), metallic taste, constipation, memory loss, blue line on gums, irritability",Occupational Medicine/Pediatrics,Depends,Heavy metal accumulation
+Mercury Poisoning,"Tremors in hands, mood instability, metallic taste, swollen bleeding gums, loss of coordination, visual field narrowing",Toxicology/Neurology,No,Heavy metal toxicity
+Restless Legs Syndrome,"Uncontrollable crawling or pulling urge to move legs, worst when resting or lying down at night, relieved by moving",Neurology/Sleep Medicine,No,Sensorimotor sleep disruption
+Chronic Fatigue Syndrome (ME/CFS),"Overwhelming exhaustion not improved by rest, severe energy crash after mild physical effort, brain fog, unrefreshing sleep",GP/Neurology,No,Debilitating multi-system fatigue disorder
+Irritable Bowel Syndrome (IBS),"Cramping stomach pain relieved by bowel movement, gas, alternating bouts of diarrhea and constipation, bloating",Gastroenterology,No,Functional gut disorder
+Raynaud's Syndrome,"Fingers or toes turning pale white then blue when cold or stressed, followed by red throbbing numb prickling warmth",Rheumatology/Vascular Surgery,No,Vasospastic disorder of extremities
+Sjogren's Syndrome,"Persistent gritty dry eyes, intense cotton-mouth dryness, difficulty swallowing dry food, joint soreness, persistent tiredness",Rheumatology,No,Autoimmune destruction of moisture glands
+Post-Poliomyelitis Syndrome,"New progressive muscle weakness, intense fatigue, joint pain, muscle shrinking decades after original polio recovery",Neurology/Physical Medicine,No,Late complication of polio
+Guillain-Barré Syndrome,"Rapidly ascending numbness and weakness starting in feet and legs, spreading up to arms, loss of reflexes, difficulty breathing",Neurology/Emergency,Yes,Autoimmune peripheral nerve attack
+Serotonin Discontinuation Syndrome,"Electric shock 'zap' sensations in head, dizziness, flu-like aches, vivid dreams, nausea after stopping antidepressants",Psychiatry/GP,No,Withdrawal reaction from SSRIs/SNRIs
+Addisonian Crisis (Acute Adrenal Insufficiency),"Severe lower back or leg pain, sudden severe vomiting and diarrhea, extreme low blood pressure, confusion, loss of consciousness",Endocrinology/Emergency,Yes,Life-threatening acute adrenal exhaustion
+Diabetic Ketoacidosis (DKA),"Fruity-smelling breath, rapid deep breathing (Kussmaul), excessive thirst, frequent urination, confusion, high blood sugar",Endocrinology/Emergency,Yes,Dangerous metabolic complication of diabetes
+Hyperosmolar Hyperglycemic State (HHS),"Extremely high blood sugar, severe dehydration, extreme sleepiness, confusion, fever without sweating, vision loss",Endocrinology/Emergency,Yes,Severe hyperglycemic emergency in Type 2 diabetes
+Cushing's Syndrome,"Rounded 'moon' face, fatty hump between shoulders, purple stretch marks on belly, fragile skin, high blood pressure",Endocrinology,No,Excess cortisol exposure
+Graves' Disease,"Bulging eyes (exophthalmos), rapid pounding heart rate, weight loss despite increased appetite, hand tremors, heat intolerance",Endocrinology,No,Autoimmune hyperthyroidism
+Hashimoto's Thyroiditis,"Unexplained weight gain, severe fatigue, cold sensitivity, dry coarse skin, constipation, puffy face",Endocrinology,No,Autoimmune hypothyroidism
+Thyroid Storm,"Extremely high fever, racing heart rate above 140 bpm, agitation, delirium, yellow skin, heart failure",Endocrinology/Emergency,Yes,Life-threatening thyrotoxicosis surge
+Pheochromocytoma,"Episodic severe headaches, drenching sweating spells, racing heart, pale skin, extreme high blood pressure spikes",Endocrinology,Depends,Adrenal medulla catecholamine-secreting tumor
+Diabetes Insipidus,"Extreme unquenchable thirst, passing massive amounts of pale urine, dry skin, severe craving for ice water",Endocrinology,No,Deficiency or resistance to vasopressin (ADH)
+Acromegaly,"Enlarging hands and feet requiring bigger shoe sizes, coarse facial features, deep husky voice, protruding lower jaw",Endocrinology,No,Excess growth hormone in adults
+Conn's Syndrome (Primary Aldosteronism),"High blood pressure unresponsive to medication, muscle weakness, cramps, frequent urination, low blood potassium",Endocrinology,No,Adrenal gland overproducing aldosterone
+Hereditary Hemochromatosis,"Bronze or slate-grey skin tint, joint pain in knuckles, fatigue, high blood sugar, enlarged liver",Hepatology/Endocrinology,No,Genetic iron overload disorder
+Wilson's Disease,"Golden-brown ring around iris of eye (Kayser-Fleischer ring), involuntary tremors, clumsiness, yellow skin, speech trouble",Hepatology/Neurology,No,Genetic copper accumulation disorder
+Acute Intermittent Porphyria,"Severe unexplained abdominal pain, dark red or port-wine urine, muscle weakness, hallucinations, high blood pressure",Endocrinology/Neurology,Yes,Heme synthesis enzyme deficiency
+Aortic Dissection,"Sudden ripping or tearing pain in center of chest spreading to upper back, weak pulse in one arm, fainting",Cardiology/Emergency,Yes,Tear in main artery lining; surgical emergency
+Cardiac Tamponade,"Muffled heart sounds, extremely low blood pressure, bulging neck veins, rapid shallow breathing, dizziness",Cardiology/Emergency,Yes,Fluid accumulation compressing heart
+Infective Endocarditis,"Flu-like fever, new heart murmur, tiny red spots under fingernails (splinter hemorrhages), painful red spots on fingertips (Osler nodes)",Cardiology/Infectious Disease,Yes,Bacterial infection of heart valves
+Acute Myocarditis,"Sharp chest pain that worsens when lying down, shortness of breath, irregular heartbeat, fatigue following a viral bug",Cardiology,Yes,Inflammation of heart muscle wall
+Brugada Syndrome,"Sudden fainting spells during rest, gasping for breath at night, irregular fast heart rhythm, family history of sudden death",Cardiology,Yes,Inherited electrical heart abnormality
+Takotsubo Cardiomyopathy (Broken Heart Syndrome),"Sudden crushing chest pain, shortness of breath, mimicking heart attack right after severe emotional or physical stress",Cardiology,Yes,Stress-induced temporary heart weakness
+Giant Cell Arteritis (Temporal Arteritis),"Severe throbbing temple headache, scalp tenderness when brushing hair, jaw pain while chewing, sudden temporary vision loss",Rheumatology/Neurology,Yes,Temporal artery inflammation risking blindness
+Takayasu Arteritis,"Weak or missing pulse in wrists or arms, blood pressure difference between arms, cool pale hands, dizziness",Vascular Surgery/Rheumatology,Depends,Large vessel vasculitis of aorta
+Kawasaki Disease,"High fever lasting >5 days, bloodshot eyes without discharge, bright red cracked lips, 'strawberry' tongue, peeling skin on fingers",Pediatrics/Rheumatology,Yes,Pediatric vasculitis risking coronary artery aneurysms
+Thromboangiitis Obliterans (Buerger's Disease),"Painful sores or gangrene on toes/fingers, burning pain in feet while walking, skin coldness, linked to heavy smoking",Vascular Surgery,Depends,Blood vessel inflammation in heavy smokers
+Deep Vein Thrombosis (DVT),"Swelling in one leg, localized warmth, throbbing ache or tenderness in calf or thigh, red skin discoloration",Vascular Surgery/GP,Depends,Blood clot in deep vein risking pulmonary embolism
+Pulmonary Embolism,"Sudden sharp stabbing chest pain when breathing in, rapid shortness of breath, coughing up blood, lightheadedness",Pulmonology/Emergency,Yes,Blood clot blocking lung artery
+Superior Vena Cava Syndrome,"Swelling of face, neck, and upper chest, distended neck veins, shortness of breath, blue skin tone on upper body",Oncology/Vascular Surgery,Yes,Obstruction of main vein returning blood to heart
+Idiopathic Pulmonary Fibrosis,"Gradual dry hacking cough, progressive shortness of breath during exertion, rounded 'clubbed' fingertips, fine crackling breath sounds",Pulmonology,No,Progressive scarring of lung tissue
+Sarcoidosis,"Reddish-purple tender bumps on shins (erythema nodosum), dry cough, shortness of breath, fatigue, painful red eyes",Pulmonology/Rheumatology,No,Granulomatous inflammatory disease
+Acute Respiratory Distress Syndrome (ARDS),"Severe rapid shortness of breath, rapid gasping breathing, blue tint on lips and skin, low blood oxygen despite oxygen delivery",Pulmonology/ICU,Yes,Catastrophic lung inflammation and fluid accumulation
+Tension Pneumothorax,"Sudden sharp chest pain on one side, extreme breathlessness, tracheal shift to opposite side, blue skin, severe low blood pressure",Emergency/Pulmonology,Yes,Trapped air collapsing lung and compressing heart
+Hypersensitivity Pneumonitis,"Fever, chills, dry cough, shortness of breath occurring hours after exposure to bird droppings or moldy hay",Pulmonology,Depends,Allergic reaction in lungs to organic dust
+Silicosis,"Persistent shortness of breath, chronic cough, fatigue, chest pain, background of construction, quarrying, or sandblasting work",Pulmonology/Occupational,No,Occupational lung disease from silica dust
+Myasthenia Gravis,"Drooping eyelids (ptosis), double vision that worsens throughout day, difficulty swallowing, muscle weakness improving after rest",Neurology,Depends,Autoimmune neuromuscular junction disorder
+Normal Pressure Hydrocephalus,"Triad of gait unsteadiness ('magnetic' feet glued to floor), urinary incontinence, and progressive memory loss/dementia",Neurology/Neurosurgery,No,Reversible dementia from excess brain fluid
+Trigeminal Neuralgia,"Sudden excruciating electric-shock pain on one side of face triggered by light touch, chewing, wind, or brushing teeth",Neurology,No,Severe facial nerve pain condition
+Cluster Headache,"Severe piercing agony behind or around one eye, eye redness and tearing, runny nose on same side, extreme restlessness during attacks",Neurology,No,Extremely painful recurring headache cycle
+Idiopathic Intracranial Hypertension (Pseudotumor Cerebri),"Frequent morning headaches, pulse-synchronous ringing in ears (whooshing sound), temporary vision loss when bending over",Neurology/Ophthalmology,Depends,Elevated brain pressure mimicking tumor
+Syringomyelia,"Loss of pain and temperature sensation across shoulders and back ('cape-like' distribution), muscle weakness in hands",Neurology/Neurosurgery,No,Fluid-filled cyst inside spinal cord
+Cauda Equina Syndrome,"Saddle anesthesia (numbness in buttocks/groin), sudden loss of bladder or bowel control, severe lower back pain, double leg weakness",Neurosurgery/Emergency,Yes,Spinal cord emergency requiring immediate surgery
+Status Epilepticus,"Continuous epileptic seizure lasting longer than 5 minutes or multiple seizures without regaining consciousness between them",Neurology/Emergency,Yes,Medical emergency with high brain damage risk
+Acute Pancreatitis,"Sudden intense upper belly pain radiating straight through to back, relieved by leaning forward, vomiting, swollen tender abdomen",Gastroenterology/Emergency,Yes,Pancreatic inflammation requiring immediate care
+Primary Biliary Cholangitis,"Intense persistent skin itching without rash, profound fatigue, dry eyes and mouth, yellow skin in late stages",Hepatology/Gastroenterology,No,Autoimmune destruction of small bile ducts
+Primary Sclerosing Cholangitis,"Intermittent yellow skin, itching, upper right abdominal pain, fever and chills, strongly linked to ulcerative colitis",Hepatology/Gastroenterology,Depends,Bile duct scarring and narrowing
+Achalasia,"Progressive difficulty swallowing both liquids and solid foods, regurgitating undigested food, chest pain after eating, weight loss",Gastroenterology,No,Esophageal motor disorder
+Boerhaave Syndrome,"Severe sudden lower chest/upper abdominal pain following violent retching or vomiting, air trapped under skin of neck",Thoracic Surgery/Emergency,Yes,Spontaneous esophageal rupture; fatal if untreated
+Mallory-Weiss Tear,"Vomiting blood or dark coffee-ground material following severe retching or heavy alcohol intoxication",Gastroenterology/Emergency,Yes,Mucosal tear at stomach-esophagus junction
+Intussusception,"Severe sudden abdominal pain causing infant to pull knees to chest, vomiting, 'currant jelly' red bloody mucosal stool",Pediatrics/Pediatric Surgery,Yes,Bowel telescoping into itself in young children
+Volvulus,"Sudden severe belly distension, abdominal pain, green/bilious vomiting, inability to pass gas or stool",General Surgery/Emergency,Yes,Twisting of bowel loop causing strangulation
+Ischemic Colitis,"Sudden crampy lower left belly pain followed by urgent bright red bloody bowel movements, low fever",Gastroenterology/Emergency,Yes,Reduced blood flow to colon tissue
+Thrombotic Thrombocytopenic Purpura (TTP),"Tiny purple skin spots (petechiae), pale skin, fever, confusion or fluctuating neurological signs, dark urine",Hematology/Emergency,Yes,Life-threatening blood clot and platelet breakdown emergency
+Hemolytic Uremic Syndrome (HUS),"Pale skin, extreme tiredness, low urine output, bloody diarrhea (often post-E. coli), swelling in ankles",Nephrology/Hematology,Yes,Kidney failure and blood cell breakdown in children
+Aplastic Anemia,"Severe fatigue, pale skin, frequent unexplained infections, spontaneous bleeding from gums or nose, dark bruises",Hematology,Yes,Bone marrow failure to produce blood cells
+Systemic Lupus Erythematosus (SLE),"Butterfly-shaped red rash across nose and cheeks, joint pain, unexplained fever, extreme fatigue, sun sensitivity",Rheumatology,Depends,Multisystem autoimmune connective tissue disease
+Systemic Sclerosis (Scleroderma),"Tight shiny hardened skin on fingers and face, fingers turning white in cold (Raynaud's), heartburn, stiff joints",Rheumatology,No,Autoimmune collagen buildup
+Dermatomyositis,"Dusky violet rash on eyelids (heliotrope rash), red scaly bumps on knuckles (Gottron papules), muscle weakness rising from chair",Rheumatology/Dermatology,No,Autoimmune inflammatory muscle and skin disease
+Polymyalgia Rheumatica,"Severe stiffness and aching in neck, shoulders, and hips worst in morning, difficulty raising arms, over age 50",Rheumatology,No,Inflammatory disorder linked to temporal arteritis
+Fibromyalgia,"Widespread body pain lasting over 3 months, tender trigger points, deep unrefreshing sleep, chronic exhaustion, brain fog",Rheumatology/Pain Medicine,No,Central pain processing sensitivity disorder
+Acute Kidney Injury (AKI),"Sudden drop in urine production, swelling in legs and feet, nausea, confusion, fluid retention, shortness of breath",Nephrology/Emergency,Yes,Rapid decline in kidney function
+Nephrotic Syndrome,"Puffy swelling around eyes especially in morning, swollen ankles and feet, foamy urine, heavy weight gain from fluid",Nephrology,Depends,Kidney filter damage causing massive protein leak
+Polycystic Kidney Disease (PKD),"High blood pressure, flank or back pain, blood in urine, feeling of fullness in belly, frequent kidney infections",Nephrology,No,Genetic kidney cyst formation
+Testicular Torsion,"Sudden severe pain in one testicle, swelling, testicle sitting higher than usual, nausea and vomiting",Urology/Emergency,Yes,Twisted spermatic cord cutting off blood supply
+Priapism,"Persistent painful erection lasting longer than 4 hours without sexual stimulation",Urology/Emergency,Yes,Urological emergency threatening erectile tissue
+Acute Pyelonephritis,"High fever with shaking chills, flank pain in lower back, painful burning urination, nausea, cloudy foul urine",Urology/Infectious Disease,Yes,Upper urinary tract / kidney infection
+Toxic Epidermal Necrolysis (TEN),"Severe burning skin, widespread dark red rash peeling off in sheets like severe burn, raw mouth and eye sores, fever",Dermatology/Burn Unit,Yes,Life-threatening drug reaction with >30% skin detachment
+Stevens-Johnson Syndrome (SJS),"Flu-like fever, painful blistering rash on skin and mucosal membranes (mouth, eyes, genitals), skin detachment <10%",Dermatology/Emergency,Yes,Severe drug hypersensitivity skin reaction
+Pemphigus Vulgaris,"Fragile loose blisters on skin that rupture easily leaving painful raw bleeding sores, painful sores inside mouth",Dermatology,Yes,Autoimmune skin blistering disease
+Bullous Pemphigoid,"Large tense firm fluid-filled blisters on red itchy skin patches, primarily in older adults, doesn't rupture easily",Dermatology,No,Autoimmune subepidermal skin blister disease
+Hidradenitis Suppurativa,"Painful deep red lumps in armpits or groin that break open and drain foul-smelling pus, forming tunneled scars",Dermatology,No,Chronic inflammatory sweat gland / hair follicle condition
+Acute Angle-Closure Glaucoma,"Sudden severe eye agony, hazy/cloudy vision, seeing rainbow halos around light sources, nausea, red eye, hard eye globe",Ophthalmology/Emergency,Yes,Rapid eye pressure spike risking blindness
+Central Retinal Artery Occlusion,"Sudden painless complete loss of vision in one eye, cherry-red spot on macula upon examination",Ophthalmology/Emergency,Yes,Ocular stroke needing urgent care
+Optic Neuritis,"Painful eye movement, rapid loss of central vision, washed-out color perception, often associated with multiple sclerosis",Ophthalmology/Neurology,Yes,Optic nerve inflammation
+Sudden Sensorineural Hearing Loss,"Unexplained rapid loss of hearing in one ear occurring over a few hours, feeling of ear blockage, ringing",ENT/Emergency,Yes,Medical emergency needing quick steroid therapy
+Peritonsillar Abscess (Quinsy),"Severe one-sided throat pain, difficulty opening mouth wide (trismus), muffled 'hot potato' voice, uvula pushed to one side",ENT/Emergency,Yes,Pus collection behind tonsil threatening airway
+Ludwig's Angina,"Rapidly spreading swelling under chin and floor of mouth, tongue pushed upward and back, severe neck pain, difficulty breathing",ENT/Emergency,Yes,Bacterial floor-of-mouth infection threatening airway
+Ovarian Torsion,"Sudden severe sharp lower pelvic pain on one side, nausea and vomiting, pelvic mass tenderness",Gynecology/Emergency,Yes,Twisted ovary cutting off blood supply
+High Altitude Pulmonary Edema (HAPE),"Severe breathlessness at rest at high altitude, dry cough progressing to pink frothy sputum, blue lips, chest tightness",Emergency/Travel Medicine,Yes,Altitude illness fluid buildup in lungs
+Anaphylaxis,"Sudden hives/itching all over, swelling of lips/tongue, wheezing, throat tightness, sharp drop in blood pressure, dizziness",Emergency/Allergy,Yes,Severe life-threatening allergic reaction
+Tetralogy of Fallot,"Blue tint to skin/lips (cyanosis) during crying or feeding, heart murmur, shortness of breath, 'tet spells' with sudden deep blue skin",Pediatric Cardiology,Depends,Congenital heart defect with 4 anatomical anomalies
+Transposition of the Great Arteries,"Severe cyanosis immediately after birth, rapid gasping breathing, poor feeding, cool clammy skin",Pediatric Cardiology/Emergency,Yes,Reversed main cardiac arteries requiring urgent intervention
+Coarctation of the Aorta,"High blood pressure in arms with weak or absent pulses in legs/groin, cold feet, leg cramps during play",Pediatric Cardiology,Depends,Congenital narrowing of aorta
+Biliary Atresia,"Persistent jaundice past 2 weeks of age, pale white or clay-colored stools, dark yellow/brown urine, enlarged belly",Pediatric Hepatology,Yes,Congenital bile duct obstruction requiring Kasai procedure
+Infantile Hypertrophic Pyloric Stenosis,"Forceful non-bilious projectile vomiting in infants 2-8 weeks old, persistent hunger after vomiting, olive-shaped belly lump",Pediatric Surgery/Emergency,Yes,Thickened stomach outlet causing obstruction
+Hirschsprung Disease,"Failure to pass meconium within first 48 hours of life, swollen belly, green bilious vomiting, explosive liquid stool after exam",Pediatric Surgery,Yes,Congenital lack of nerve cells in colon wall
+Tracheoesophageal Fistula,"Excessive frothy drooling at birth, coughing and choking during first feeding, blue skin while nursing",Pediatric Surgery/Emergency,Yes,Abnormal connection between esophagus and windpipe
+Duchenne Muscular Dystrophy (DMD),"Frequent falls, difficulty rising from floor using hands on thighs (Gowers sign), enlarged calf muscles, waddling gait in boys",Pediatric Neurology,No,X-linked recessive dystrophin gene defect
+Dengue Hemorrhagic Fever,"High fever, severe pain behind eyes, joint/muscle agony ('breakbone fever'), sudden bleeding gums, skin bruising",Infectious Disease/Emergency,Yes,Severe capillary leak and shock complication of dengue
+Tetanus (Lockjaw),"Painful jaw muscle spasms preventing mouth opening, stiff neck and abdominal muscles, arched back (opisthotonos), painful body convulsions",Infectious Disease/Emergency,Yes,Clostridium tetani neurotoxin infection
+Botulism,"Symmetrical descending paralysis: blurry vision, drooping eyelids, dry mouth, difficulty swallowing, muscle weakness, clear mind",Infectious Disease/Emergency,Yes,Neurotoxin blocking acetylcholine release
+Leptospirosis (Weil's Disease),"Red conjunctival suffusion without pus, muscle aches in calves/lower back, jaundice, kidney failure, dark urine",Infectious Disease,Yes,Spirochete infection from rat urine-contaminated water
+Chagas Disease (American Trypanosomiasis),"Painless swelling around one eye (Romaña sign), fever, leading years later to enlarged heart (cardiomegaly) or enlarged esophagus/colon",Infectious Disease/Cardiology,Depends,Parasitic infection transmitted by triatomine bugs
+Schistosomiasis,"Itchy skin rash ('swimmer's itch'), bloody urine (hematuria), lower abdominal pain, liver/spleen enlargement",Infectious Disease,No,Freshwater parasitic worm infection
+Ebola Virus Disease,"Unexplained fever, severe weakness, red eyes, bloody diarrhea, vomiting blood, unexplained bleeding from mucous membranes",Infectious Disease/Emergency,Yes,Severe viral hemorrhagic fever
+Organophosphate Toxicity,"SLUDGEM symptoms: Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis, Miosis (pinpoint pupils), muscle twitches",Emergency/Toxicology,Yes,Inhibition of acetylcholinesterase from pesticides
+Methanol Poisoning,"Feeling intoxicated followed hours later by visual disturbances ('snowfield vision'), severe belly pain, deep rapid breathing",Emergency/Toxicology,Yes,Toxic alcohol breakdown causing metabolic acidosis and blindness
+Ethylene Glycol Poisoning,"Intoxication without alcohol odor, flank pain, flank soreness, cloudiness in urine with calcium oxalate crystals, kidney failure",Emergency/Toxicology,Yes,Antifreeze ingestion leading to acute renal failure
+Decompression Sickness (The Bends),"Deep joint pain ('the bends'), skin tingling or marble-like rash, dizziness, numbness after emerging from deep sea diving",Emergency/Hyperbaric Medicine,Yes,Nitrogen gas bubbles forming in tissue
+High Altitude Cerebral Edema (HACE),"Severe headache unresponsive to medication, loss of coordination (ataxia), confusion, hallucinations, stupor at altitude",Emergency/Travel Medicine,Yes,Life-threatening brain swelling at high elevation
+Acute Compartment Syndrome,"Severe out-of-proportion pain in swollen limb, pain with passive stretching, pale skin, numbness/tingling, lack of pulse late",Orthopedics/Emergency,Yes,Elevated pressure within muscle compartment threatening limb
+Septic Arthritis,"Sudden severe pain in a single joint (knee/hip), unable to bear weight, joint hot, red, swollen, high fever",Orthopedics/Rheumatology,Yes,Bacterial infection inside joint space requiring drainage
+Acute Osteomyelitis,"Constant deep bone aching, localized tenderness, swelling and warmth over bone, high fever, refusal to move limb",Orthopedics/Infectious Disease,Yes,Bacterial bone infection
+Avascular Necrosis of Femoral Head,"Gradual groin or hip pain worsening with weight-bearing, limited range of hip motion, limp, history of steroid use or trauma",Orthopedics,No,Loss of blood supply to bone leading to collapse
+Slipped Capital Femoral Epiphysis (SCFE),"Limp and dull hip or knee pain in an overweight adolescent, leg turned outward (external rotation), decreased internal rotation",Pediatric Orthopedics,Yes,Slipping of growth plate at top of thigh bone
+Neuroleptic Malignant Syndrome (NMS),"Severe 'lead-pipe' muscle rigidity, extreme fever (>104°F), mental status change, unstable blood pressure, profuse sweating",Psychiatry/Emergency,Yes,Life-threatening reaction to antipsychotic medications
+Delirium Tremens (DTs),"Shaking tremors, vivid visual hallucinations (seeing insects/animals), severe confusion, drenching sweat, racing heart 48-96h after stopping alcohol",Psychiatry/Emergency,Yes,Severe alcohol withdrawal syndrome
+Wernicke Encephalopathy,"Triad of confusion, unsteady stance/walk (ataxia), and abnormal eye movements (nystagmus/paralysis) in severe alcoholism or malnutrition",Neurology/Emergency,Yes,Acute thiamine (Vitamin B1) deficiency
+Tumor Lysis Syndrome,"Muscle cramps, numbness around mouth, dark urine, irregular heart rhythm, confusion following cancer chemotherapy",Oncology/Emergency,Yes,Massive cancer cell breakdown releasing intracellular toxins
+Febrile Neutropenia,Fever in a cancer patient undergoing chemotherapy with extremely low white blood cell count,Oncology/Emergency,Yes,Oncologic emergency with high risk of sepsis
+Pompe Disease (GSD Type II),"Progressive heart enlargement (infantile), severe muscle weakness, breathing difficulty, enlarged tongue",Genetics/Pediatrics,Depends,Lysosomal storage disorder causing glycogen accumulation
+Tay-Sachs Disease,"Exaggerated startle response, loss of motor skills after 6 months, cherry-red spot on macula, blindness, seizures",Pediatric Neurology,No,Fatal autosomal recessive hexosaminidase A deficiency
+Niemann-Pick Disease (Type C),"Inability to move eyes vertically, unsteady gait (ataxia), progressive dementia, enlarged liver and spleen",Genetics/Neurology,No,Lysosomal lipid storage disorder
+Alkaptonuria (Black Bone Disease),"Dark brown or black urine upon standing, blue-black discoloration of ear cartilage and whites of eyes, early severe arthritis",Genetics/Rheumatology,No,Homogentisate 1,2-dioxygenase deficiency
+Ehlers-Danlos Syndrome (Vascular Type),"Translucent fragile skin with visible veins, joint hypermobility, easy bruising, high risk of arterial or organ rupture",Genetics/Vascular Surgery,Yes,COL3A1 gene mutation risking fatal vascular rupture
+Progeria (Hutchinson-Gilford Syndrome),"Accelerated aging in children, hair loss, thin wrinkled skin, joint stiffness, early severe atherosclerosis and heart attack",Genetics/Pediatrics,No,LMNA gene mutation causing premature senile degeneration
+Amyotrophic Lateral Sclerosis (ALS / Lou Gehrig's),"Progressive muscle twitching (fasciculations), muscle weakness spreading from hands/feet, slurred speech, respiratory failure",Neurology,Depends,Motor neuron degeneration preserving sensory and cognitive function
+Neuromyelitis Optica Spectrum Disorder (NMOSD),"Sudden vision loss in one or both eyes, intense pain on eye movement, weakness or paralysis in limbs, uncontrollable hiccups/vomiting",Neurology/Ophthalmology,Yes,Autoimmune anti-AQP4 attack on optic nerves and spinal cord
+Complex Regional Pain Syndrome (CRPS),"Continuous burning pain far out of proportion to initial injury, severe sensitivity to touch/temperature, localized swelling and color change",Pain Medicine/Neurology,No,Chronic neuroinflammatory pain condition following trauma
+Creutzfeldt-Jakob Disease (CJD),"Rapidly progressive dementia over months, sudden muscle jerks (myoclonus), unsteady gait, visual hallucinations",Neurology,No,Fatal prion brain protein misfolding disease
+Guillain-Barré Syndrome (GBS),"Ascending symmetrical weakness starting in feet/legs, tingling sensations, loss of reflexes, respiratory muscle paralysis",Neurology/ICU,Yes,Post-infectious autoimmune peripheral nerve demyelination
+Lambert-Eaton Myasthenic Syndrome (LEMS),"Muscle weakness in legs/hips that temporary improves after exertion, dry mouth, erectile dysfunction, linked to small cell lung cancer",Neurology/Oncology,No,Autoimmune attack on presynaptic voltage-gated calcium channels
+Granulomatosis with Polyangiitis (Wegener's),"Persistent nasal crusting/bleeding, chronic sinus pain, coughing blood, dark urine from glomerulonephritis, saddle-nose deformity",Rheumatology/Nephrology,Yes,ANCA-associated small vessel vasculitis
+Antiphospholipid Syndrome (APS),"Recurrent blood clots in veins or arteries, recurrent unexplained miscarriages, livedo reticularis (net-like skin rash)",Rheumatology/Hematology,Yes,Autoimmune hypercoagulable state
+Relapsing Polychondritis,"Painful swollen red ears (sparing lobes), saddle-nose deformity, hoarseness, airway collapse, eye inflammation",Rheumatology/ENT,Yes,Autoimmune destruction of cartilage tissue
+Polycythemia Vera,"Intense itching after a warm bath or shower (aquagenic pruritus), flushed reddish skin, headaches, enlarged spleen, high red blood cell count",Hematology,Depends,JAK2-mutation myeloproliferative neoplasm
+Hemophagocytic Lymphohistiocytosis (HLH),"High non-remitting fever, massive liver and spleen enlargement, low blood cell counts, extremely elevated serum ferritin levels",Hematology/ICU,Yes,Life-threatening hyperinflammatory immune activation
+Disseminated Intravascular Coagulation (DIC),"Simultaneous widespread blood clotting and uncontrollable bleeding from venipuncture sites, petechiae, organ failure",Hematology/ICU,Yes,Catastrophic systemic coagulation cascade consumption
+Burkitt Lymphoma,"Rapidly expanding jaw or abdominal mass, severe abdominal pain, high uric acid levels, starry-sky appearance on biopsy",Oncology/Pediatrics,Yes,Fastest-growing human tumor linked to c-Myc and EBV
+Buerger's Disease (Thromboangiitis Obliterans),"Painful gangrene or ulcers on fingertips/toes, burning hand/foot pain during walk, Raynaud's phenomenon in heavy smokers",Vascular Surgery,Depends,Non-atherosclerotic segmental inflammatory vascular disease
+Hypertrophic Cardiomyopathy (HCM),"Sudden fainting or cardiac arrest during strenuous athletic exercise, chest pain, dyspnea, systolic murmur",Cardiology,Yes,Genetic thick heart muscle leading to outflow obstruction
+Primary Biliary Cholangitis (PBC),"Intense persistent generalized itching (pruritus), severe fatigue, dry eyes/mouth, hyperpigmentation, high alkaline phosphatase",Hepatology,No,Autoimmune destruction of intrahepatic interlobular bile ducts
+Zenker's Diverticulum,"Difficulty swallowing, regurgitation of undigested food hours after eating, bad breath (halitosis), gurgling noise in neck",Gastroenterology/ENT,No,Outpouching of upper esophageal pharyngeal mucosa
+Celiac Disease,"Chronic diarrhea with bulky foul-smelling stools, bloating, unexplained weight loss, itchy blistering rash on elbows/knees (dermatitis herpetiformis)",Gastroenterology,No,Autoimmune gluten-sensitive enteropathy
+Erythema Nodosum,"Painful tender bright red nodules on shins, fever, joint aches, frequently associated with sarcoidosis or IBD",Dermatology/Rheumatology,No,Panniculitis (inflammation of subcutaneous fat)
+Lyme Disease (Disseminated),"Expanding bullseye-shaped rash (erythema migrans), Bell's palsy (facial drooping), joint swelling, heart block following tick bite",Infectious Disease/Neurology,Depends,Borrelia burgdorferi spirochete infection
+Rocky Mountain Spotted Fever (RMSF),"High fever, severe headache, rash starting on wrists and ankles spreading to trunk and palms/soles, muscle pain",Infectious Disease/Emergency,Yes,Rickettsia rickettsii tick-borne infection
+Meningococcemia,"Sudden high fever, stiff neck, rapidly spreading purple or dark red non-blanching spots (purpura fulminans), septic shock",Infectious Disease/Emergency,Yes,Neisseria meningitidis bloodstream infection
+Stiff-Person Syndrome (SPS),"Progressive muscle stiffness and rigidity in trunk and limbs, severe painful muscle spasms triggered by noise or emotional distress",Neurology,Depends,Autoimmune GAD-antibody neurological movement disorder
+Alien Hand Syndrome,Involuntary autonomous movement of one hand acting independently of patient's conscious control,Neurology,No,Interhemispheric neurodegenerative or post-stroke dissociation
+Kearns-Sayre Syndrome,"Progressive limitation of eye movement (CPEO), pigmentary retinopathy, cardiac conduction block before age 20",Neurology/Cardiology,Yes,Mitochondrial DNA deletion disorder
+Post-Pomeranian / Post-Polio Syndrome,"New progressive muscle weakness, intense fatigue, joint pain, muscle atrophy decades after recovery from acute poliomyelitis",Neurology,No,Late motor neuron exhaustion following polio
+Fatal Familial Insomnia (FFI),"Worsening intractable insomnia, hallucinations, panic attacks, severe autonomic dysfunction, motor loss",Neurology/Genetics,No,Fatal autosomal dominant prion disease of the thalamus
+Paroxysmal Nocturnal Hemoglobinuria (PNH),"Dark cola-colored urine in the morning, fatigue from severe anemia, abdominal pain, high risk of deep thrombosis",Hematology,Yes,Acquired somatic PIGA gene mutation causing complement lysis
+Castleman Disease,"Enlarged lymph nodes, fever, night sweats, weight loss, elevated IL-6, spleen enlargement",Hematology/Oncology,Depends,Rare lymphoproliferative disorder
+Common Variable Immunodeficiency (CVID),"Recurrent severe sinus and lung infections, chronic diarrhea, low serum immunoglobulin (IgG/IgA) levels",Immunology,No,Primary immunodeficiency disorder
+Severe Combined Immunodeficiency (SCID),"Severe recurrent opportunistic infections in early infancy, persistent diarrhea, failure to thrive, absent T-cells",Pediatric Immunology,Yes,Fatal primary immunodeficiency ('bubble boy' disease)
+Gitelman Syndrome,"Muscle cramps, severe muscle weakness, fatigue, craving for salt, low potassium and magnesium levels",Nephrology/Endocrinology,No,Autosomal recessive renal tubulopathy
+Bartter Syndrome,"Muscle weakness, extreme thirst and urination in infants, growth retardation, low blood pressure, low potassium",Nephrology/Pediatrics,No,Renal tubular salt-wasting disorder
+Hyperparathyroidism (Primary),"Painful bones, kidney stones, abdominal groans (constipation/ulcers), psychiatric overtones (depression/confusion)",Endocrinology,No,Excess parathyroid hormone secretion causing hypercalcemia
+Hypoparathyroidism,"Muscle tingling around mouth and fingertips, painful muscle cramps, carpopedal spasms (Trousseau sign), facial twitching (Chvostek sign)",Endocrinology,Depends,Deficiency of PTH causing severe hypocalcemia
+Gardner Syndrome,"Hundreds of colorectal polyps, soft tissue tumors (desmoids, epidermoid cysts), jaw osteomas, high colon cancer risk",Gastroenterology/Genetics,No,Variant of Familial Adenomatous Polyposis (FAP)
+Peutz-Jeghers Syndrome,"Dark freckle-like spots on lips/inside mouth, hamartomatous intestinal polyps, recurrent bowel intussusception",Gastroenterology/Genetics,Depends,Autosomal dominant STK11 gene mutation
+Zollinger-Ellison Syndrome,"Severe persistent heartburn, multiple peptic ulcers resistant to treatment, chronic watery diarrhea, high gastrin levels",Gastroenterology/Endocrinology,No,Gastrin-secreting tumor (gastrinoma)
+African Trypanosomiasis (Sleeping Sickness),"Painless chancre at tsetse fly bite, fever, disrupted sleep-wake cycle (daytime sleepiness, nighttime insomnia), confusion",Infectious Disease/Tropical,Depends,Protozoan Trypanosoma infection
+Lassa Fever,"Gradual onset fever, retrosternal chest pain, facial swelling, mucosal bleeding, sudden sensorineural hearing loss",Infectious Disease/Emergency,Yes,Arenavirus viral hemorrhagic fever
+Hydatid Disease (Cystic Echinococcosis),"Slow-growing fluid-filled cysts in liver or lungs, right upper quadrant pain, anaphylactic shock if cyst ruptures",Infectious Disease/Hepatology,Yes,Echinococcus granulosus tapeworm infection
+Strongyloidiasis (Hyperinfection),"Itchy rash on buttocks/feet, cough, abdominal pain, severe overwhelming sepsis with enteric bacteria in immunocompromised",Infectious Disease,Yes,Strongyloides stercoralis roundworm infection

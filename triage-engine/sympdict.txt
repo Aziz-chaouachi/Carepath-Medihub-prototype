@@ -1,0 +1,2052 @@
+Chest pain -> chest ache; pain in the chest; chest discomfort; pressure or discomfort in the chest
+shortness of breath -> breathlessness; difficulty breathing; feeling out of breath; feeling unable to get enough air
+sweating -> perspiring; sweating more than usual; increased sweating
+nausea -> feeling sick; feeling like throwing up; queasy; upset stomach
+radiation to arm/jaw -> pain spreading to arm/jaw
+anxiety -> feeling worried; nervousness; uneasiness; feeling on edge
+fatigue -> tiredness; weariness; low energy; feeling unusually tired: tired
+swelling in legs -> swelling in legs
+rapid heartbeat -> fast heartbeat; racing heart; heartbeat faster than usual
+persistent cough -> ongoing coughing
+orthopnea -> shortness of breath when lying flat
+Palpitations -> heart racing; pounding heartbeat; fluttering heartbeat; feeling your heart race, pound, or flutter
+dizziness -> lightheadedness; feeling unsteady; feeling off-balance; wooziness
+fainting -> passing out; briefly losing consciousness; blacking out
+chest discomfort -> an uncomfortable feeling in the chest
+irregular pulse -> a heartbeat that does not follow a steady rhythm
+Usually asymptomatic -> Usually without noticeable symptoms
+headaches -> headaches
+nosebleeds -> nosebleeds
+vision changes -> changes in what or how you see
+Facial drooping -> Facial drooping
+arm weakness -> arm reduced strength or feeling weak
+speech difficulty -> speech difficulty
+sudden confusion -> starting quickly difficulty thinking clearly or knowing what is happening
+vision loss -> partly or completely losing sight
+severe headache -> very strong pain or pressure in the head; extreme pain or pressure in the head
+Sudden severe headache -> starting quickly very strong pain or pressure in the head
+weakness -> feeling weak; low strength; reduced strength; lack of strength
+numbness -> loss of feeling; reduced sensation; reduced or absent feeling
+vision problems -> difficulty seeing normally
+altered consciousness -> altered consciousness
+Leg swelling -> swollen legs; puffy legs; leg puffiness
+pain -> ache; soreness; discomfort
+warmth -> warmth
+redness -> skin turning red; red skin
+difficulty walking -> difficulty walking
+calf tenderness -> calf tenderness
+hemoptysis -> coughing up blood
+Leg pain -> Leg pain
+cramping -> cramping
+cold extremities -> cold extremities
+claudication -> leg pain or cramping with walking that improves with rest
+Severe back/abdominal pain -> very strong back/belly pain; extreme back/belly pain
+shock -> shock
+pulsating mass -> pulsating mass
+fever -> high temperature; raised body temperature; feeling feverish
+friction rub -> a scratchy rubbing sound caused by inflamed tissue
+arrhythmia -> irregular heartbeat
+heart failure -> heart failure
+Murmur -> an unusual sound heard during a heartbeat
+swelling -> puffiness; enlarged area; fluid-related swelling; a swollen area
+Chest pressure -> pressure, squeezing, or heaviness in the chest
+arm/jaw pain -> arm/jaw pain
+syncope -> fainting or passing out
+sudden death risk -> starting quickly death risk
+heart murmur -> heart murmur
+right heart strain -> right heart strain
+varicose veins -> varicose veins
+skin changes -> skin changes
+ulceration -> ulceration
+Cough -> coughing
+sputum production -> mucus brought up by coughing production
+chills -> feeling cold or shivering, sometimes with fever
+Dry cough -> non-productive cough; cough without mucus; Dry coughing
+headache -> head pain; head pressure; aching in the head
+muscle aches -> aching or soreness in the muscles
+Wheezing -> whistling breathing; whistling sound when breathing; a whistling sound when breathing
+chest tightness -> a tight or squeezed feeling in the chest
+coughing at night -> coughing at night
+difficulty exercising -> difficulty exercising
+frequent infections -> frequent infections
+mucus production -> making or bringing up mucus
+daily sputum -> daily mucus brought up by coughing
+blue lips -> blue lips
+night sweats -> heavy sweating at night; sweating during sleep; heavy perspiring during sleep
+weight loss -> weight loss
+No symptoms -> No symptoms
+positive tb test -> clinical finding/medical term: a test or finding that came back positive tb test
+tb exposure history -> clinical finding/medical term: tb a history of being around the possible cause
+normal x-ray -> clinical finding/medical term: normal x-ray
+Severe shortness of breath -> very strong feeling unable to get enough air; extreme feeling unable to get enough air
+rapid breathing -> rapid breathing
+hypoxia -> low oxygen level in the body
+respiratory failure -> respiratory failure
+Snoring -> Snoring
+daytime sleepiness -> feeling very sleepy during the day
+gasping at night -> gasping at night
+pauses in breathing -> pauses in breathing
+morning headaches -> morning headaches
+Apnea episodes -> pauses in breathing episodes
+choking sensation -> choking sensation
+insomnia -> trouble falling asleep or staying asleep
+dullness to percussion -> dullness to percussion
+barrel chest -> barrel chest
+hoarseness -> a rough or hoarse voice
+neurological symptoms -> related to the brain, spinal cord, or nerves symptoms
+Progressive shortness of breath -> getting worse over time feeling unable to get enough air
+digital clubbing -> digital clubbing
+thick sputum -> thick mucus brought up by coughing
+pancreatic insufficiency -> pancreatic insufficiency
+malabsorption -> malabsorption
+recurrent infections -> recurrent infections
+Heartburn -> Heartburn
+regurgitation -> regurgitation
+difficulty swallowing -> difficulty swallowing
+sore throat -> throat pain; throat irritation; painful throat
+laryngitis -> laryngitis
+Abdominal pain -> belly pain
+vomiting blood -> throwing up blood
+black stools -> black stools
+loss of appetite -> loss of appetite
+vomiting -> throwing up; being sick; bringing up stomach contents
+diarrhea -> loose stools; watery stools; frequent loose bowel movements
+abdominal cramps -> abdominal cramps
+dehydration -> dehydration
+Severe diarrhea -> very strong loose or watery stools; extreme loose or watery stools
+bloody stools -> bloody stools
+rectal bleeding -> rectal bleeding
+fistulas -> fistulas
+Bloody diarrhea -> Bloody loose or watery stools
+tenesmus -> a persistent feeling that you need to pass stool even when little comes out
+urgency -> urgency
+toxic megacolon risk -> toxic megacolon risk
+Diarrhea/constipation -> loose or watery stools/difficulty passing stool
+bloating -> feeling full or swollen in the belly
+mucus in stool -> mucus in stool
+no bleeding -> no bleeding
+Right lower abdominal pain -> Right lower belly pain
+anorexia -> loss of appetite
+rebound tenderness -> rebound tenderness
+Left lower abdominal pain -> Left lower belly pain
+constipation/diarrhea -> difficulty passing stool/loose or watery stools
+blood in stool -> blood in stool
+Severe epigastric pain -> very strong upper-middle belly pain; extreme upper-middle belly pain
+elevated amylase/lipase -> elevated amylase/lipase
+Chronic abdominal pain -> long-lasting belly pain
+steatorrhea -> greasy, oily, hard-to-flush stools
+diabetes -> diabetes
+Jaundice -> yellowing of the skin or whites of the eyes
+abdominal swelling -> a swollen or bigger than usual belly
+easy bruising -> easy bruising
+ascites -> fluid buildup causing belly swelling
+hepatic encephalopathy -> hepatic brain-function changes causing difficulty thinking clearly or knowing what is happening or other mental changes
+portal hypertension -> portal hypertension
+dark urine -> dark urine
+light stools -> light stools
+arthralgia -> joint pain
+liver dysfunction -> liver dysfunction
+often asymptomatic -> often without noticeable symptoms
+joint pain -> pain in a joint; aching joint; sore joint
+cirrhosis risk -> cirrhosis risk
+hepatocellular carcinoma -> hepatocellular carcinoma
+Right upper quadrant pain -> Right upper quadrant pain
+murphy's sign positive -> clinical finding/medical term: murphy's sign a test or finding that came back positive
+elevated liver enzymes -> elevated liver enzymes
+changes in bowel habits -> changes in bowel habits
+anemia -> anemia
+obstruction -> obstruction
+dysphagia -> trouble swallowing
+Progressive dysphagia -> getting worse over time trouble swallowing
+Tonic-clonic seizures -> Tonic-clonic seizures
+loss of consciousness -> loss of consciousness
+muscle jerking -> muscle jerking
+confusion -> difficulty thinking clearly or knowing what is happening
+tongue biting -> tongue biting
+Localized muscle jerking -> Localized muscle jerking
+aura -> aura
+automatisms -> automatisms
+post-ictal confusion -> post-ictal difficulty thinking clearly or knowing what is happening
+Prolonged/repeated seizures -> Prolonged/repeated seizures
+respiratory distress -> respiratory distress
+hyperthermia -> hyperthermia
+rhabdomyolysis -> rhabdomyolysis
+cerebral edema -> cerebral swelling from fluid buildup
+visual disturbances -> related to sight disturbances
+photophobia -> being unusually sensitive to bright light
+phonophobia -> being unusually sensitive to sounds
+unilateral -> unilateral
+Throbbing headache -> Throbbing pain or pressure in the head
+bilateral or unilateral -> bilateral or unilateral
+Pressure sensation -> Pressure sensation
+bilateral tightness -> bilateral tightness
+mild to moderate -> mild to moderate
+neck tension -> neck tension
+not disabling -> not disabling
+Unilateral severe pain -> Unilateral very strong pain
+lacrimation -> lacrimation
+conjunctival injection -> conjunctival injection
+nasal congestion -> nose-related congestion
+recurrent episodes -> recurrent episodes
+Tremor at rest -> Tremor at rest
+rigidity -> rigidity
+bradykinesia -> bradykinesia
+postural instability -> postural instability
+cogwheel rigidity -> cogwheel rigidity
+Parkinsonian features -> Parkinsonian features
+medication-induced/toxic cause -> medication-induced/toxic cause
+vascular -> vascular
+traumatic -> traumatic
+metabolic -> metabolic
+Memory loss -> Memory loss
+disorientation -> not knowing where you are, the time, or what is happening
+behavioral changes -> behavioral changes
+cognitive decline -> cognitive decline
+personality change -> personality change
+stroke history -> clinical finding/medical term: stroke history
+stepwise deterioration -> stepwise deterioration
+motor deficits -> motor deficits
+urinary incontinence -> urinary incontinence
+Hallucinations -> Hallucinations
+parkinsonism -> parkinsonism
+cognitive fluctuation -> cognitive fluctuation
+rem sleep behavior -> rem sleep behavior
+sensitivity to antipsychotics -> sensitivity to antipsychotics
+cognitive issues -> cognitive issues
+optic neuritis -> optic neuritis
+Muscle weakness -> reduced muscle strength
+fasciculations -> fasciculations
+difficulty speaking -> difficulty speaking
+respiratory decline -> respiratory decline
+Ascending paralysis -> Ascending paralysis
+autonomic dysfunction -> autonomic dysfunction
+areflexia -> areflexia
+sensory changes -> sensory changes
+tingling -> tingling
+burning pain -> burning pain
+loss of reflexes -> loss of reflexes
+ataxia -> poor coordination or unsteady movement
+difficulty closing eye -> difficulty closing eye
+drooping mouth -> drooping mouth
+loss of facial movement -> loss of facial movement
+ear pain -> ear pain
+Severe facial pain -> very strong facial pain; extreme facial pain
+sudden shocks -> starting quickly shocks
+triggered by touch/chewing -> triggered by touch/chewing
+facial spasms -> facial spasms
+neck stiffness -> neck stiffness
+petechial rash -> petechial rash
+malaise -> a general feeling of being unwell
+usually self-limited -> usually self-limited
+Increased thirst -> more than usual thirst
+frequent urination -> frequent urination
+ketoacidosis risk -> ketoacidosis risk
+blurred vision -> blurred vision
+Severe hyperglycemia -> very strong hyperglycemia; extreme hyperglycemia
+ketosis -> ketosis
+metabolic acidosis -> metabolic acidosis
+seizures -> seizures
+coma -> coma
+weight gain -> weight gain
+cold intolerance -> cold intolerance
+dry skin -> dry skin
+hair loss -> hair loss
+constipation -> difficulty passing stool; infrequent bowel movements; hard-to-pass stool
+myxedema -> myxedema
+heat intolerance -> heat intolerance
+tremor -> tremor
+exophthalmos -> bulging eyes
+goiter -> goiter
+Neck mass -> Neck mass
+lymph node swelling -> lymph node swelling
+lung metastases -> lung metastases
+nodule -> nodule
+distant metastases -> distant metastases
+elevated tsh -> elevated tsh
+slow growth -> slow growth
+Central obesity -> Central obesity
+purple stretch marks -> purple stretch marks
+hypertension -> hypertension
+moon face -> moon face
+hypotension -> hypotension
+hyperpigmentation -> areas of skin becoming darker than usual
+electrolyte imbalance -> electrolyte imbalance
+adrenal crisis -> adrenal crisis
+hormonal imbalance -> hormonal imbalance
+pituitary insufficiency -> pituitary insufficiency
+mass effect -> mass effect
+Irregular periods -> not regular periods
+hirsutism -> excess hair growth in areas where it is usually less common
+acne -> acne
+infertility -> infertility
+insulin resistance -> insulin resistance
+ovarian cysts -> ovarian cysts
+xanthomas -> xanthomas
+corneal arcus -> corneal arcus
+atherosclerosis -> atherosclerosis
+elevated lipids -> elevated lipids
+paralysis -> paralysis
+peaked t-waves -> peaked t-waves
+cardiac arrest risk -> cardiac arrest risk
+Tetany -> Tetany
+paresthesia -> tingling, pins-and-needles, or odd skin sensations
+muscle cramps -> muscle cramps
+qt prolongation -> qt prolongation
+laryngospasm -> laryngospasm
+hematuria -> blood in the urine
+proteinuria -> proteinuria
+decreased gfr -> reduced gfr
+increased urination -> more than usual urination
+bone disease -> bone disease
+uremia -> uremia
+Oliguria -> unusually little urine
+elevated creatinine -> elevated creatinine
+decreased urine output -> reduced urine output
+cellular casts -> cellular casts
+tubular necrosis -> tubular necrosis
+sepsis -> sepsis
+drug toxicity -> drug toxicity
+flank pain -> flank pain
+elevated bun/cr -> elevated bun/cr
+urinary retention -> urinary retention
+hypoalbuminemia -> hypoalbuminemia
+edema -> swelling caused by fluid buildup
+hyperlipidemia -> hyperlipidemia
+thrombosis risk -> thrombosis risk
+throat infection history -> clinical finding/medical term: throat infection history
+progressive renal decline -> getting worse over time renal decline
+mesangial iga -> mesangial iga
+variable course -> variable course
+complement activation -> complement activation
+progressive renal failure -> getting worse over time renal failure
+Severe flank pain -> very strong flank pain; extreme flank pain
+radiation to groin -> pain spreading to groin
+costovertebral angle tenderness -> costovertebral angle tenderness
+dysuria -> pain or burning when urinating
+sepsis risk -> sepsis risk
+frequency -> frequency
+suprapubic pain -> suprapubic pain
+negative cva tenderness -> clinical finding/medical term: a test or finding that came back negative cva tenderness
+Urinary frequency -> Urinary frequency
+nocturia -> needing to urinate during the night
+weak stream -> weak stream
+incomplete emptying -> incomplete emptying
+erectile dysfunction -> erectile dysfunction
+bone pain -> bone pain
+elevated psa -> elevated psa
+Inability to achieve/maintain erection -> Inability to achieve/maintain erection
+weak erection -> weak erection
+diminished libido -> diminished libido
+Symmetric joint pain -> Symmetric pain in a joint
+morning stiffness -> morning stiffness
+rheumatoid factor positive -> clinical finding/medical term: rheumatoid factor a test or finding that came back positive
+systemic involvement -> systemic involvement
+stiffness -> stiffness
+reduced mobility -> reduced mobility
+bony enlargement -> bony enlargement
+crepitus -> crepitus
+Malar rash -> Malar rash
+photosensitivity -> photosensitivity
+oral ulcers -> mouth-related ulcers
+serositis -> serositis
+ana positive -> clinical finding/medical term: ana a test or finding that came back positive
+Dry eyes -> Dry eyes
+dry mouth -> dry mouth
+lymphocytes -> lymphocytes
+autoantibodies -> autoantibodies
+Skin tightening -> Skin tightening
+raynaud's -> raynaud's
+pulmonary fibrosis -> pulmonary fibrosis
+organ involvement -> organ involvement
+Back pain -> pain in the back
+uveitis -> uveitis
+hla-b27 positive -> clinical finding/medical term: hla-b27 a test or finding that came back positive
+psoriatic rash -> psoriatic rash
+nail involvement -> nail involvement
+asymmetric arthritis -> asymmetric arthritis
+systemic features -> systemic features
+urethritis -> urethritis
+conjunctivitis -> conjunctivitis
+mucocutaneous ulcers -> mucocutaneous ulcers
+post-infection -> post-infection
+Severe joint pain -> very strong pain in a joint; extreme pain in a joint
+erythema -> skin redness
+elevated uric acid -> elevated uric acid
+often big toe -> often big toe
+Widespread pain -> Widespread pain
+sleep dysfunction -> sleep dysfunction
+tender points -> tender points
+Proximal muscle pain -> Proximal aching or soreness in the muscles or soreness
+elevated esr/crp -> elevated esr/crp
+Temporal headache -> Temporal pain or pressure in the head
+scalp tenderness -> scalp tenderness
+jaw claudication -> jaw claudication
+visual loss -> related to sight loss
+elevated esr -> elevated esr
+Palpable purpura -> able to be felt by touch purpura
+arthralgias -> arthralgias
+renal involvement -> renal involvement
+systemic symptoms -> systemic symptoms
+Claudication symptoms -> Claudication symptoms
+elevated inflammatory markers -> elevated inflammatory markers
+Recurrent oral ulcers -> Recurrent mouth-related ulcers
+genital ulcers -> genital ulcers
+ocular involvement -> eye-related involvement
+skin lesions -> skin lesions
+vasculitis -> vasculitis
+Features of multiple autoimmune diseases -> Features of multiple autoimmune diseases
+high anti-rnp -> high anti-rnp
+Runny nose -> Runny nose
+sneezing -> sneezing
+mild fever -> mild higher-than-normal body temperature
+High fever -> High higher-than-normal body temperature
+body aches -> body aches
+severe fatigue -> very strong unusual tiredness or low energy; extreme unusual tiredness or low energy; very exhausted; extreme tiredness; very low energy
+loss of taste/smell -> loss of taste/smell
+myalgia -> muscle aches or muscle pain
+apnea in infants -> pauses in breathing in infants
+Severe sore throat -> very strong pain or irritation in the throat; extreme pain or irritation in the throat
+swollen tonsils -> swollen tonsils
+exudate -> exudate
+swollen lymph nodes -> swollen lymph nodes
+splenomegaly -> an enlarged spleen
+ebv exposure -> clinical finding/medical term: ebv exposure
+whooping sound -> whooping sound
+apnea -> a temporary stop or pause in breathing
+koplik spots -> koplik spots
+maculopapular rash -> maculopapular rash
+cough-3-3 rule -> coughing-3-3 rule
+bilateral parotid swelling -> bilateral parotid swelling
+difficulty eating -> difficulty eating
+meningitis -> meningitis
+deafness -> deafness
+orchitis -> orchitis
+vesicular rash -> vesicular rash
+severe pruritus -> very strong itching; extreme itching
+scabs -> scabs
+successive crops -> successive crops
+contagious -> contagious
+Severe pain -> very strong pain; extreme pain
+vesicular rash in dermatome -> vesicular rash in dermatome
+postherpetic neuralgia -> postherpetic neuralgia
+opportunistic infections -> opportunistic infections
+immunodeficiency -> immunodeficiency
+cd4 <200 -> cd4 <200
+transaminitis -> transaminitis
+hepatitis b surface antigen -> clinical finding/medical term: hepatitis b surface antigen
+hcv rna positive -> clinical finding/medical term: hcv rna a test or finding that came back positive
+Requires hepatitis b -> Requires hepatitis b
+severe liver disease -> very strong liver disease; extreme liver disease
+fulminant hepatitis risk -> fulminant hepatitis risk
+cholestasis -> cholestasis
+fulminant failure in pregnant women -> fulminant failure in pregnant women
+tachycardia -> fast heartbeat
+tachypnea -> unusually fast breathing
+altered mental status -> altered mental status
+organ dysfunction -> organ dysfunction
+Sepsis + hypotension -> Sepsis + hypotension
+lactate >2 mmol/l -> lactate >2 mmol/l
+multi-organ failure -> multi-organ failure
+hemolytic anemia -> hemolytic anemia
+cerebral malaria -> cerebral malaria
+paroxysms -> paroxysms
+rash -> skin eruption; irritated skin; unusual skin changes
+hemorrhagic manifestations -> hemorrhagic manifestations
+dengue shock -> dengue shock
+rose spots -> rose spots
+delirium -> delirium
+intestinal perforation risk -> intestinal perforation risk
+Hypoesthetic skin lesions -> Hypoesthetic skin lesions
+peripheral neuropathy -> peripheral nerve problems or nerve damage
+skin deformity -> skin deformity
+nasal involvement -> nose-related involvement
+chronic -> long-lasting
+Sudden fever -> starting quickly higher-than-normal body temperature
+buboes -> buboes
+septicemia -> septicemia
+pneumonic plague -> pneumonic plague
+Red plaques -> Red plaques
+silvery scales -> silvery scales
+pruritus -> itching
+symmetric distribution -> symmetric distribution
+Pustules on erythematous base -> Pustules on erythematous base
+arthritis -> arthritis
+trigger factors -> trigger factors
+Intense pruritus -> Intense itching
+red skin -> red skin
+dryness -> dryness
+cracking -> cracking
+oozing -> oozing
+lichenification -> lichenification
+vesicles -> small fluid-filled blisters
+well-demarcated -> well-demarcated
+allergen exposure history -> clinical finding/medical term: allergen a history of being around the possible cause
+Comedones -> Comedones
+papules -> small raised bumps on the skin
+pustules -> small raised bumps filled with pus
+cysts -> cysts
+scarring potential -> scarring potential
+sebaceous gland involvement -> sebaceous gland involvement
+Facial flushing -> Facial flushing
+red papules -> red papules
+visible blood vessels -> visible blood vessels
+rhinophyma -> rhinophyma
+ocular symptoms -> eye-related symptoms
+Itchy hives -> Itchy hives
+angioedema -> angioedema
+evanescent lesions -> evanescent lesions
+anaphylaxis risk -> anaphylaxis risk
+allergic trigger -> allergic trigger
+Recurrent hives -> Recurrent hives
+>6 weeks duration -> duration entry: >6 weeks duration
+idiopathic or autoimmune -> idiopathic or autoimmune
+persistent -> ongoing
+Asymmetric mole -> Asymmetric mole
+irregular border -> not regular border
+color variation -> color variation
+diameter >6mm -> diameter >6mm
+bleeding -> bleeding
+Pearly nodule -> Pearly nodule
+telangiectic vessels -> telangiectic vessels
+Red scaly patch -> Red scaly patch
+rapid growth -> rapid growth
+sun exposure history -> clinical finding/medical term: sun a history of being around the possible cause
+Sudden hair loss -> starting quickly hair loss
+circular patches -> circular patches
+autoimmune -> autoimmune
+usually recoverable -> usually recoverable
+Progressive hair loss -> getting worse over time hair loss
+male/female pattern -> male/female pattern
+miniaturization -> miniaturization
+genetic predisposition -> genetic predisposition
+Depigmented patches -> Depigmented patches
+progressive -> getting worse over time
+cosmetic concern -> cosmetic concern
+Purple polygonal papules -> Purple polygonal papules
+oral involvement -> mouth-related involvement
+hyperkeratosis -> hyperkeratosis
+itching -> itchiness; urge to scratch; itchy skin
+nail dystrophy -> nail dystrophy
+Intraepidermal blistering -> Intraepidermal blistering
+flaccid bullae -> flaccid bullae
+acantholysis -> acantholysis
+Subepidermal blistering -> Subepidermal blistering
+tense bullae -> tense bullae
+urticarial lesions -> urticarial lesions
+Interdigital maceration -> Interdigital maceration
+scaling -> scaling
+fungal infection -> fungal infection
+White patches -> White patches
+burning sensation -> burning sensation
+predisposing factors -> predisposing factors
+fungal overgrowth -> fungal overgrowth
+crusting -> crusting
+recurrent -> recurrent
+viral reactivation -> viral reactivation
+prodrome -> prodrome
+dyspnea -> shortness of breath
+pallor -> pallor
+microcytic hypochromic -> microcytic hypochromic
+Megaloblastic anemia -> Megaloblastic anemia
+dementia -> dementia
+macrocytic -> macrocytic
+intrinsic factor issue -> intrinsic factor issue
+glossitis -> glossitis
+macrocytic anemia -> macrocytic anemia
+pregnancy/alcohol-related -> pregnancy/alcohol-related
+hemoglobinuria -> hemoglobinuria
+elevated reticulocyte count -> clinical finding/medical term: elevated reticulocyte count
+ldh elevation -> ldh elevation
+haptoglobin decrease -> haptoglobin decrease
+bruising -> bruising
+lymphadenopathy -> swollen lymph nodes
+blasts -> blasts
+myeloblasts -> myeloblasts
+auer rods -> auer rods
+Asymptomatic often -> without noticeable symptoms often
+infections -> infections
+slow progression -> slow progression
+philadelphia chromosome -> philadelphia chromosome
+b symptoms -> b symptoms
+reed-sternberg cells -> reed-sternberg cells
+abdominal distention -> belly swelling or feeling full or swollen in the belly
+hepatosplenomegaly -> hepatosplenomegaly
+variable histology -> variable histology
+petechiae -> tiny red or purple spots from small amounts of bleeding under the skin
+mucosal bleeding -> mucosal bleeding
+platelet <30k -> platelet <30k
+Microangiopathic hemolytic anemia -> Microangiopathic hemolytic anemia
+thrombocytopenia -> thrombocytopenia
+renal dysfunction -> renal dysfunction
+cns symptoms -> cns symptoms
+spontaneous bleeding -> spontaneous bleeding
+joint bleeds -> joint bleeds
+muscle hematomas -> muscle hematomas
+factor viii deficiency -> clinical finding/medical term: factor viii deficiency
+factor ix deficiency -> clinical finding/medical term: factor ix deficiency
+prolonged bleeding -> prolonged bleeding
+variable severity -> variable severity
+Severe pain crisis -> very strong pain crisis; extreme pain crisis
+organ damage -> organ damage
+stroke risk -> stroke risk
+vaso-occlusion -> vaso-occlusion
+Blurred distance vision -> Blurred distance vision
+close vision clear -> close vision clear
+difficulty seeing board -> difficulty seeing board
+refractive error -> refractive error
+Blurred near vision -> Blurred near vision
+distance vision better -> distance vision better
+eye strain -> eye strain
+accommodative effort -> accommodative effort
+Blurred vision at all distances -> Blurred vision at all distances
+irregular cornea -> not regular cornea
+Difficulty focusing near objects -> Difficulty focusing near objects
+age-related -> age-related entry: age-related
+>40 years old -> >40 years old
+Cloudy lens -> Cloudy lens
+glare sensitivity -> glare sensitivity
+dimmed colors -> dimmed colors
+gradual vision loss -> gradual partly or completely losing sight
+elevated intraocular pressure -> elevated intraocular pressure
+optic disc cupping -> optic disc cupping
+Severe eye pain -> very strong eye pain; extreme eye pain
+halos -> halos
+red eye -> red eye
+emergency -> emergency
+Central vision loss -> Central partly or completely losing sight
+distorted lines -> distorted lines
+blurred colors -> blurred colors
+drusen -> drusen
+>50 years -> threshold or range entry: >50 years
+Floaters -> spots, strings, or shapes drifting in your vision
+microaneurysms -> microaneurysms
+hemorrhages -> hemorrhages
+cotton-wool spots -> cotton-wool spots
+diabetic -> diabetic
+Sudden floaters -> starting quickly floaters
+flashing lights -> flashing lights
+shadow in vision -> shadow in vision
+painless -> painless
+Eye pain -> Eye pain
+tearing -> tearing
+foreign body sensation -> foreign body sensation
+epithelial defect -> epithelial defect
+Eye dryness -> Eye dryness
+grittiness -> grittiness
+burning -> burning
+paradoxical tearing -> paradoxical tearing
+mucus discharge -> mucus discharge
+discharge -> discharge
+self-limited -> self-limited
+purulent discharge -> purulent discharge
+eyelid swelling -> eyelid swelling
+swollen lids -> swollen lids
+seasonal -> seasonal
+non-contagious -> non-contagious
+Bone fragility -> Bone fragility
+height loss -> height loss
+kyphosis -> kyphosis
+fracture risk -> fracture risk
+decreased bone mineral density -> reduced bone mineral density
+Acute back pain -> Acute pain in the back
+deformity -> deformity
+post-menopausal -> post-menopausal
+Severe hip pain -> very strong pain around the hip; extreme pain around the hip
+unable to bear weight -> unable to bear weight
+external rotation -> external rotation
+shortened leg -> shortened leg
+falls -> falls
+Knee pain -> pain in the knee
+locking -> locking
+clicking -> clicking
+limited range of motion -> limited range of motion
+pivot shift test positive -> clinical finding/medical term: pivot shift test a test or finding that came back positive
+Acute knee pain -> Acute pain in the knee
+giving way -> giving way
+instability -> instability
+lachman test positive -> clinical finding/medical term: lachman test a test or finding that came back positive
+Posterior knee pain -> Posterior pain in the knee
+drawer sign positive -> clinical finding/medical term: drawer sign a test or finding that came back positive
+Medial knee pain -> Medial pain in the knee
+valgus instability -> valgus instability
+contact injury -> contact injury
+Shoulder pain -> pain in the shoulder
+atrophy -> atrophy
+impingement -> impingement
+progressive stiffness -> getting worse over time stiffness
+limited motion -> limited motion
+gradual onset -> gradual onset
+sleep disruption -> sleep disruption
+Knee pain below patella -> pain in the knee below patella
+pain with jumping -> pain with jumping
+overuse injury -> overuse injury
+athletes -> athletes
+Heel pain -> Heel pain
+pain with activities -> pain with activities
+overuse -> overuse
+rupture risk -> rupture risk
+morning pain worse -> morning pain worse
+fascia inflammation -> fascia inflammation
+flat feet -> flat feet
+obesity factor -> obesity factor
+Hand numbness -> Hand reduced or absent feeling
+weak grip -> weak grip
+pain in wrist -> pain in wrist
+paresthesia at night -> tingling or pins-and-needles at night
+Elbow pain -> Elbow pain
+ulnar nerve compression -> ulnar nerve compression
+numbness in ring/pinky finger -> reduced or absent feeling in ring/pinky finger
+Neck pain -> pain in the neck
+radiculopathy -> pain, tingling, or weakness caused by an irritated nerve root
+myelopathy -> spinal-cord dysfunction
+osteophytes -> osteophytes
+neurogenic claudication -> neurogenic claudication
+arm numbness -> arm reduced or absent feeling
+myelopathy risk -> myelopathy risk
+leg numbness -> leg reduced or absent feeling
+sciatica -> sciatica
+cauda equina risk -> cauda equina risk
+hearing loss -> reduced or absent hearing
+ear fullness -> ear fullness
+otoscopic findings -> otoscopic findings
+conductive -> conductive
+Chronic ear drainage -> long-lasting ear drainage
+perforation -> perforation
+recurrent infection -> recurrent infection
+mastoiditis risk -> mastoiditis risk
+Progressive hearing loss -> getting worse over time reduced or absent hearing
+conductive then sensorineural -> conductive then sensorineural
+tinnitus -> ringing, buzzing, or other sounds in the ears
+vertigo -> a spinning or room-moving sensation
+stapes fixation -> stapes fixation
+Sudden rotatory vertigo -> starting quickly rotatory spinning or room-moving sensation
+dix-hallpike positive -> clinical finding/medical term: dix-hallpike a test or finding that came back positive
+brief episodes -> brief episodes
+benign -> benign
+Vertigo attacks -> spinning or room-moving sensation attacks
+aural fullness -> aural fullness
+episodic -> happening in episodes
+endolymphatic hydrops -> endolymphatic hydrops
+Facial pain -> Facial pain
+post-nasal drip -> post-nose-related drip
+Chronic nasal congestion -> long-lasting nose-related congestion
+loss of smell -> loss of smell
+Nasal obstruction -> nose-related obstruction
+recurrent sinusitis -> recurrent sinusitis
+mostly painless -> mostly painless
+asymmetry -> asymmetry
+sleep apnea -> sleep pauses in breathing
+difficulty breathing -> difficulty breathing
+voice loss -> voice loss
+usually viral -> usually viral
+stridor -> a harsh, high-pitched sound when breathing
+voice problems -> voice problems
+psychological stress -> psychological stress
+otalgia -> otalgia
+Persistent sadness -> ongoing sadness
+loss of interest -> loss of interest
+sleep changes -> sleep changes
+appetite changes -> appetite changes
+guilt -> guilt
+suicidal ideation -> suicidal ideation
+Chronic low mood -> long-lasting low mood
+low self-worth -> low self-worth
+sleep/appetite changes -> sleep/appetite changes
+>2 years -> threshold or range entry: >2 years
+Manic episodes -> Manic episodes
+depressive episodes -> depressive episodes
+grandiosity -> grandiosity
+decreased need for sleep -> reduced need for sleep
+impulsive behavior -> impulsive behavior
+Hypomanic episodes -> Hypomanic episodes
+major depressive episodes -> major depressive episodes
+lower severity mania -> lower severity mania
+mood instability -> mood instability
+Excessive worry -> Excessive worry
+restlessness -> restlessness
+irritability -> irritability
+muscle tension -> muscle tension
+sleep problems -> sleep problems
+>6 months -> threshold or range entry: >6 months
+Panic attacks -> Panic attacks
+heart palpitations -> heart feeling your heartbeat strongly, quickly, or irregularly
+trembling -> trembling
+fear of dying -> fear of dying
+anticipatory anxiety -> anticipatory anxiety
+Intense fear of social situations -> Intense fear of social situations
+avoidance -> avoidance
+physical symptoms -> physical symptoms
+embarrassment fear -> embarrassment fear
+Intense fear of specific object/situation -> Intense fear of specific object/situation
+panic response -> panic response
+disproportionate fear -> disproportionate fear
+Flashbacks -> Flashbacks
+nightmares -> nightmares
+hypervigilance -> hypervigilance
+emotional numbness -> emotional reduced or absent feeling
+trauma history -> clinical finding/medical term: trauma history
+Similar to ptsd -> Similar to ptsd
+occurs within 4 weeks of trauma -> occurs within 4 weeks of trauma
+dissociation -> dissociation
+intrusive thoughts -> intrusive thoughts
+compulsions -> compulsions
+repetitive behaviors -> repetitive behaviors
+time-consuming rituals -> time-consuming rituals
+Preoccupation with appearance -> Preoccupation with appearance
+body image distortion -> body image distortion
+functional impairment -> functional impairment
+Delusions -> Delusions
+disorganized speech -> disorganized speech
+negative symptoms -> clinical finding/medical term: a test or finding that came back negative symptoms
+Delusions/hallucinations -> Delusions/hallucinations
+<1 month duration -> duration entry: <1 month duration
+acute onset -> acute onset
+Social difficulties -> Social difficulties
+sensory sensitivities -> sensory sensitivities
+communication challenges -> communication challenges
+Inattention -> Inattention
+hyperactivity -> hyperactivity
+impulsivity -> impulsivity
+academic/work difficulty -> academic/work difficulty
+executive dysfunction -> executive dysfunction
+Severe caloric restriction -> very strong caloric restriction; extreme caloric restriction
+preoccupation with weight -> preoccupation with weight
+body dysmorphia -> body dysmorphia
+amenorrhea -> amenorrhea
+health risks -> health risks
+Binge eating -> Binge eating
+purging -> purging
+normal weight -> clinical finding/medical term: normal weight
+vaginal bleeding -> vaginal bleeding
+hcg positive -> clinical finding/medical term: hcg a test or finding that came back positive
+abdominal cramping -> abdominal cramping
+tissue passage -> tissue passage
+decreased hcg -> reduced hcg
+emotional distress -> emotional distress
+Excessive bleeding -> Excessive bleeding
+uterine size larger than dates -> uterine size larger than dates
+severe hyperemesis -> very strong hyperemesis; extreme hyperemesis
+elevated hcg -> elevated hcg
+visual changes -> related to sight changes
+epigastric pain -> upper-middle belly pain
+seizure risk -> seizure risk
+Preeclampsia + seizures -> Preeclampsia + seizures
+acute kidney injury -> acute kidney injury
+Hemolysis -> Hemolysis
+low platelets -> low platelets
+uterine contractions -> uterine contractions
+fetal distress -> fetal distress
+painless bleeding -> painless bleeding
+premature labor -> premature labor
+cesarean delivery needed -> cesarean delivery needed
+Acute dyspnea -> Acute feeling unable to get enough air
+cardiovascular collapse -> cardiovascular collapse
+dic -> dic
+cardiopulmonary arrest -> heart-and-lung related arrest
+Heavy menstrual bleeding -> Heavy menstrual bleeding
+pelvic pain -> pelvic pain
+pressure symptoms -> pressure symptoms
+dyspareunia -> dyspareunia
+fullness -> fullness
+torsion risk -> torsion risk
+Dysmenorrhea -> Dysmenorrhea
+chronic pelvic pain -> long-lasting pelvic pain
+heavy bleeding -> heavy bleeding
+obesity -> obesity
+Abnormal vaginal bleeding -> Abnormal vaginal bleeding
+vaginal discharge -> vaginal discharge
+obesity-related -> obesity-related
+Abnormal bleeding -> Abnormal bleeding
+hpv positive -> clinical finding/medical term: hpv a test or finding that came back positive
+Abdominal bloating -> Abdominal feeling full or swollen in the belly
+early satiety -> early satiety
+ca-125 elevation -> ca-125 elevation
+Breast lump -> Breast lump
+nipple discharge -> nipple discharge
+dimpling -> dimpling
+axillary lymphadenopathy -> axillary swollen lymph nodes
+Breast pain -> Breast pain
+lactating women -> lactating women
+Barky cough -> Barky coughing
+low fever -> low higher-than-normal body temperature
+viral -> viral
+<3 years -> threshold or range entry: <3 years
+Severe throat pain -> very strong throat pain; extreme throat pain
+drooling -> drooling
+tripod position -> tripod position
+medical emergency -> medical emergency
+apnea risk -> pauses in breathing risk
+infants -> infants
+rsv -> rsv
+facial rash (slapped cheek) -> facial rash (slapped cheek)
+lacy rash on trunk -> lacy rash on trunk
+parvovirus b19 -> parvovirus b19
+fever then rash -> higher-than-normal body temperature then rash
+rash after fever breaks -> rash after higher-than-normal body temperature breaks
+hhv-6 -> hhv-6
+sandpaper-like rash -> sandpaper-like rash
+strawberry tongue -> strawberry tongue
+streptococcus pyogenes -> streptococcus pyogenes
+painful vesicles in mouth -> painful vesicles in mouth
+rash on hands/feet -> rash on hands/feet
+enterovirus -> enterovirus
+Prolonged fever -> Prolonged higher-than-normal body temperature
+oral changes -> mouth-related changes
+extremity changes -> extremity changes
+coronary aneurysm risk -> coronary aneurysm risk
+Sudden severe pain -> starting quickly very strong pain
+palpable mass -> able to be felt by touch mass
+ages 6 months - 3 years -> age-related entry: ages 6 months - 3 years
+Projectile vomiting -> Projectile throwing up
+hungry after vomiting -> hungry after throwing up
+males 3-5 weeks -> males 3-5 weeks
+cyanosis if severe -> bluish skin or lips if very strong
+paradoxical embolism risk -> paradoxical embolism risk
+congenital defect -> congenital defect
+cyanosis if large -> bluish skin or lips if larger than usual
+congestive heart failure -> congestive heart failure
+pulmonary hypertension -> pulmonary hypertension
+Cyanosis -> bluish skin or lips from low oxygen
+squatting posture -> squatting posture
+exercise intolerance -> exercise intolerance
+blue baby -> blue baby
+Severe cyanosis -> very strong bluish skin or lips from low oxygen; extreme bluish skin or lips from low oxygen; very strong bluish skin or lips
+egg-on-string x-ray -> clinical finding/medical term: egg-on-string x-ray
+ductus arteriosus dependency -> ductus arteriosus dependency
+Seizure with fever -> Seizure with higher-than-normal body temperature
+age 6 months - 5 years -> age-related entry: age 6 months - 5 years
+usually generalized -> usually generalized
+Brief lapses in awareness -> Brief lapses in awareness
+staring spells -> staring spells
+no loss of consciousness -> no loss of consciousness
+absence attacks -> absence attacks
+childhood -> childhood
+seronegative -> seronegative
+Polyuria -> urinating more often or producing unusually large amounts of urine
+polydipsia -> polydipsia
+diabetic ketoacidosis risk -> diabetic ketoacidosis risk
+Progressive dyspnea -> getting worse over time feeling unable to get enough air
+nodular opacities -> nodular opacities
+occupational exposure -> clinical finding/medical term: occupational exposure
+pleural plaques -> pleural plaques
+fibrosis -> fibrosis
+mesothelioma risk -> mesothelioma risk
+occupational -> occupational
+black sputum -> black mucus brought up by coughing
+coal miner exposure -> clinical finding/medical term: coal miner exposure
+moldy hay -> moldy hay
+Core body temperature >40°c -> Core body temperature >40°c
+anhidrosis -> anhidrosis
+organ failure -> organ failure
+Heavy sweating -> Heavy perspiring
+core temp 37-40°c -> core temp 37-40°c
+Tissue freezing -> Tissue freezing
+blistering -> blistering
+blackening -> blackening
+gangrene -> gangrene
+cold exposure -> clinical finding/medical term: cold exposure
+Core body temperature <35°c -> Core body temperature <35°c
+shivering -> shivering
+bradycardia -> slow heartbeat
+peripheral vasoconstriction -> peripheral vasoconstriction
+cherry-red skin -> cherry-red skin
+carboxyhemoglobin -> carboxyhemoglobin
+Rapid onset -> Rapid onset
+cardiac arrhythmia -> cardiac arrhythmia
+bitter almond odor -> bitter almond odor
+encephalopathy -> a change in brain function causing confusion or other mental changes
+developmental delay in children -> developmental delay in children
+emotional instability -> emotional instability
+personality changes -> personality changes
+gingivitis -> gingivitis
+Tall stature -> Tall stature
+arachnodactyly -> arachnodactyly
+lens dislocation -> lens dislocation
+aortic aneurysm -> aortic aneurysm
+fibrillin-1 mutation -> clinical finding/medical term: fibrillin-1 mutation
+Skin hyperelasticity -> Skin hyperelasticity
+vascular fragility -> vascular fragility
+joint hypermobility -> joint hypermobility
+wound healing issues -> wound healing issues
+recurrent fractures -> recurrent fractures
+blue sclerae -> blue sclerae
+collagen defect -> collagen defect
+Iron overload -> Iron overload
+cirrhosis -> cirrhosis
+cardiomyopathy -> cardiomyopathy
+arthropathy -> arthropathy
+hfe gene mutation -> clinical finding/medical term: hfe gene mutation
+Neuropsychiatric -> Neuropsychiatric
+liver disease -> liver disease
+kayser-fleischer ring -> kayser-fleischer ring
+copper accumulation -> copper accumulation
+atp7b mutation -> clinical finding/medical term: atp7b mutation
+cftr mutation -> clinical finding/medical term: cftr mutation
+Progressive weakness -> getting worse over time reduced strength or feeling weak
+muscle wasting -> muscle wasting
+gait abnormality -> gait abnormality
+elevated ck -> elevated ck
+males -> males
+dystrophin -> dystrophin
+Milder than dmd -> Milder than dmd
+adult onset -> adult onset
+Intellectual disability -> Intellectual disability
+autism -> autism
+macro-orchidism -> macro-orchidism
+facial features -> facial features
+x-linked -> x-linked
+characteristic facies -> characteristic facies
+cardiac defects -> cardiac defects
+down features -> down features
+trisomy 21 -> trisomy 21
+Short stature -> Short stature
+ovarian dysgenesis -> ovarian dysgenesis
+webbed neck -> webbed neck
+45 -> number/value: 45 (not a symptom by itself)
+x -> x
+gynecomastia -> gynecomastia
+reduced testosterone -> reduced testosterone
+47 -> number/value: 47 (not a symptom by itself)
+xxy -> xxy
+Untreated: intellectual disability -> Untreated: intellectual disability
+behavioral issues -> behavioral issues
+musty odor -> musty odor
+phenylalanine elevation -> phenylalanine elevation
+glucocerebroside accumulation -> glucocerebroside accumulation
+Acroparesthesia -> Acroparesthesia
+angiokeratomas -> angiokeratomas
+corneal opacity -> corneal opacity
+cardiac/renal involvement -> cardiac/renal involvement
+alpha-galactosidase a -> alpha-galactosidase a
+neurologic decline -> related to the brain, spinal cord, or nerves decline
+infiltration -> infiltration
+sphingomyelinase deficiency -> clinical finding/medical term: sphingomyelinase deficiency
+Pale skin -> Pale skin
+unexplained fevers -> unexplained fevers
+constant fatigue -> constant unusual tiredness or low energy
+bone and joint pain -> bone and pain in a joint
+Extreme tiredness -> very strong tiredness; very severe tiredness
+unusual bleeding or bruising -> unusual bleeding or bruising
+frequent fevers -> frequent fevers
+Swollen lymph nodes in neck or armpits -> Swollen lymph nodes in neck or armpits
+constant tiredness -> constant tiredness
+unexplained weight loss -> unexplained weight loss
+Feeling full quickly after small meals -> Feeling full quickly after smaller than usual meals
+heavy sweating at night -> heavy perspiring at night
+Persistent back or rib bone pain -> ongoing back or rib bone pain
+frequent bone fractures -> frequent bone fractures
+recurring infections -> recurring infections
+thirst -> thirst
+Painless swollen lymph nodes in neck or armpits -> Painless swollen lymph nodes in neck or armpits
+drenching night sweats -> drenching heavy perspiring during sleep
+itchy skin -> itchy skin
+unexplained fever -> unexplained higher-than-normal body temperature
+Swollen lymph nodes in neck or groin -> Swollen lymph nodes in neck or groin
+persistent coughing -> ongoing coughing
+feeling full quickly -> feeling full quickly
+Worsening morning headaches -> Worsening morning headaches
+mood or personality changes -> mood or personality changes
+blurry vision -> blurry vision
+Gradual headaches -> Gradual headaches
+weakness in arms or legs -> reduced strength or feeling weak in arms or legs
+Morning vomiting -> Morning throwing up
+unsteadiness while walking -> unsteadiness while walking
+clumsy hand movements -> clumsy hand movements
+double vision -> double vision
+persistent headaches -> ongoing headaches
+changes in vision or speech -> changes in vision or speech
+weakness on one side -> reduced strength or feeling weak on one side
+numbness or tingling -> reduced or absent feeling or tingling
+memory problems -> memory problems
+balance trouble -> balance trouble
+back pain if spinal cord involved -> pain in the back if spinal cord involved
+Blurred or double vision -> Blurred or double vision
+loss of side vision -> loss of side vision
+unexplained weight gain -> unexplained weight gain
+Yellowing of skin and eyes -> Yellowing of skin and eyes
+upper belly pain spreading to back -> upper belly pain spreading to back
+sudden unexplained weight loss -> starting quickly unexplained weight loss
+Belly swelling -> Belly swelling
+upper right abdomen pain -> upper right abdomen pain
+yellow skin -> yellow skin
+feeling full easily -> feeling full easily
+chalky stool -> chalky stool
+Persistent indigestion -> ongoing indigestion
+severe heartburn -> very strong heartburn; extreme heartburn
+feeling bloated after small meals -> feeling bloated after smaller than usual meals
+stomach pain -> stomach pain
+Difficulty or pain when swallowing food -> Difficulty or pain when swallowing food
+feeling like food is stuck in chest -> feeling like food is stuck in chest
+chronic cough -> long-lasting coughing
+persistent changes in bowel habits -> ongoing changes in bowel habits
+belly cramps -> belly cramps
+unexplained fatigue -> unexplained unusual tiredness or low energy
+feeling bowel isn't empty -> feeling bowel isn't empty
+Severe persistent cough -> very strong ongoing coughing; extreme ongoing coughing
+coughing up blood -> coughing up blood
+sudden shortness of breath -> starting quickly feeling unable to get enough air
+rapid weight loss -> rapid weight loss
+Lingering cough -> Lingering coughing
+deep chest pain when breathing or laughing -> deep pain or discomfort in the chest when breathing or laughing
+tiredness -> tiredness
+voice hoarseness -> voice a rough or hoarse voice
+Hard lump in breast -> Hard lump in breast
+dimpling or pitting of breast skin -> dimpling or pitting of breast skin
+nipple turning inward -> nipple turning inward
+bloody nipple discharge -> bloody nipple discharge
+Painless firm lump in breast or armpit -> Painless firm lump in breast or armpit
+skin redness or thickening -> skin redness or thickening
+change in breast size or shape -> change in breast size or shape
+Constant abdominal bloating -> Constant abdominal feeling full or swollen in the belly
+feeling full fast -> feeling full fast
+frequent urgency to urinate -> frequent urgency to urinate
+Unusual vaginal bleeding post-menopause -> Unusual vaginal bleeding post-menopause
+heavy or irregular periods -> heavy or not regular periods
+watery discharge -> watery discharge
+Bleeding after intercourse -> Bleeding after intercourse
+unusual spot bleeding between periods -> unusual spot bleeding between periods
+foul-smelling discharge -> foul-smelling discharge
+Difficulty starting urination -> Difficulty starting urination
+weak urine stream -> weak urine stream
+waking up often at night to urinate -> waking up often at night to urinate
+blood in semen -> blood in semen
+hip/back pain -> hip/pain in the back
+Blood in urine (pink or rusty color) -> Blood in urine (pink or rusty color)
+side/back pain below ribs -> side/pain in the back below ribs
+lump on side or lower back -> lump on side or lower back
+Painless blood in urine -> Painless blood in urine
+painful urination -> painful urination
+frequent urge to pass urine -> frequent urge to pass urine
+lower back discomfort -> lower back discomfort
+New irregular dark spot on skin -> New not regular dark spot on skin
+existing mole changing color/shape/size -> existing mole changing color/shape/size
+bleeding or itchy sore -> bleeding or itchy sore
+Firm red nodule -> Firm red nodule
+flat sore with a scaly crust -> flat sore with a scaly crust
+persistent open sore that bleeds easily -> ongoing open sore that bleeds easily
+Pearly white or waxy bump -> Pearly white or waxy bump
+flat flesh-colored lesion -> flat flesh-colored lesion
+easily bleeding sore that heals and returns -> easily bleeding sore that heals and returns
+Deep bone pain that worsens at night -> Deep bone pain that worsens at night
+swollen area near joint -> swollen area near joint
+sudden bone fracture from minor movement -> starting quickly bone fracture from minor movement
+Localized bone pain -> Localized bone pain
+swelling and tenderness near affected bone -> swelling and tenderness near affected bone
+limping -> limping
+Growing lump near joint -> Growing lump near joint
+dull ache in hip/thigh/shoulder -> dull ache in hip/thigh/shoulder
+limited movement -> limited movement
+Rapidly growing neck mass -> Rapidly growing neck mass
+tight feeling in throat -> tight feeling in throat
+severe swallowing trouble -> very strong swallowing trouble; extreme swallowing trouble
+voice change -> voice change
+noisy breathing -> noisy breathing
+Painless lump in neck -> Painless lump in neck
+mild throat tightness -> mild throat tightness
+swollen neck lymph nodes -> swollen neck lymph nodes
+Lump in neck -> Lump in neck
+nasal congestion with bloody discharge -> nose-related congestion with bloody discharge
+hearing loss or ringing in one ear -> reduced or absent hearing or ringing in one ear
+frequent headaches -> frequent headaches
+Persistent hoarseness lasting weeks -> ongoing a rough or hoarse voice lasting weeks
+painful swallowing -> painful swallowing
+feeling of lump in throat -> feeling of lump in throat
+breathing trouble -> breathing trouble
+seeing flashing lights or dark spots -> seeing flashing lights or dark spots
+growing dark spot on colored iris -> growing dark spot on colored iris
+Sudden heavy vomiting -> starting quickly heavy throwing up
+explosive watery diarrhea -> explosive watery loose or watery stools
+stomach cramps -> stomach cramps
+low-grade fever -> low-grade higher-than-normal body temperature
+Severe watery diarrhea in infants -> very strong watery loose or watery stools in infants; extreme watery loose or watery stools in infants
+persistent vomiting -> ongoing throwing up
+signs of dehydration -> signs of dehydration
+rapid shallow breathing -> rapid shallow breathing
+severe coughing fits -> very strong coughing fits; extreme coughing fits
+nasal flaring -> nose-related flaring
+blueish lip tinge -> blueish lip tinge
+Barking seal-like cough -> Barking seal-like coughing
+harsh raspy sound when inhaling -> harsh raspy sound when inhaling
+Red painful eyes with watery discharge -> Red painful eyes with watery discharge
+loose stools -> loose stools
+Stuffy or runny nose -> Stuffy or runny nose
+scratchy sore throat -> scratchy pain or irritation in the throat
+mild body aches -> mild body aches
+Painful sores inside mouth -> Painful sores inside mouth
+itchy red rash or blisters on palms and soles -> itchy red rash or blisters on palms and soles
+Painful fluid-filled blisters on or around lips -> Painful fluid-filled blisters on or around lips
+tingling or burning sensation before outbreak -> tingling or burning sensation before outbreak
+swollen gums -> swollen gums
+Painful genital blisters or sores -> Painful genital blisters or sores
+burning during urination -> burning during urination
+groin swelling -> groin swelling
+flu-like aches -> flu-like aches
+Extreme exhaustion -> very strong exhaustion; very severe exhaustion
+severe sore throat with swollen white tonsils -> very strong pain or irritation in the throat with swollen white tonsils; extreme pain or irritation in the throat with swollen white tonsils
+swollen neck glands -> swollen neck glands
+enlarged spleen -> bigger than usual spleen
+Prolonged fatigue -> Prolonged unusual tiredness or low energy
+Sudden high fever lasting 3-5 days followed by a rosy-pink raised rash on chest and belly after fever drops -> starting quickly high higher-than-normal body temperature lasting 3-5 days followed by a rosy-pink raised rash on chest and belly after higher-than-normal body temperature drops
+Painful swollen puffy cheeks and jaw -> Painful swollen puffy cheeks and jaw
+pain when chewing or swallowing -> pain when chewing or swallowing
+testicular swelling -> testicular swelling
+Mild red rash starting on face and moving down -> Mild red rash starting on face and moving down
+swollen lymph nodes behind ears/neck -> swollen lymph nodes behind ears/neck
+Very itchy red spots turning into fluid-filled blisters all over body -> Very itchy red spots turning into fluid-filled blisters all over body
+lost appetite -> lost appetite
+Painful burning or tingling strip of red blisters on one side of waist -> Painful burning or tingling strip of red blisters on one side of waist
+torso -> torso
+or face -> or face
+intense nerve pain -> intense nerve pain
+Bright red 'slapped cheek' rash on face -> Bright red 'slapped cheek' rash on face
+lace-like rash on arms and body -> lace-like rash on arms and body
+joint soreness in adults -> joint soreness in adults
+Small painless firm dome-shaped bumps with a central dimple on skin -> smaller than usual painless firm dome-shaped bumps with a central dimple on skin
+mild itching -> mild itching
+Small flesh-colored or cauliflower-like bumps around genitals or anus -> smaller than usual flesh-colored or cauliflower-like bumps around genitals or anus
+mild itching or discomfort -> mild itching or discomfort
+body tremors -> body tremors
+red itchy eyes -> red itchy eyes
+joint and muscle pain -> joint and aching or soreness in the muscles or soreness
+faint pink spotty skin rash -> faint pink spotty an area of irritated or changed skin
+Sudden high fever -> starting quickly high higher-than-normal body temperature
+severe debilitating joint pain in hands and feet -> very strong debilitating pain in a joint in hands and feet; extreme debilitating pain in a joint in hands and feet
+skin rash -> an area of irritated or changed skin
+muscle pain -> muscle aches; muscle soreness; aching muscles
+severe back pain -> very strong pain in the back; extreme pain in the back
+yellow skin and eyes -> yellow skin and eyes
+dark black vomiting -> dark black throwing up
+Tingling or itching at bite site -> Tingling or itching at bite site
+extreme anxiety -> very strong anxiety; very severe anxiety
+fear of water -> fear of water
+inability to swallow -> inability to swallow
+aggressive outbursts -> aggressive outbursts
+Painful blistering rash on face -> Painful blistering rash on face
+hands -> hands
+or genitals -> or genitals
+intense body aches -> intense body aches
+Flu-like aches and fever followed by sudden severe shortness of breath -> Flu-like aches and higher-than-normal body temperature followed by starting quickly very strong feeling unable to get enough air
+fluid filling lungs -> fluid filling lungs
+Sudden nausea -> starting quickly feeling like you might vomit
+belly pain under right ribs -> belly pain under right ribs
+dark tea-colored urine -> dark tea-colored urine
+pale stool -> pale stool
+right upper belly tenderness -> right upper belly tenderness
+Chronic fatigue -> long-lasting unusual tiredness or low energy
+vague right side belly discomfort -> vague right side belly discomfort
+brain fog -> brain fog
+spider-like skin veins -> spider-like skin veins
+pale stools -> pale stools
+belly pain -> belly pain
+severe illness in pregnant women -> very strong illness in pregnant women; extreme illness in pregnant women
+Sudden sharp sore throat -> starting quickly sharp pain or irritation in the throat
+bright red tonsils with white spots -> bright red tonsils with white spots
+Sandpaper-like red skin rash -> Sandpaper-like red an area of irritated or changed skin
+bright red strawberry tongue -> bright red strawberry tongue
+flushed face -> flushed face
+Honey-colored crusted sores around mouth and nose -> Honey-colored crusted sores around mouth and nose
+red itchy blisters that pop easily -> red itchy blisters that pop easily
+Bright red -> Bright red
+shiny -> shiny
+raised -> raised
+hot and painful skin patch with distinct sharp edges -> hot and painful skin patch with distinct sharp edges
+Painful red swollen bump like a spider bite -> Painful red swollen bump like a spider bite
+filled with pus -> filled with pus
+warm to touch -> warm to touch
+severe low blood pressure -> very strong low blood pressure; extreme low blood pressure
+sunburn-like body rash -> sunburn-like body rash
+peeling palms and soles -> peeling palms and soles
+Expanding red 'bullseye' rash -> Expanding red 'bullseye' rash
+joint aches -> joint aches
+Single painless hard open sore on genitals or mouth -> Single painless hard open sore on genitals or mouth
+swollen nearby lymph nodes -> swollen nearby lymph nodes
+Rough non-itchy rash on palms and soles of feet -> Rough non-itchy rash on palms and soles of feet
+patchy hair loss -> patchy hair loss
+swollen glands -> swollen glands
+Thick yellow or green discharge from genitals -> Thick yellow or green discharge from genitals
+burning pain when passing urine -> burning pain when passing urine
+testicular pain -> testicular pain
+spotty bleeding -> spotty bleeding
+Watery or cloudy genital discharge -> Watery or cloudy genital discharge
+pain when peeing -> pain when peeing
+lower belly ache -> lower belly ache
+pain during sex -> pain during sex
+Severe lower belly pain -> very strong lower belly pain; extreme lower belly pain
+foul-smelling vaginal discharge -> foul-smelling vaginal discharge
+bleeding between periods -> bleeding between periods
+pain during intercourse -> pain during intercourse
+Sustained high fever -> Sustained high higher-than-normal body temperature
+severe stomach pain -> very strong stomach pain; extreme stomach pain
+rose-colored spots on chest -> rose-colored spots on chest
+constipation or diarrhea -> difficulty passing stool or loose or watery stools
+Sudden watery diarrhea -> starting quickly watery loose or watery stools
+Frequent bloody or painful diarrhea -> Frequent bloody or painful loose or watery stools
+intense stomach cramps -> intense stomach cramps
+constant urge to poop -> constant urge to poop
+Massive painless watery diarrhea ('rice-water stools') -> Massive painless watery loose or watery stools ('rice-water stools')
+rapid severe vomiting -> rapid very strong throwing up
+severe dehydration -> very strong dehydration; extreme dehydration
+extreme thirst -> very strong thirst; very severe thirst
+Frequent watery foul-smelling diarrhea -> Frequent watery foul-smelling loose or watery stools
+severe abdominal cramping -> very strong abdominal cramping; extreme abdominal cramping
+dehydration after taking antibiotics -> dehydration after taking antibiotics
+severe muscle aches -> very strong aching or soreness in the muscles; extreme aching or soreness in the muscles
+Persistent dry barking cough lasting weeks -> ongoing dry barking coughing lasting weeks
+mild chest soreness -> mild chest soreness
+Severe uncontrollable coughing fits followed by a high-pitched 'whoop' sound when inhaling -> very strong uncontrollable coughing fits followed by a high-pitched 'whoop' sound when inhaling; extreme uncontrollable coughing fits followed by a high-pitched 'whoop' sound when inhaling
+vomiting after coughing -> throwing up after coughing
+Thick grey leathery coating over throat and tonsils -> Thick grey leathery coating over throat and tonsils
+swollen 'bull neck' -> swollen 'bull neck'
+difficulty breathing or swallowing -> difficulty breathing or swallowing
+extreme neck stiffness -> very strong neck stiffness; very severe neck stiffness
+dark purple spotty rash that doesn't fade when pressed -> dark purple spotty rash that doesn't fade when pressed
+stiff neck -> stiff neck
+loss of balance -> loss of balance
+miscarriages in pregnant women -> miscarriages in pregnant women
+Wave-like fever that rises and drops repeatedly -> Wave-like higher-than-normal body temperature that rises and drops repeatedly
+profuse sweating with moldy odor -> profuse perspiring with moldy odor
+severe calf and lower back pain -> very strong calf and lower pain in the back; extreme calf and lower pain in the back
+intensely red eyes without discharge -> intensely red eyes without discharge
+painfully swollen enlarged lymph nodes in groin or armpits -> painfully swollen bigger than usual lymph nodes in groin or armpits
+severe chills -> very strong feeling cold or shivering, sometimes with fever; extreme feeling cold or shivering, sometimes with fever
+Numb pale skin patches -> Numb pale skin patches
+enlarged thick nerves under skin -> bigger than usual thick nerves under skin
+loss of feeling in fingers and toes -> loss of feeling in fingers and toes
+Swollen tender lymph node near a cat scratch or bite -> Swollen tender lymph node near a cat scratch or bite
+small red bump at bite site -> smaller than usual red bump at bite site
+Sudden unbearable pain in wound -> starting quickly unbearable pain in wound
+pale skin turning dark purple or black -> pale skin turning dark purple or black
+crackling gas bubbles under skin -> crackling gas bubbles under skin
+foul discharge -> foul discharge
+Watery foul-smelling diarrhea -> Watery foul-smelling loose or watery stools
+greasy floating stools -> greasy floating stools
+severe gas -> very strong gas; extreme gas
+sulfur burps -> sulfur burps
+Severe bloody diarrhea -> very strong bloody loose or watery stools; extreme bloody loose or watery stools
+deep belly cramps -> deep belly cramps
+liver abscess pain in upper right abdomen -> liver abscess pain in upper right abdomen
+Profuse watery diarrhea -> Profuse watery loose or watery stools
+nausea lasting weeks -> feeling like you might vomit lasting weeks
+Intense itching around anus especially at night -> Intense itching around anus especially at night
+restless sleep -> restless sleep
+irritability in young children -> irritability in young children
+Stomach discomfort -> Stomach discomfort
+visible large worms in stool or vomit -> visible larger than usual worms in stool or vomit
+coughing during larval migration -> coughing during larval migration
+intestinal blockage -> intestinal blockage
+Itchy 'ground itch' rash on feet -> Itchy 'ground itch' rash on feet
+severe tiredness -> very strong tiredness; extreme tiredness
+Itchy red lines on skin -> Itchy red lines on skin
+Severe muscle soreness and swelling -> very strong muscle soreness and swelling; extreme muscle soreness and swelling
+puffy swollen eyelids -> puffy swollen eyelids
+splinter-like marks under fingernails -> splinter-like marks under fingernails
+passing flat white tapeworm segments in stool -> passing flat white tapeworm segments in stool
+mild belly discomfort -> mild belly discomfort
+Sudden seizures -> starting quickly seizures
+severe progressive headaches -> very strong getting worse over time headaches; extreme getting worse over time headaches
+balance loss -> balance loss
+fluid buildup in brain -> fluid buildup in brain
+Slowly growing liver mass causing right belly ache -> Slowly growing liver mass causing right belly ache
+coughing up fluid if in lungs -> coughing up fluid if in lungs
+severe allergic reaction if cyst bursts -> very strong allergic reaction if cyst bursts; extreme allergic reaction if cyst bursts
+Itchy skin rash after swimming -> Itchy an area of irritated or changed skin after swimming
+blood in urine -> blood in urine
+enlarged liver or spleen -> bigger than usual liver or spleen
+Extreme swelling and thickening of skin and legs or scrotum -> very strong swelling and thickening of skin and legs or scrotum; very severe swelling and thickening of skin and legs or scrotum
+severe fluid buildup -> very strong fluid buildup; extreme fluid buildup
+repeated skin infections -> repeated skin infections
+Intense relentless skin itching -> Intense relentless skin itching
+firm skin lumps -> firm skin lumps
+leopard-like skin discoloration -> leopard-like skin discoloration
+Visible adult worm crawling under eye surface -> Visible adult worm crawling under eye surface
+temporary painful swollen itchy spots on arms or legs -> temporary painful swollen itchy spots on arms or legs
+Painful burning skin blister on lower leg -> Painful burning skin blister on lower leg
+severe localized burning relieved by water -> very strong localized burning relieved by water; extreme localized burning relieved by water
+worm emerging from wound -> worm emerging from wound
+Painless open skin sores or ulcers with raised borders that leave deep crater scars after healing -> Painless open skin sores or ulcers with raised borders that leave deep crater scars after healing
+Persistent high fever -> ongoing high higher-than-normal body temperature
+massive abdominal swelling from enlarged spleen and liver -> massive a swollen or bigger than usual belly from bigger than usual spleen and liver
+severe anemia -> very strong anemia; extreme anemia
+dark skin tone -> dark skin tone
+Irregular heartbeats -> not regular heartbeats
+massive enlarged heart -> massive bigger than usual heart
+extreme constipation -> very strong difficulty passing stool or having bowel movements less often; extreme difficulty passing stool or having bowel movements less often; very severe difficulty passing stool
+Painful bite sore -> Painful bite sore
+extreme daytime sleepiness -> very strong feeling very sleepy during the day; extreme feeling very sleepy during the day; very severe feeling very sleepy during the day
+nighttime insomnia -> nighttime trouble falling asleep or staying asleep
+severe confusion -> very strong difficulty thinking clearly or knowing what is happening; extreme difficulty thinking clearly or knowing what is happening
+unsteadiness -> unsteadiness
+dark red urine -> dark red urine
+drenching sweats -> drenching sweats
+pale skin from breakdown of red blood cells -> pale skin from breakdown of red blood cells
+Sudden severe frontal headache -> starting quickly very strong frontal pain or pressure in the head
+altered sense of smell or taste -> altered sense of smell or taste
+rapid coma -> rapid coma
+intense redness -> intense redness
+feeling like something is in eye -> feeling like something is in eye
+ring-shaped cloudiness on cornea -> ring-shaped cloudiness on cornea
+Foul-smelling frothy yellow-green vaginal discharge -> Foul-smelling frothy yellow-green vaginal discharge
+genital itching -> genital itching
+burning when peeing -> burning when peeing
+chest pain when breathing -> pain or discomfort in the chest when breathing
+joint soreness -> joint soreness
+painful red skin bumps on shins -> painful red skin bumps on shins
+rash on lower legs -> rash on lower legs
+cough with sputum -> coughing with mucus brought up by coughing
+crusted skin warts or ulcers -> crusted skin warts or ulcers
+bone lesions -> bone lesions
+Severe chest pain -> very strong pain or discomfort in the chest; extreme pain or discomfort in the chest
+rapid tissue damage -> rapid tissue damage
+Slowly worsening headache -> Slowly worsening pain or pressure in the head
+sensitivity to light -> sensitivity to light
+High fever and chills resistant to antibiotics -> High higher-than-normal body temperature and feeling cold or shivering, sometimes with fever resistant to antibiotics
+low blood pressure -> low blood pressure
+organ failure in hospital patients -> organ failure in hospital patients
+feeling like food gets stuck in throat -> feeling like food gets stuck in throat
+severe chest burning -> very strong chest burning; extreme chest burning
+Itchy circular red rash with raised scaly edges and clearer skin in the center -> Itchy circular red rash with raised scaly edges and clearer skin in the center
+Scaly round bald patches on scalp -> Scaly round bald patches on scalp
+brittle broken hairs -> brittle broken hairs
+severe scalp itching -> very strong scalp itching; extreme scalp itching
+tender swollen spots -> tender swollen spots
+Very itchy -> Very itchy
+red -> red
+scaly rash in groin and inner thighs -> scaly rash in groin and inner thighs
+Itchy -> Itchy
+peeling -> peeling
+cracked -> cracked
+red skin between toes -> red skin between toes
+stinging or burning soles -> stinging or burning soles
+Patches of discolored skin on back and chest -> Patches of discolored skin on back and chest
+fine flaking skin -> fine flaking skin
+mild itchiness -> mild itchiness
+Black dead skin on nose bridge or inside mouth -> Black dead skin on nose bridge or inside mouth
+facial swelling -> facial swelling
+eye bulging -> eye bulging
+Painless red bump on finger or hand after thorn prick -> Painless red bump on finger or hand after thorn prick
+followed by a line of red nodules up the arm -> followed by a line of red nodules up the arm
+dry non-productive cough -> dry non-productive coughing
+deep fatigue -> deep unusual tiredness or low energy
+Thickened -> Thickened
+yellowed -> yellowed
+brittle -> brittle
+crumbling -> crumbling
+or distorted fingernails or toenails -> or distorted fingernails or toenails
+Involuntary jerky dancing movements (chorea) -> Involuntary jerky dancing movements (chorea)
+severe mood swings -> very strong mood swings; extreme mood swings
+clumsiness -> clumsiness
+progressive memory loss -> getting worse over time memory loss
+Persistent salty-tasting skin -> ongoing salty-tasting skin
+thick sticky mucus coughing -> thick sticky mucus coughing
+frequent lung infections -> frequent lung infections
+poor weight gain -> poor weight gain
+greasy bulky stools -> greasy bulky stools
+Unusually stretchy velvety skin -> Unusually stretchy velvety skin
+extremely flexible joints that dislocate easily -> extremely flexible joints that dislocate easily
+chronic joint pain -> long-lasting pain in a joint
+Translucent thin skin with visible veins -> Translucent thin skin with visible veins
+fragile blood vessels prone to tearing -> fragile blood vessels prone to tearing
+hollow organ rupture -> hollow organ rupture
+Tall slender build with disproportionately long arms/legs/fingers -> Tall slender build with disproportionately long arms/legs/fingers
+chest bone sinking or sticking out -> chest bone sinking or sticking out
+extreme nearsightedness -> very strong nearsightedness; very severe nearsightedness
+heart valve murmur -> heart valve murmur
+Gradual muscle weakness starting in hands or feet -> Gradual reduced muscle strength starting in hands or feet
+muscle twitching and cramping -> muscle twitching and cramping
+slurred speech -> slurred speech
+difficulty swallowing or breathing -> difficulty swallowing or breathing
+Floppy muscle tone in infants -> Floppy muscle tone in infants
+inability to sit or roll -> inability to sit or roll
+weak cry -> weak cry
+bell-shaped chest -> bell-shaped chest
+swallowing difficulty -> swallowing difficulty
+Frequent falls -> Frequent falls
+difficulty rising from floor (Gowers' sign) -> difficulty rising from floor (Gowers' sign)
+large calf muscles -> larger than usual calf muscles
+waddling gait -> waddling gait
+heart muscle weakness -> heart reduced muscle strength
+Multiple flat light-brown skin spots (cafe-au-lait) -> Multiple flat light-brown skin spots (cafe-au-lait)
+soft rubbery bumps under skin -> soft rubbery bumps under skin
+freckles in armpits/groin -> freckles in armpits/groin
+bone deformities -> bone deformities
+Enormously swollen belly from enlarged liver and spleen -> Enormously swollen belly from bigger than usual liver and spleen
+bone pain and fractures -> bone pain and fractures
+easy bruising and bleeding -> easy bruising and bleeding
+Burning pain or tingling in hands and feet -> Burning pain or tingling in hands and feet
+reddish-purple skin spots on lower belly -> reddish-purple skin spots on lower belly
+decreased sweating -> reduced perspiring
+cloudy cornea -> cloudy cornea
+Extreme muscle weakness -> very strong reduced muscle strength; extreme reduced muscle strength; very severe reduced muscle strength
+enlarged heart in infants -> bigger than usual heart in infants
+trouble breathing when lying flat -> trouble breathing when lying flat
+Urine turning dark black when exposed to air -> Urine turning dark black when exposed to air
+blue-black dark spots on ear cartilage and whites of eyes -> blue-black dark spots on ear cartilage and whites of eyes
+early joint stiffness -> early joints feeling tight or hard to move
+Insatiable extreme hunger and chronic overeating -> Insatiable very severe hunger and long-lasting overeating
+floppiness as infant -> floppiness as infant
+almond-shaped eyes -> almond-shaped eyes
+developmental delay -> developmental delay
+Frequent smiling and happy excitable personality -> Frequent smiling and happy excitable personality
+severe speech delay -> very strong speech delay; extreme speech delay
+jerky arm movements -> jerky arm movements
+unstable walking -> unstable walking
+microcephaly -> microcephaly
+Malformed big toes at birth -> Malformed big toes at birth
+painful hard swellings on back/shoulders that gradually turn muscles into solid bone -> painful hard swellings on back/shoulders that gradually turn muscles into solid bone
+Rapid aging starting in infancy -> Rapid aging starting in infancy
+thin wrinkled skin -> thin wrinkled skin
+pinched nose -> pinched nose
+severe early stiffness and heart disease -> very strong early stiffness and heart disease; extreme early stiffness and heart disease
+Large ears -> larger than usual ears
+long narrow face -> long narrow face
+prominent jaw -> prominent jaw
+hyperflexible fingers -> hyperflexible fingers
+social anxiety -> social anxiety
+autism-like behaviors -> autism-like behaviors
+Nausea and vomiting in first 24 hours -> feeling like you might vomit and throwing up in first 24 hours
+followed by pain under right lower ribs -> followed by pain under right lower ribs
+yellowing skin -> yellowing skin
+extreme drowsiness -> very strong drowsiness; very severe drowsiness
+Loud ringing in ears (tinnitus) -> Loud ringing in ears (ringing or buzzing in the ears)
+deep rapid hyperventilating -> deep rapid hyperventilating
+Pinpoint tiny pupils -> Pinpoint tiny pupils
+unresponsiveness or deep coma -> unresponsiveness or deep coma
+dangerously slow breathing -> dangerously slow breathing
+blueish lips and fingernails -> blueish lips and fingernails
+Dull throbbing headache -> Dull throbbing pain or pressure in the head
+bright red skin in late stage -> bright red skin in late stage
+Profuse sweating -> Profuse perspiring
+watery mouth drooling -> watery mouth drooling
+pinpoint pupils -> pinpoint pupils
+watery diarrhea -> watery loose or watery stools
+severe muscle twitching -> very strong muscle twitching; extreme muscle twitching
+slow heart rate -> slow heart rate
+Flushed hot skin -> Flushed hot skin
+extreme mouth dryness -> very strong mouth dryness; very severe mouth dryness
+widely dilated pupils -> widely dilated pupils
+severe confusion/hallucinations -> very strong difficulty thinking clearly or knowing what is happening/hallucinations; extreme difficulty thinking clearly or knowing what is happening/hallucinations
+rapid heart rate -> rapid heart rate
+urine retention -> urine retention
+High body temperature -> High body temperature
+severe muscle shivering and stiffness -> very strong muscle shivering and stiffness; extreme muscle shivering and stiffness
+hyperactive reflexes -> hyperactive reflexes
+Seeing yellow-green halos around lights -> Seeing yellow-green halos around lights
+dangerously slow or irregular pulse -> dangerously slow or a heartbeat that does not follow a steady rhythm
+Severe cramping belly pain ('lead colic') -> very strong cramping belly pain ('lead colic'); extreme cramping belly pain ('lead colic')
+metallic taste -> metallic taste
+blue line on gums -> blue line on gums
+Tremors in hands -> Tremors in hands
+swollen bleeding gums -> swollen bleeding gums
+loss of coordination -> loss of coordination
+visual field narrowing -> related to sight field narrowing
+Uncontrollable crawling or pulling urge to move legs -> Uncontrollable crawling or pulling urge to move legs
+worst when resting or lying down at night -> worst when resting or lying down at night
+relieved by moving -> relieved by moving
+Overwhelming exhaustion not improved by rest -> Overwhelming exhaustion not improved by rest
+severe energy crash after mild physical effort -> very strong energy crash after mild physical effort; extreme energy crash after mild physical effort
+unrefreshing sleep -> unrefreshing sleep
+Cramping stomach pain relieved by bowel movement -> Cramping stomach pain relieved by bowel movement
+gas -> gas
+alternating bouts of diarrhea and constipation -> alternating bouts of loose or watery stools and difficulty passing stool
+Fingers or toes turning pale white then blue when cold or stressed -> Fingers or toes turning pale white then blue when cold or stressed
+followed by red throbbing numb prickling warmth -> followed by red throbbing numb prickling warmth
+Persistent gritty dry eyes -> ongoing gritty dry eyes
+intense cotton-mouth dryness -> intense cotton-mouth dryness
+difficulty swallowing dry food -> difficulty swallowing dry food
+persistent tiredness -> ongoing tiredness
+New progressive muscle weakness -> New getting worse over time reduced muscle strength
+intense fatigue -> intense unusual tiredness or low energy
+muscle shrinking decades after original polio recovery -> muscle shrinking decades after original polio recovery
+Rapidly ascending numbness and weakness starting in feet and legs -> Rapidly ascending reduced or absent feeling and reduced strength or feeling weak starting in feet and legs
+spreading up to arms -> spreading up to arms
+Electric shock 'zap' sensations in head -> Electric shock 'zap' sensations in head
+vivid dreams -> vivid dreams
+nausea after stopping antidepressants -> feeling like you might vomit after stopping antidepressants
+Severe lower back or leg pain -> very strong lower back or leg pain; extreme lower back or leg pain
+sudden severe vomiting and diarrhea -> starting quickly very strong throwing up and loose or watery stools
+extreme low blood pressure -> very strong low blood pressure; very severe low blood pressure
+Fruity-smelling breath -> Fruity-smelling breath
+rapid deep breathing (Kussmaul) -> rapid deep breathing (Kussmaul)
+excessive thirst -> excessive thirst
+high blood sugar -> high blood sugar
+Extremely high blood sugar -> Extremely high blood sugar
+extreme sleepiness -> very strong sleepiness; very severe sleepiness
+fever without sweating -> higher-than-normal body temperature without perspiring
+Rounded 'moon' face -> Rounded 'moon' face
+fatty hump between shoulders -> fatty hump between shoulders
+purple stretch marks on belly -> purple stretch marks on belly
+fragile skin -> fragile skin
+high blood pressure -> high blood pressure
+Bulging eyes (exophthalmos) -> Bulging eyes (exophthalmos)
+rapid pounding heart rate -> rapid pounding heart rate
+weight loss despite increased appetite -> weight loss despite feeling unusually hungry or wanting more food
+hand tremors -> hand tremors
+cold sensitivity -> cold sensitivity
+dry coarse skin -> dry coarse skin
+puffy face -> puffy face
+Extremely high fever -> Extremely high higher-than-normal body temperature
+racing heart rate above 140 bpm -> racing heart rate above 140 bpm
+agitation -> restlessness or difficulty staying still
+Episodic severe headaches -> happening in episodes very strong headaches
+drenching sweating spells -> drenching perspiring spells
+racing heart -> racing heart
+extreme high blood pressure spikes -> very strong high blood pressure spikes; very severe high blood pressure spikes
+Extreme unquenchable thirst -> very strong unquenchable thirst; very severe unquenchable thirst
+passing massive amounts of pale urine -> passing massive amounts of pale urine
+severe craving for ice water -> very strong craving for ice water; extreme craving for ice water
+Enlarging hands and feet requiring bigger shoe sizes -> Enlarging hands and feet requiring bigger shoe sizes
+coarse facial features -> coarse facial features
+deep husky voice -> deep husky voice
+protruding lower jaw -> protruding lower jaw
+High blood pressure unresponsive to medication -> High blood pressure unresponsive to medication
+cramps -> cramps
+low blood potassium -> low blood potassium
+Bronze or slate-grey skin tint -> Bronze or slate-grey skin tint
+joint pain in knuckles -> pain in a joint in knuckles
+enlarged liver -> bigger than usual liver
+Golden-brown ring around iris of eye (Kayser-Fleischer ring) -> Golden-brown ring around iris of eye (Kayser-Fleischer ring)
+involuntary tremors -> involuntary tremors
+speech trouble -> speech trouble
+Severe unexplained abdominal pain -> very strong unexplained belly pain; extreme unexplained belly pain
+dark red or port-wine urine -> dark red or port-wine urine
+Sudden ripping or tearing pain in center of chest spreading to upper back -> starting quickly ripping or tearing pain in center of chest spreading to upper back
+weak pulse in one arm -> weak pulse in one arm
+Muffled heart sounds -> Muffled heart sounds
+extremely low blood pressure -> extremely low blood pressure
+bulging neck veins -> bulging neck veins
+Flu-like fever -> Flu-like higher-than-normal body temperature
+new heart murmur -> new heart murmur
+tiny red spots under fingernails (splinter hemorrhages) -> tiny red spots under fingernails (splinter hemorrhages)
+painful red spots on fingertips (Osler nodes) -> painful red spots on fingertips (Osler nodes)
+Sharp chest pain that worsens when lying down -> Sharp pain or discomfort in the chest that worsens when lying down
+irregular heartbeat -> not regular heartbeat
+fatigue following a viral bug -> unusual tiredness or low energy following a viral bug
+Sudden fainting spells during rest -> starting quickly briefly losing consciousness spells during rest
+gasping for breath at night -> gasping for breath at night
+irregular fast heart rhythm -> not regular fast heart rhythm
+family history of sudden death -> clinical finding/medical term: family history of starting quickly death
+Sudden crushing chest pain -> starting quickly crushing pain or discomfort in the chest
+mimicking heart attack right after severe emotional or physical stress -> mimicking heart attack right after very strong emotional or physical stress
+Severe throbbing temple headache -> very strong throbbing temple pain or pressure in the head; extreme throbbing temple pain or pressure in the head
+scalp tenderness when brushing hair -> scalp tenderness when brushing hair
+jaw pain while chewing -> jaw pain while chewing
+sudden temporary vision loss -> starting quickly temporary partly or completely losing sight
+Weak or missing pulse in wrists or arms -> Weak or missing pulse in wrists or arms
+blood pressure difference between arms -> blood pressure difference between arms
+cool pale hands -> cool pale hands
+High fever lasting >5 days -> High higher-than-normal body temperature lasting >5 days
+bloodshot eyes without discharge -> bloodshot eyes without discharge
+bright red cracked lips -> bright red cracked lips
+'strawberry' tongue -> 'strawberry' tongue
+peeling skin on fingers -> peeling skin on fingers
+Painful sores or gangrene on toes/fingers -> Painful sores or gangrene on toes/fingers
+burning pain in feet while walking -> burning pain in feet while walking
+skin coldness -> skin coldness
+linked to heavy smoking -> linked to heavy smoking
+Swelling in one leg -> Swelling in one leg
+localized warmth -> localized warmth
+throbbing ache or tenderness in calf or thigh -> throbbing ache or tenderness in calf or thigh
+red skin discoloration -> red skin discoloration
+Sudden sharp stabbing chest pain when breathing in -> starting quickly sharp stabbing pain or discomfort in the chest when breathing in
+rapid shortness of breath -> rapid feeling unable to get enough air
+lightheadedness -> lightheadedness
+Swelling of face -> Swelling of face
+neck -> neck
+and upper chest -> and upper chest
+distended neck veins -> distended neck veins
+blue skin tone on upper body -> blue skin tone on upper body
+Gradual dry hacking cough -> Gradual dry hacking coughing
+progressive shortness of breath during exertion -> getting worse over time feeling unable to get enough air during exertion
+rounded 'clubbed' fingertips -> rounded 'clubbed' fingertips
+fine crackling breath sounds -> fine crackling breath sounds
+Reddish-purple tender bumps on shins (erythema nodosum) -> Reddish-purple tender bumps on shins (skin redness nodosum)
+painful red eyes -> painful red eyes
+Severe rapid shortness of breath -> very strong rapid feeling unable to get enough air; extreme rapid feeling unable to get enough air
+rapid gasping breathing -> rapid gasping breathing
+blue tint on lips and skin -> blue tint on lips and skin
+low blood oxygen despite oxygen delivery -> low blood oxygen despite oxygen delivery
+Sudden sharp chest pain on one side -> starting quickly sharp pain or discomfort in the chest on one side
+extreme breathlessness -> very strong breathlessness; very severe breathlessness
+tracheal shift to opposite side -> tracheal shift to opposite side
+blue skin -> blue skin
+shortness of breath occurring hours after exposure to bird droppings or moldy hay -> clinical finding/medical term: feeling unable to get enough air occurring hours after exposure to bird droppings or moldy hay
+Persistent shortness of breath -> ongoing feeling unable to get enough air
+background of construction -> background of construction
+quarrying -> quarrying
+or sandblasting work -> or sandblasting work
+Drooping eyelids (ptosis) -> Drooping eyelids (drooping eyelid)
+double vision that worsens throughout day -> double vision that worsens throughout day
+muscle weakness improving after rest -> reduced muscle strength improving after rest
+Triad of gait unsteadiness ('magnetic' feet glued to floor) -> Triad of gait unsteadiness ('magnetic' feet glued to floor)
+and progressive memory loss/dementia -> and getting worse over time memory loss/dementia
+Sudden excruciating electric-shock pain on one side of face triggered by light touch -> starting quickly excruciating electric-shock pain on one side of face triggered by light touch
+chewing -> chewing
+wind -> wind
+or brushing teeth -> or brushing teeth
+Severe piercing agony behind or around one eye -> very strong piercing agony behind or around one eye; extreme piercing agony behind or around one eye
+eye redness and tearing -> eye redness and tearing
+runny nose on same side -> runny nose on same side
+extreme restlessness during attacks -> very strong restlessness during attacks; very severe restlessness during attacks
+Frequent morning headaches -> Frequent morning headaches
+pulse-synchronous ringing in ears (whooshing sound) -> pulse-synchronous ringing in ears (whooshing sound)
+temporary vision loss when bending over -> temporary partly or completely losing sight when bending over
+Loss of pain and temperature sensation across shoulders and back ('cape-like' distribution) -> Loss of pain and temperature sensation across shoulders and back ('cape-like' distribution)
+muscle weakness in hands -> reduced muscle strength in hands
+Saddle anesthesia (numbness in buttocks/groin) -> Saddle anesthesia (reduced or absent feeling in buttocks/groin)
+sudden loss of bladder or bowel control -> starting quickly loss of bladder or bowel control
+severe lower back pain -> very strong lower pain in the back; extreme lower pain in the back
+double leg weakness -> double leg reduced strength or feeling weak
+Continuous epileptic seizure lasting longer than 5 minutes or multiple seizures without regaining consciousness between them -> Continuous epileptic seizure lasting longer than 5 minutes or multiple seizures without regaining consciousness between them
+Sudden intense upper belly pain radiating straight through to back -> starting quickly intense upper belly pain radiating straight through to back
+relieved by leaning forward -> relieved by leaning forward
+swollen tender abdomen -> swollen tender abdomen
+Intense persistent skin itching without rash -> Intense ongoing skin itching without rash
+profound fatigue -> very strong unusual tiredness or low energy; extreme unusual tiredness or low energy; very severe unusual tiredness or low energy
+dry eyes and mouth -> dry eyes and mouth
+yellow skin in late stages -> yellow skin in late stages
+Intermittent yellow skin -> coming and going yellow skin
+upper right abdominal pain -> upper right belly pain
+fever and chills -> higher-than-normal body temperature and feeling cold or shivering, sometimes with fever
+strongly linked to ulcerative colitis -> strongly linked to ulcerative colitis
+Progressive difficulty swallowing both liquids and solid foods -> getting worse over time difficulty swallowing both liquids and solid foods
+regurgitating undigested food -> regurgitating undigested food
+chest pain after eating -> pain or discomfort in the chest after eating
+Severe sudden lower chest/upper abdominal pain following violent retching or vomiting -> very strong starting quickly lower chest/upper belly pain following violent retching or throwing up; extreme starting quickly lower chest/upper belly pain following violent retching or throwing up
+air trapped under skin of neck -> air trapped under skin of neck
+Vomiting blood or dark coffee-ground material following severe retching or heavy alcohol intoxication -> throwing up blood or dark coffee-ground material following very strong retching or heavy alcohol intoxication
+Severe sudden abdominal pain causing infant to pull knees to chest -> very strong starting quickly belly pain causing infant to pull knees to chest; extreme starting quickly belly pain causing infant to pull knees to chest
+'currant jelly' red bloody mucosal stool -> 'currant jelly' red bloody mucosal stool
+Sudden severe belly distension -> starting quickly very strong belly distension
+green/bilious vomiting -> green/bilious throwing up
+inability to pass gas or stool -> inability to pass gas or stool
+Sudden crampy lower left belly pain followed by urgent bright red bloody bowel movements -> starting quickly crampy lower left belly pain followed by urgent bright red bloody bowel movements
+Tiny purple skin spots (petechiae) -> Tiny purple skin spots (petechiae)
+confusion or fluctuating neurological signs -> difficulty thinking clearly or knowing what is happening or fluctuating related to the brain, spinal cord, or nerves signs
+low urine output -> low urine output
+bloody diarrhea (often post-E. coli) -> bloody loose or watery stools (often post-E. coli)
+swelling in ankles -> swelling in ankles
+frequent unexplained infections -> frequent unexplained infections
+spontaneous bleeding from gums or nose -> spontaneous bleeding from gums or nose
+dark bruises -> dark bruises
+Butterfly-shaped red rash across nose and cheeks -> Butterfly-shaped red rash across nose and cheeks
+extreme fatigue -> very strong unusual tiredness or low energy; extreme unusual tiredness or low energy; very severe unusual tiredness or low energy
+sun sensitivity -> sun sensitivity
+Tight shiny hardened skin on fingers and face -> Tight shiny hardened skin on fingers and face
+fingers turning white in cold (Raynaud's) -> fingers turning white in cold (Raynaud's)
+stiff joints -> stiff joints
+Dusky violet rash on eyelids (heliotrope rash) -> Dusky violet rash on eyelids (heliotrope rash)
+red scaly bumps on knuckles (Gottron papules) -> red scaly bumps on knuckles (Gottron papules)
+muscle weakness rising from chair -> reduced muscle strength rising from chair
+Severe stiffness and aching in neck -> very strong stiffness and aching in neck; extreme stiffness and aching in neck
+shoulders -> shoulders
+and hips worst in morning -> and hips worst in morning
+difficulty raising arms -> difficulty raising arms
+over age 50 -> age-related entry: over age 50
+Widespread body pain lasting over 3 months -> Widespread body pain lasting over 3 months
+tender trigger points -> tender trigger points
+deep unrefreshing sleep -> deep unrefreshing sleep
+chronic exhaustion -> long-lasting exhaustion
+Sudden drop in urine production -> starting quickly drop in urine production
+swelling in legs and feet -> swelling in legs and feet
+fluid retention -> holding onto extra fluid, which can cause swelling
+Puffy swelling around eyes especially in morning -> Puffy swelling around eyes especially in morning
+swollen ankles and feet -> swollen ankles and feet
+foamy urine -> foamy urine
+heavy weight gain from fluid -> heavy weight gain from fluid
+flank or back pain -> flank or pain in the back
+feeling of fullness in belly -> feeling of fullness in belly
+frequent kidney infections -> frequent kidney infections
+Sudden severe pain in one testicle -> starting quickly very strong pain in one testicle
+testicle sitting higher than usual -> testicle sitting higher than usual
+nausea and vomiting -> feeling like you might vomit and throwing up
+Persistent painful erection lasting longer than 4 hours without sexual stimulation -> ongoing painful erection lasting longer than 4 hours without sexual stimulation
+High fever with shaking chills -> High higher-than-normal body temperature with shaking feeling cold or shivering, sometimes with fever
+flank pain in lower back -> flank pain in lower back
+painful burning urination -> painful burning urination
+cloudy foul urine -> cloudy foul urine
+Severe burning skin -> very strong burning skin; extreme burning skin
+widespread dark red rash peeling off in sheets like severe burn -> widespread dark red rash peeling off in sheets like very strong burn
+raw mouth and eye sores -> raw mouth and eye sores
+painful blistering rash on skin and mucosal membranes (mouth -> painful blistering rash on skin and mucosal membranes (mouth
+eyes -> eyes
+genitals) -> genitals)
+skin detachment <10% -> skin detachment <10%
+Fragile loose blisters on skin that rupture easily leaving painful raw bleeding sores -> Fragile loose blisters on skin that rupture easily leaving painful raw bleeding sores
+Large tense firm fluid-filled blisters on red itchy skin patches -> larger than usual tense firm fluid-filled blisters on red itchy skin patches
+primarily in older adults -> primarily in older adults
+doesn't rupture easily -> doesn't rupture easily
+Painful deep red lumps in armpits or groin that break open and drain foul-smelling pus -> Painful deep red lumps in armpits or groin that break open and drain foul-smelling pus
+forming tunneled scars -> forming tunneled scars
+Sudden severe eye agony -> starting quickly very strong eye agony
+hazy/cloudy vision -> hazy/cloudy vision
+seeing rainbow halos around light sources -> seeing rainbow halos around light sources
+hard eye globe -> hard eye globe
+Sudden painless complete loss of vision in one eye -> starting quickly painless complete loss of vision in one eye
+cherry-red spot on macula upon examination -> cherry-red spot on macula upon examination
+Painful eye movement -> Painful eye movement
+rapid loss of central vision -> rapid loss of central vision
+washed-out color perception -> washed-out color perception
+often associated with multiple sclerosis -> often associated with multiple sclerosis
+Unexplained rapid loss of hearing in one ear occurring over a few hours -> Unexplained rapid loss of hearing in one ear occurring over a few hours
+feeling of ear blockage -> feeling of ear blockage
+ringing -> ringing
+Severe one-sided throat pain -> very strong one-sided throat pain; extreme one-sided throat pain
+difficulty opening mouth wide (trismus) -> difficulty opening mouth wide (trismus)
+muffled 'hot potato' voice -> muffled 'hot potato' voice
+uvula pushed to one side -> uvula pushed to one side
+Rapidly spreading swelling under chin and floor of mouth -> Rapidly spreading swelling under chin and floor of mouth
+tongue pushed upward and back -> tongue pushed upward and back
+severe neck pain -> very strong pain in the neck; extreme pain in the neck
+Sudden severe sharp lower pelvic pain on one side -> starting quickly very strong sharp lower pelvic pain on one side
+pelvic mass tenderness -> pelvic mass tenderness
+Severe breathlessness at rest at high altitude -> very strong breathlessness at rest at high altitude; extreme breathlessness at rest at high altitude
+dry cough progressing to pink frothy sputum -> dry coughing progressing to pink frothy mucus brought up by coughing
+Sudden hives/itching all over -> starting quickly hives/itching all over
+swelling of lips/tongue -> swelling of lips/tongue
+throat tightness -> throat tightness
+sharp drop in blood pressure -> sharp drop in blood pressure
+Blue tint to skin/lips (cyanosis) during crying or feeding -> Blue tint to skin/lips (bluish skin or lips) during crying or feeding
+'tet spells' with sudden deep blue skin -> 'tet spells' with starting quickly deep blue skin
+Severe cyanosis immediately after birth -> very strong bluish skin or lips immediately after birth; extreme bluish skin or lips immediately after birth
+poor feeding -> poor feeding
+cool clammy skin -> cool clammy skin
+High blood pressure in arms with weak or absent pulses in legs/groin -> clinical finding/medical term: High blood pressure in arms with weak or absent pulses in legs/groin
+cold feet -> cold feet
+leg cramps during play -> leg cramps during play
+Persistent jaundice past 2 weeks of age -> age-related entry: Persistent jaundice past 2 weeks of age
+pale white or clay-colored stools -> pale white or clay-colored stools
+dark yellow/brown urine -> dark yellow/brown urine
+enlarged belly -> bigger than usual belly
+Forceful non-bilious projectile vomiting in infants 2-8 weeks old -> Forceful non-bilious projectile throwing up in infants 2-8 weeks old
+persistent hunger after vomiting -> ongoing hunger after throwing up
+olive-shaped belly lump -> olive-shaped belly lump
+Failure to pass meconium within first 48 hours of life -> Failure to pass meconium within first 48 hours of life
+swollen belly -> swollen belly
+green bilious vomiting -> green bilious throwing up
+explosive liquid stool after exam -> explosive liquid stool after exam
+Excessive frothy drooling at birth -> Excessive frothy drooling at birth
+coughing and choking during first feeding -> coughing and choking during first feeding
+blue skin while nursing -> blue skin while nursing
+difficulty rising from floor using hands on thighs (Gowers sign) -> difficulty rising from floor using hands on thighs (Gowers sign)
+enlarged calf muscles -> bigger than usual calf muscles
+waddling gait in boys -> waddling gait in boys
+severe pain behind eyes -> very strong pain behind eyes; extreme pain behind eyes
+joint/muscle agony ('breakbone fever') -> joint/muscle agony ('breakbone higher-than-normal body temperature')
+sudden bleeding gums -> starting quickly bleeding gums
+skin bruising -> skin bruising
+Painful jaw muscle spasms preventing mouth opening -> Painful jaw muscle spasms preventing mouth opening
+stiff neck and abdominal muscles -> stiff neck and abdominal muscles
+arched back (opisthotonos) -> arched back (opisthotonos)
+painful body convulsions -> painful body convulsions
+Symmetrical descending paralysis: blurry vision -> Symmetrical descending paralysis: blurry vision
+drooping eyelids -> drooping eyelids
+clear mind -> clear mind
+Red conjunctival suffusion without pus -> Red conjunctival suffusion without pus
+muscle aches in calves/lower back -> aching or soreness in the muscles in calves/lower back
+kidney failure -> kidney failure
+Painless swelling around one eye (Romaña sign) -> Painless swelling around one eye (Romaña sign)
+leading years later to enlarged heart (cardiomegaly) or enlarged esophagus/colon -> leading years later to bigger than usual heart (cardiomegaly) or bigger than usual esophagus/colon
+Itchy skin rash ('swimmer's itch') -> Itchy an area of irritated or changed skin ('swimmer's itch')
+bloody urine (hematuria) -> bloody urine (blood in the urine)
+lower abdominal pain -> lower belly pain
+liver/spleen enlargement -> liver/spleen enlargement
+severe weakness -> very strong reduced strength or feeling weak; extreme reduced strength or feeling weak
+red eyes -> red eyes
+unexplained bleeding from mucous membranes -> unexplained bleeding from mucous membranes
+SLUDGEM symptoms: Salivation -> SLUDGEM symptoms: Salivation
+Urination -> Urination
+Defecation -> Defecation
+GI distress -> GI distress
+Emesis -> Emesis
+Miosis (pinpoint pupils) -> Miosis (pinpoint pupils)
+muscle twitches -> muscle twitches
+Feeling intoxicated followed hours later by visual disturbances ('snowfield vision') -> Feeling intoxicated followed hours later by related to sight disturbances ('snowfield vision')
+severe belly pain -> very strong belly pain; extreme belly pain
+deep rapid breathing -> deep rapid breathing
+Intoxication without alcohol odor -> Intoxication without alcohol odor
+flank soreness -> flank soreness
+cloudiness in urine with calcium oxalate crystals -> cloudiness in urine with calcium oxalate crystals
+Deep joint pain ('the bends') -> Deep pain in a joint ('the bends')
+skin tingling or marble-like rash -> skin tingling or marble-like rash
+numbness after emerging from deep sea diving -> reduced or absent feeling after emerging from deep sea diving
+Severe headache unresponsive to medication -> very strong pain or pressure in the head unresponsive to medication; extreme pain or pressure in the head unresponsive to medication
+loss of coordination (ataxia) -> loss of coordination (ataxia)
+stupor at altitude -> stupor at altitude
+Severe out-of-proportion pain in swollen limb -> very strong out-of-proportion pain in swollen limb; extreme out-of-proportion pain in swollen limb
+pain with passive stretching -> pain with passive stretching
+numbness/tingling -> reduced or absent feeling/tingling
+lack of pulse late -> lack of pulse late
+Sudden severe pain in a single joint (knee/hip) -> starting quickly very strong pain in a single joint (knee/hip)
+joint hot -> joint hot
+swollen -> swollen
+Constant deep bone aching -> Constant deep bone aching
+localized tenderness -> localized tenderness
+swelling and warmth over bone -> swelling and warmth over bone
+refusal to move limb -> refusal to move limb
+Gradual groin or hip pain worsening with weight-bearing -> Gradual groin or pain around the hip worsening with weight-bearing
+limited range of hip motion -> limited range of hip motion
+limp -> limp
+history of steroid use or trauma -> clinical finding/medical term: history of steroid use or trauma
+Limp and dull hip or knee pain in an overweight adolescent -> Limp and dull hip or pain in the knee in an overweight adolescent
+leg turned outward (external rotation) -> leg turned outward (external rotation)
+decreased internal rotation -> reduced internal rotation
+Severe 'lead-pipe' muscle rigidity -> very strong 'lead-pipe' muscle rigidity; extreme 'lead-pipe' muscle rigidity
+extreme fever (>104°F) -> very strong higher-than-normal body temperature (>104°F); extreme higher-than-normal body temperature (>104°F); very severe higher-than-normal body temperature (>104°F)
+mental status change -> mental status change
+unstable blood pressure -> unstable blood pressure
+Shaking tremors -> Shaking tremors
+vivid visual hallucinations (seeing insects/animals) -> vivid related to sight hallucinations (seeing insects/animals)
+drenching sweat -> drenching sweat
+racing heart 48-96h after stopping alcohol -> racing heart 48-96h after stopping alcohol
+Triad of confusion -> Triad of difficulty thinking clearly or knowing what is happening
+unsteady stance/walk (ataxia) -> unsteady stance/walk (ataxia)
+and abnormal eye movements (nystagmus/paralysis) in severe alcoholism or malnutrition -> and abnormal eye movements (nystagmus/paralysis) in very strong alcoholism or malnutrition
+numbness around mouth -> reduced or absent feeling around mouth
+irregular heart rhythm -> not regular heart rhythm
+confusion following cancer chemotherapy -> difficulty thinking clearly or knowing what is happening following cancer chemotherapy
+Fever in a cancer patient undergoing chemotherapy with extremely low white blood cell count -> clinical finding/medical term: higher-than-normal body temperature in a cancer patient undergoing chemotherapy with extremely low white blood cell count
+Progressive heart enlargement (infantile) -> getting worse over time heart enlargement (infantile)
+severe muscle weakness -> very strong reduced muscle strength; extreme reduced muscle strength
+breathing difficulty -> breathing difficulty
+enlarged tongue -> bigger than usual tongue
+Exaggerated startle response -> Exaggerated startle response
+loss of motor skills after 6 months -> loss of motor skills after 6 months
+cherry-red spot on macula -> cherry-red spot on macula
+blindness -> blindness
+Inability to move eyes vertically -> Inability to move eyes vertically
+unsteady gait (ataxia) -> unsteady gait (ataxia)
+progressive dementia -> getting worse over time dementia
+enlarged liver and spleen -> bigger than usual liver and spleen
+Dark brown or black urine upon standing -> Dark brown or black urine upon standing
+blue-black discoloration of ear cartilage and whites of eyes -> blue-black discoloration of ear cartilage and whites of eyes
+early severe arthritis -> early very strong arthritis
+Translucent fragile skin with visible veins -> Translucent fragile skin with visible veins
+high risk of arterial or organ rupture -> high risk of arterial or organ rupture
+Accelerated aging in children -> Accelerated aging in children
+joint stiffness -> joints feeling tight or hard to move
+early severe atherosclerosis and heart attack -> early very strong atherosclerosis and heart attack
+Progressive muscle twitching (fasciculations) -> getting worse over time muscle twitching (fasciculations)
+muscle weakness spreading from hands/feet -> reduced muscle strength spreading from hands/feet
+Sudden vision loss in one or both eyes -> starting quickly partly or completely losing sight in one or both eyes
+intense pain on eye movement -> intense pain on eye movement
+weakness or paralysis in limbs -> reduced strength or feeling weak or paralysis in limbs
+uncontrollable hiccups/vomiting -> uncontrollable hiccups/throwing up
+Continuous burning pain far out of proportion to initial injury -> Continuous burning pain far out of proportion to initial injury
+severe sensitivity to touch/temperature -> very strong sensitivity to touch/temperature; extreme sensitivity to touch/temperature
+localized swelling and color change -> localized swelling and color change
+Rapidly progressive dementia over months -> Rapidly getting worse over time dementia over months
+sudden muscle jerks (myoclonus) -> starting quickly muscle jerks (myoclonus)
+unsteady gait -> unsteady gait
+visual hallucinations -> related to sight hallucinations
+Ascending symmetrical weakness starting in feet/legs -> Ascending symmetrical reduced strength or feeling weak starting in feet/legs
+tingling sensations -> tingling sensations
+respiratory muscle paralysis -> respiratory muscle paralysis
+Muscle weakness in legs/hips that temporary improves after exertion -> reduced muscle strength in legs/hips that temporary improves after exertion
+linked to small cell lung cancer -> linked to smaller than usual cell lung cancer
+Persistent nasal crusting/bleeding -> ongoing nose-related crusting/bleeding
+chronic sinus pain -> long-lasting sinus pain
+coughing blood -> coughing blood
+dark urine from glomerulonephritis -> dark urine from glomerulonephritis
+saddle-nose deformity -> saddle-nose deformity
+Recurrent blood clots in veins or arteries -> Recurrent blood clots in veins or arteries
+recurrent unexplained miscarriages -> recurrent unexplained miscarriages
+livedo reticularis (net-like skin rash) -> livedo reticularis (net-like an area of irritated or changed skin)
+Painful swollen red ears (sparing lobes) -> Painful swollen red ears (sparing lobes)
+airway collapse -> airway collapse
+eye inflammation -> eye inflammation
+Intense itching after a warm bath or shower (aquagenic pruritus) -> Intense itching after a warm bath or shower (aquagenic itching)
+flushed reddish skin -> flushed reddish skin
+high red blood cell count -> clinical finding/medical term: high red blood cell count
+High non-remitting fever -> High non-remitting higher-than-normal body temperature
+massive liver and spleen enlargement -> massive liver and spleen enlargement
+low blood cell counts -> low blood cell counts
+extremely elevated serum ferritin levels -> extremely elevated serum ferritin levels
+Simultaneous widespread blood clotting and uncontrollable bleeding from venipuncture sites -> Simultaneous widespread blood clotting and uncontrollable bleeding from venipuncture sites
+Rapidly expanding jaw or abdominal mass -> Rapidly expanding jaw or abdominal mass
+severe abdominal pain -> very strong belly pain; extreme belly pain
+high uric acid levels -> high uric acid levels
+starry-sky appearance on biopsy -> starry-sky appearance on biopsy
+Painful gangrene or ulcers on fingertips/toes -> Painful gangrene or ulcers on fingertips/toes
+burning hand/foot pain during walk -> burning hand/foot pain during walk
+Raynaud's phenomenon in heavy smokers -> Raynaud's phenomenon in heavy smokers
+Sudden fainting or cardiac arrest during strenuous athletic exercise -> starting quickly briefly losing consciousness or cardiac arrest during strenuous athletic exercise
+systolic murmur -> systolic murmur
+Intense persistent generalized itching (pruritus) -> Intense ongoing generalized itching (itching)
+dry eyes/mouth -> dry eyes/mouth
+high alkaline phosphatase -> high alkaline phosphatase
+regurgitation of undigested food hours after eating -> regurgitation of undigested food hours after eating
+bad breath (halitosis) -> bad breath (halitosis)
+gurgling noise in neck -> gurgling noise in neck
+Chronic diarrhea with bulky foul-smelling stools -> long-lasting loose or watery stools with bulky foul-smelling stools
+itchy blistering rash on elbows/knees (dermatitis herpetiformis) -> itchy blistering rash on elbows/knees (dermatitis herpetiformis)
+Painful tender bright red nodules on shins -> Painful tender bright red nodules on shins
+frequently associated with sarcoidosis or IBD -> frequently associated with sarcoidosis or IBD
+Expanding bullseye-shaped rash (erythema migrans) -> Expanding bullseye-shaped rash (skin redness migrans)
+Bell's palsy (facial drooping) -> Bell's palsy (facial drooping)
+joint swelling -> joint swelling
+heart block following tick bite -> heart block following tick bite
+rash starting on wrists and ankles spreading to trunk and palms/soles -> rash starting on wrists and ankles spreading to trunk and palms/soles
+rapidly spreading purple or dark red non-blanching spots (purpura fulminans) -> rapidly spreading purple or dark red non-blanching spots (purpura fulminans)
+septic shock -> septic shock
+Progressive muscle stiffness and rigidity in trunk and limbs -> getting worse over time muscle stiffness and rigidity in trunk and limbs
+severe painful muscle spasms triggered by noise or emotional distress -> very strong painful muscle spasms triggered by noise or emotional distress; extreme painful muscle spasms triggered by noise or emotional distress
+Involuntary autonomous movement of one hand acting independently of patient's conscious control -> Involuntary autonomous movement of one hand acting independently of patient's conscious control
+Progressive limitation of eye movement (CPEO) -> getting worse over time limitation of eye movement (CPEO)
+pigmentary retinopathy -> pigmentary retinopathy
+cardiac conduction block before age 20 -> age-related entry: cardiac conduction block before age 20
+muscle atrophy decades after recovery from acute poliomyelitis -> muscle atrophy decades after recovery from acute poliomyelitis
+Worsening intractable insomnia -> Worsening intractable trouble falling asleep or staying asleep
+severe autonomic dysfunction -> very strong autonomic dysfunction; extreme autonomic dysfunction
+motor loss -> motor loss
+Dark cola-colored urine in the morning -> Dark cola-colored urine in the morning
+fatigue from severe anemia -> unusual tiredness or low energy from very strong anemia
+high risk of deep thrombosis -> high risk of deep thrombosis
+Enlarged lymph nodes -> bigger than usual lymph nodes
+elevated IL-6 -> elevated IL-6
+spleen enlargement -> spleen enlargement
+Recurrent severe sinus and lung infections -> Recurrent very strong sinus and lung infections
+chronic diarrhea -> long-lasting loose or watery stools
+low serum immunoglobulin (IgG/IgA) levels -> low serum immunoglobulin (IgG/IgA) levels
+Severe recurrent opportunistic infections in early infancy -> very strong recurrent opportunistic infections in early infancy; extreme recurrent opportunistic infections in early infancy
+persistent diarrhea -> ongoing loose or watery stools
+failure to thrive -> failure to thrive
+absent T-cells -> clinical finding/medical term: absent T-cells
+craving for salt -> craving for salt
+low potassium and magnesium levels -> low potassium and magnesium levels
+extreme thirst and urination in infants -> very strong thirst and urination in infants; very severe thirst and urination in infants
+growth retardation -> growth retardation
+low potassium -> low potassium
+Painful bones -> Painful bones
+kidney stones -> kidney stones
+abdominal groans (constipation/ulcers) -> abdominal groans (difficulty passing stool/ulcers)
+psychiatric overtones (depression/confusion) -> psychiatric overtones (depression/difficulty thinking clearly or knowing what is happening)
+Muscle tingling around mouth and fingertips -> Muscle tingling around mouth and fingertips
+painful muscle cramps -> painful muscle cramps
+carpopedal spasms (Trousseau sign) -> carpopedal spasms (Trousseau sign)
+facial twitching (Chvostek sign) -> facial twitching (Chvostek sign)
+Hundreds of colorectal polyps -> Hundreds of colorectal polyps
+soft tissue tumors (desmoids -> soft tissue tumors (desmoids
+epidermoid cysts) -> epidermoid cysts)
+jaw osteomas -> jaw osteomas
+high colon cancer risk -> high colon cancer risk
+Dark freckle-like spots on lips/inside mouth -> Dark freckle-like spots on lips/inside mouth
+hamartomatous intestinal polyps -> hamartomatous intestinal polyps
+recurrent bowel intussusception -> recurrent bowel intussusception
+Severe persistent heartburn -> very strong ongoing heartburn; extreme ongoing heartburn
+multiple peptic ulcers resistant to treatment -> multiple peptic ulcers resistant to treatment
+chronic watery diarrhea -> long-lasting watery loose or watery stools
+high gastrin levels -> high gastrin levels
+Painless chancre at tsetse fly bite -> Painless chancre at tsetse fly bite
+disrupted sleep-wake cycle (daytime sleepiness -> disrupted sleep-wake cycle (feeling very sleepy during the day
+nighttime insomnia) -> nighttime trouble falling asleep or staying asleep)
+Gradual onset fever -> Gradual onset higher-than-normal body temperature
+retrosternal chest pain -> behind the breastbone pain or discomfort in the chest
+sudden sensorineural hearing loss -> starting quickly sensorineural reduced or absent hearing
+Slow-growing fluid-filled cysts in liver or lungs -> Slow-growing fluid-filled cysts in liver or lungs
+anaphylactic shock if cyst ruptures -> anaphylactic shock if cyst ruptures
+Itchy rash on buttocks/feet -> Itchy rash on buttocks/feet
+severe overwhelming sepsis with enteric bacteria in immunocompromised -> very strong overwhelming sepsis with enteric bacteria in immunocompromised; extreme overwhelming sepsis with enteric bacteria in immunocompromised
+
+Method note:
+OEWN is a lexical network rather than a medical symptom ontology. For this use case, synonyms should be
+treated as candidate language variants, not as medical equivalence. Clinical meaning can change with context.
